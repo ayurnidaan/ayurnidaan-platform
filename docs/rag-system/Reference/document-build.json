@@ -1,0 +1,32 @@
+[
+  {
+    "document": "03_Software_Architecture_Document",
+    "pages": 11,
+    "words": 2742,
+    "toc_sections": 13
+  },
+  {
+    "document": "04_API_Documentation",
+    "pages": 14,
+    "words": 3658,
+    "toc_sections": 13
+  },
+  {
+    "document": "05_Database_Documentation",
+    "pages": 13,
+    "words": 3297,
+    "toc_sections": 10
+  },
+  {
+    "document": "06_Installation_and_Deployment_Guide",
+    "pages": 13,
+    "words": 3403,
+    "toc_sections": 14
+  },
+  {
+    "document": "07_User_Manual",
+    "pages": 16,
+    "words": 3760,
+    "toc_sections": 16
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "file": "03_Software_Architecture_Document.pdf",
+    "pages": 11,
+    "edge_issues": [],
+    "page_word_counts": [
+      102,
+      133,
+      336,
+      207,
+      257,
+      285,
+      300,
+      458,
+      390,
+      350,
+      57
+    ]
+  },
+  {
+    "file": "04_API_Documentation.pdf",
+    "pages": 14,
+    "edge_issues": [],
+    "page_word_counts": [
+      101,
+      123,
+      359,
+      348,
+      194,
+      272,
+      339,
+      219,
+      265,
+      406,
+      312,
+      359,
+      264,
+      192
+    ]
+  },
+  {
+    "file": "05_Database_Documentation.pdf",
+    "pages": 13,
+    "edge_issues": [],
+    "page_word_counts": [
+      101,
+      112,
+      178,
+      310,
+      261,
+      310,
+      346,
+      265,
+      373,
+      324,
+      331,
+      396,
+      40
+    ]
+  },
+  {
+    "file": "06_Installation_and_Deployment_Guide.pdf",
+    "pages": 13,
+    "edge_issues": [],
+    "page_word_counts": [
+      104,
+      130,
+      277,
+      320,
+      264,
+      268,
+      353,
+      324,
+      323,
+      363,
+      340,
+      304,
+      216
+    ]
+  },
+  {
+    "file": "07_User_Manual.pdf",
+    "pages": 16,
+    "edge_issues": [],
+    "page_word_counts": [
+      102,
+      158,
+      275,
+      205,
+      365,
+      293,
+      232,
+      436,
+      280,
+      128,
+      232,
+      212,
+      400,
+      159,
+      447,
+      172
+    ]
+  }
+]
