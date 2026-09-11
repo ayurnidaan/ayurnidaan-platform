@@ -1,0 +1,677 @@
+{
+  "source_repository": "https://github.com/AmRitJain0442/vedai",
+  "source_commit": "73beef60490f97bfbd2902db152ff99a6484456d",
+  "destination_repository": "https://github.com/ayurnidaan/ayurnidaan-platform",
+  "destination_base_commit": "678cba397143724d97a243547d6094035a58d00e",
+  "actual_import_date": "2026-11-11",
+  "requested_author_date": "2026-09-11",
+  "requested_committer_date": "2026-09-11",
+  "timestamp_note": "Import commit author and committer timestamps are user-requested historical metadata; they are not evidence of original development or transfer dates.",
+  "source_files": [
+    {
+      "source_path": ".env.example",
+      "destination_path": "apps/vaidya-ai/.env.example",
+      "git_mode": "100644",
+      "source_git_blob": "7592f483f0dc2a7694639ab4a6f2f8b63a0836ef",
+      "sha256": "21fa4a57f7ae64d627cdcc076e20c38dd4f9cdb1c1c7502d6d85048c30b642a3"
+    },
+    {
+      "source_path": ".gitattributes",
+      "destination_path": "apps/vaidya-ai/.gitattributes",
+      "git_mode": "100644",
+      "source_git_blob": "a706312715569ff912aa984d5cd1dd50afbfab5c",
+      "sha256": "a6d1fd247708de8f7c67d3232623f40420ca0813853c4ed399056278bd30a6c6"
+    },
+    {
+      "source_path": ".github/workflows/tests.yml",
+      "destination_path": "apps/vaidya-ai/.github/workflows/tests.yml",
+      "git_mode": "100644",
+      "source_git_blob": "9d6e26a9ab58e3564043c33bf829766d828031d6",
+      "sha256": "f16bf4c880fac7bad62106366bc5eea56bdab020932676889ff4bf001dbb816e"
+    },
+    {
+      "source_path": ".gitignore",
+      "destination_path": "apps/vaidya-ai/.gitignore",
+      "git_mode": "100644",
+      "source_git_blob": "7a54c93c9da5aaacecc9bf0df78565446892393d",
+      "sha256": "bc323e6a73c722896aaa5692da9484e632c650e28f7f3759de5321e39864311b"
+    },
+    {
+      "source_path": "README.md",
+      "destination_path": "apps/vaidya-ai/README.md",
+      "git_mode": "100644",
+      "source_git_blob": "1574ce57df71c708dc508bc9275a80526b19c4bd",
+      "sha256": "3196995d32e9ef7114912a3b5df72484b38a4afd8fea89621cca2177b5d28d40"
+    },
+    {
+      "source_path": "config/ayurveda.json",
+      "destination_path": "apps/vaidya-ai/config/ayurveda.json",
+      "git_mode": "100644",
+      "source_git_blob": "486fcf165b0d1d7cd45f9b1f0a695ea58b78b76e",
+      "sha256": "f510c39a8d8f35c2672542145c6710da45da7b036c70d0f4ba22e0e1be8cc52e"
+    },
+    {
+      "source_path": "deploy/bootstrap.sh",
+      "destination_path": "apps/vaidya-ai/deploy/bootstrap.sh",
+      "git_mode": "100644",
+      "source_git_blob": "cf7ae849da2d370317c8c0f2ee97731e43cce17c",
+      "sha256": "42cd80a9070b54c6de10662628c007f598aa038b166b3ce566b5787398dcfbca"
+    },
+    {
+      "source_path": "deploy/install.sh",
+      "destination_path": "apps/vaidya-ai/deploy/install.sh",
+      "git_mode": "100644",
+      "source_git_blob": "006dedadcc6cc035b65355885573ab8011ef9f14",
+      "sha256": "da3fa3ddbe7ad6b04f582c412518311320f0eb27bd94bc6d61862fcdcb05ba7b"
+    },
+    {
+      "source_path": "deploy/package.py",
+      "destination_path": "apps/vaidya-ai/deploy/package.py",
+      "git_mode": "100644",
+      "source_git_blob": "4fb543a7b745311c93331c1c5d08561c2423c494",
+      "sha256": "5b02e771764eb080ab43012dddfc44846c4b9f8dc3440b420772a839441168f6"
+    },
+    {
+      "source_path": "deploy/update-code.sh",
+      "destination_path": "apps/vaidya-ai/deploy/update-code.sh",
+      "git_mode": "100644",
+      "source_git_blob": "58ace2dcff81733b4685453f69fa5b1b833ded9c",
+      "sha256": "495be66d367ab1c7e04c833441fb73959451025b15ccf0b072ee025761a8070a"
+    },
+    {
+      "source_path": "deploy/vedai-tunnel.service",
+      "destination_path": "apps/vaidya-ai/deploy/vedai-tunnel.service",
+      "git_mode": "100644",
+      "source_git_blob": "3b31e46e645d412ab8e2c55aadde775fc2712a38",
+      "sha256": "6cf6fd8ca36148aa4ecef4dc5e29a646071174d6447691f5681cfe1acbca84d9"
+    },
+    {
+      "source_path": "deploy/vedai.service",
+      "destination_path": "apps/vaidya-ai/deploy/vedai.service",
+      "git_mode": "100644",
+      "source_git_blob": "6bd8dddb20c197ea49a9f3e525e62cc6e9c9d82e",
+      "sha256": "b5957cf3d0c49676cee705abcebaae697653382b75b9d35dedaa047a863d2c88"
+    },
+    {
+      "source_path": "docs/CLINICAL_CASES.md",
+      "destination_path": "apps/vaidya-ai/docs/CLINICAL_CASES.md",
+      "git_mode": "100644",
+      "source_git_blob": "aa761804e5f48f922d34b519799d4974dc61ec16",
+      "sha256": "037c3bac21cec4d150b7e190313bd35114c505010a18691340e7789b70262127"
+    },
+    {
+      "source_path": "docs/DEPLOYMENT.md",
+      "destination_path": "apps/vaidya-ai/docs/DEPLOYMENT.md",
+      "git_mode": "100644",
+      "source_git_blob": "6a942d942e29e339089c8265c84af33542e798c8",
+      "sha256": "957a8cdf50f21840418782cadd3e5e2a29581a360ad171562c61a2d017d7472c"
+    },
+    {
+      "source_path": "docs/DESIGN_ASSETS.md",
+      "destination_path": "apps/vaidya-ai/docs/DESIGN_ASSETS.md",
+      "git_mode": "100644",
+      "source_git_blob": "89621704459f8aa7271cd4d744439c78110c3bf4",
+      "sha256": "d9f60de03a4f479f7602afb331376798b8078ae01a0ea76ca723b5d851385a7e"
+    },
+    {
+      "source_path": "docs/RAG_PLAN.md",
+      "destination_path": "apps/vaidya-ai/docs/RAG_PLAN.md",
+      "git_mode": "100644",
+      "source_git_blob": "39c5285125e412278a001db4d00de51090a0ec25",
+      "sha256": "7e5d655edbbb02b9ae8aa385e35234e60f91c97072d6cdb887ef0cf4749454fe"
+    },
+    {
+      "source_path": "docs/RETRIEVAL_RESULTS.md",
+      "destination_path": "apps/vaidya-ai/docs/RETRIEVAL_RESULTS.md",
+      "git_mode": "100644",
+      "source_git_blob": "4232972cde22e4d6b499074028cf637a44eaa18d",
+      "sha256": "cca134559a71bbb3523d6155143a80cc94361f41a5aee31a305837388a0b5900"
+    },
+    {
+      "source_path": "eval/README.md",
+      "destination_path": "apps/vaidya-ai/eval/README.md",
+      "git_mode": "100644",
+      "source_git_blob": "20d9eb2fa569d7bbf39668f0dd230243bef117f2",
+      "sha256": "fdf96ab098140928076d827da30a139c63978439712f8211ca7d4d217cf87e6b"
+    },
+    {
+      "source_path": "eval/clinical_cases.jsonl",
+      "destination_path": "apps/vaidya-ai/eval/clinical_cases.jsonl",
+      "git_mode": "100644",
+      "source_git_blob": "cd09a6b9f61ffa3bfc708b28a5f0eb0c1e5dfd25",
+      "sha256": "3b1eae3d5fec9bbd25beedb212d0ce8eb5617268e377684465735cc930747922"
+    },
+    {
+      "source_path": "eval/import_clinical_cases.py",
+      "destination_path": "apps/vaidya-ai/eval/import_clinical_cases.py",
+      "git_mode": "100644",
+      "source_git_blob": "69bccd816c1d6fd16cf46708da61026e525e8359",
+      "sha256": "aa3b0cd4c7aca600fc510c7c7f4ee75c32d385ca8f63a257377f94f7630472b3"
+    },
+    {
+      "source_path": "eval/questions.jsonl",
+      "destination_path": "apps/vaidya-ai/eval/questions.jsonl",
+      "git_mode": "100644",
+      "source_git_blob": "8fb2a22b054bd60c858a567b10b6a590e1b8799e",
+      "sha256": "affaccb0e296221d6fac62566bbb4337a3e2063534ce42933fb0b5dea580ec23"
+    },
+    {
+      "source_path": "eval/topics.json",
+      "destination_path": "apps/vaidya-ai/eval/topics.json",
+      "git_mode": "100644",
+      "source_git_blob": "55e2aa1bc1289ed00a9af8b506323dc3984f5f3c",
+      "sha256": "33739e7cbc48373b71dc9ba6cc5c880107adf6c4de671c786451711ce7722731"
+    },
+    {
+      "source_path": "pyproject.toml",
+      "destination_path": "apps/vaidya-ai/pyproject.toml",
+      "git_mode": "100644",
+      "source_git_blob": "d9627b7f36fd34b76e75b86184974df8d04e54a4",
+      "sha256": "35962f98c1058dccd38b3dba0caf4aae788a65987ad2a75089291ccb3f3a5106"
+    },
+    {
+      "source_path": "reports/clinical-deep-checks.json",
+      "destination_path": "apps/vaidya-ai/reports/clinical-deep-checks.json",
+      "git_mode": "100644",
+      "source_git_blob": "a6be11618e955b2159c90c22bcc26b7b344c86b8",
+      "sha256": "b2b9f006399c20960fea396319eb1b886256e0329c360bc60d47ce18fde5bf16"
+    },
+    {
+      "source_path": "reports/clinical-deployment.json",
+      "destination_path": "apps/vaidya-ai/reports/clinical-deployment.json",
+      "git_mode": "100644",
+      "source_git_blob": "a357f5dc5026a24246f4422d5e9801eb093f74b4",
+      "sha256": "2ec926f502f624ba3469c9c299ea65a762105536b47d67fba0806200bacc2056"
+    },
+    {
+      "source_path": "reports/clinical-hosted-checks.json",
+      "destination_path": "apps/vaidya-ai/reports/clinical-hosted-checks.json",
+      "git_mode": "100644",
+      "source_git_blob": "21e5ae66f349e42c95b2a48b63319c8e079e7a3b",
+      "sha256": "750f837936adfc4694212bdcebafa3cc43df1f66d291d18c99d7dd0487b30088"
+    },
+    {
+      "source_path": "reports/clinical-pilot.json",
+      "destination_path": "apps/vaidya-ai/reports/clinical-pilot.json",
+      "git_mode": "100644",
+      "source_git_blob": "864f9d618741fb9fa57ad135815bc2638fd7c3c7",
+      "sha256": "82bcd116e7f14a64809593f1206fe1c8d1bff6081b0ec4d6e92c5124d7fd3717"
+    },
+    {
+      "source_path": "reports/clinical-reference-checks.json",
+      "destination_path": "apps/vaidya-ai/reports/clinical-reference-checks.json",
+      "git_mode": "100644",
+      "source_git_blob": "c8cbee66ca0589103a0fcc94564a81f2cd3c5e2f",
+      "sha256": "716d30069de5ecdbf276591a649ac0b2d4c2fe63d201ae70f029d724758fe436"
+    },
+    {
+      "source_path": "reports/clinical-retrieval-checks.json",
+      "destination_path": "apps/vaidya-ai/reports/clinical-retrieval-checks.json",
+      "git_mode": "100644",
+      "source_git_blob": "cf023bddfc3223329ce98ca42842d9bd5a437655",
+      "sha256": "d3e49a69811379395dd4473b4efc93feb3dad837d260d642acdec39fc9c5ddcf"
+    },
+    {
+      "source_path": "reports/clinical-sama-checks.json",
+      "destination_path": "apps/vaidya-ai/reports/clinical-sama-checks.json",
+      "git_mode": "100644",
+      "source_git_blob": "801b402f8886d222365f3d5c1aa56fe1360c1779",
+      "sha256": "ffcbc09037cb7d506b986a2257d211f0b375b0a514f54e86a251f81353c47565"
+    },
+    {
+      "source_path": "reports/clinical-summary.json",
+      "destination_path": "apps/vaidya-ai/reports/clinical-summary.json",
+      "git_mode": "100644",
+      "source_git_blob": "f8d729dc5bdc38569a9f5acdbd75269cae111152",
+      "sha256": "35130da7f9dcae5d3740d4a32b92a9111c2601b84e71bb5f78f0726c32b8205c"
+    },
+    {
+      "source_path": "reports/corpus-summary.json",
+      "destination_path": "apps/vaidya-ai/reports/corpus-summary.json",
+      "git_mode": "100644",
+      "source_git_blob": "1423d47b0f792f5cc1bcb939d2cd1f95ff9f0498",
+      "sha256": "109e7fe1545dae62e6dca5bc3f4fa2e855f612bbbddac2d8a914aaecde464e2e"
+    },
+    {
+      "source_path": "reports/embedding-index.json",
+      "destination_path": "apps/vaidya-ai/reports/embedding-index.json",
+      "git_mode": "100644",
+      "source_git_blob": "4b77e64a18a7ab435b40d89f72267303b9766327",
+      "sha256": "04571915714f3b02b9bb9fa2eb0fcb190f2b1cde674da69b82a59558bd5f0b27"
+    },
+    {
+      "source_path": "reports/eval-expanded.json",
+      "destination_path": "apps/vaidya-ai/reports/eval-expanded.json",
+      "git_mode": "100644",
+      "source_git_blob": "7567aaa314552bd30db32d3f3d12db6c51caa27b",
+      "sha256": "611efcd6f6cd51b11d167fd445c7eec87bbc670700b640ef24ac614fd441ca6e"
+    },
+    {
+      "source_path": "reports/eval-hybrid-initial.json",
+      "destination_path": "apps/vaidya-ai/reports/eval-hybrid-initial.json",
+      "git_mode": "100644",
+      "source_git_blob": "f1320c58386a9d515f819cedbd5e6809661dccc9",
+      "sha256": "bb36348a6acbad2a9341d4cf4d0c52abee57bd27ba7428eae0d64019610bc76a"
+    },
+    {
+      "source_path": "reports/eval-hybrid.json",
+      "destination_path": "apps/vaidya-ai/reports/eval-hybrid.json",
+      "git_mode": "100644",
+      "source_git_blob": "6940cf8a2f084dda457b8ff94fb2ef460668bc35",
+      "sha256": "1b697fa629bf151aa99c5da5b621fc9f3841b9757b5c289dc6ed43cef37e0436"
+    },
+    {
+      "source_path": "reports/eval-lexical.json",
+      "destination_path": "apps/vaidya-ai/reports/eval-lexical.json",
+      "git_mode": "100644",
+      "source_git_blob": "23b7a63f9c33542936a1f88b460fbeb2ba8e5776",
+      "sha256": "932837beecdff31eb0be4a99efba573515350b5cc3f986f92ce750a9c2856157"
+    },
+    {
+      "source_path": "reports/eval-semantic.json",
+      "destination_path": "apps/vaidya-ai/reports/eval-semantic.json",
+      "git_mode": "100644",
+      "source_git_blob": "d73c8702d5a0d54566ba041129368153cbc5d014",
+      "sha256": "ec4eca822cdaf0e273b204a9f3c551c9d20348c56a861eb6ffae247b4ae71ecd"
+    },
+    {
+      "source_path": "reports/hosted-checks.json",
+      "destination_path": "apps/vaidya-ai/reports/hosted-checks.json",
+      "git_mode": "100644",
+      "source_git_blob": "7f8f65ab2a14d402add8911f53777b460bab53cc",
+      "sha256": "31bfb6194fcbd8cd16a4a3491fb7e40784db152b4e8c9ed1ab5f96c4820ce036"
+    },
+    {
+      "source_path": "reports/live-answer-checks.json",
+      "destination_path": "apps/vaidya-ai/reports/live-answer-checks.json",
+      "git_mode": "100644",
+      "source_git_blob": "eb6f54c6140ba948e9420f5a2d122ec09f054f8f",
+      "sha256": "b6f8ce6a8ec9a004760dd41d95e517672f641f83314ddcb8415f8f7eb133306f"
+    },
+    {
+      "source_path": "reports/passages-integrity.json",
+      "destination_path": "apps/vaidya-ai/reports/passages-integrity.json",
+      "git_mode": "100644",
+      "source_git_blob": "0121d1b171f8a2369482a0ddbb476e71f9fc576d",
+      "sha256": "5d1e5e19ecf29c91764893bcf117260584a6fb1be2d983df8bfe67acbb291221"
+    },
+    {
+      "source_path": "reports/performance/README.md",
+      "destination_path": "apps/vaidya-ai/reports/performance/README.md",
+      "git_mode": "100644",
+      "source_git_blob": "ece8709c98dfa2d297be7db9ae4441bbf4ce0543",
+      "sha256": "5e72a6f142d9e4e24e90bbefd397e5bae045429cb8ed628f127e841460bcbf8b"
+    },
+    {
+      "source_path": "reports/performance/VedAI-Performance-Report.html",
+      "destination_path": "apps/vaidya-ai/reports/performance/VedAI-Performance-Report.html",
+      "git_mode": "100644",
+      "source_git_blob": "1c1a8315073f9b391a57e056e6c7dbb0bd4f8eae",
+      "sha256": "fda3206d2e001d32022a3395dffc40d62ab52b5fbb0e571dbafa0b27872927a3"
+    },
+    {
+      "source_path": "reports/performance/VedAI-Performance-Report.pdf",
+      "destination_path": "apps/vaidya-ai/reports/performance/VedAI-Performance-Report.pdf",
+      "git_mode": "100644",
+      "source_git_blob": "7ff55e729635c77f0e933aa16e05c5c26113f0cc",
+      "sha256": "5694bf81c09e9f809db183c11663651f90465577013236c95e464bde683fb1a5"
+    },
+    {
+      "source_path": "reports/performance/recorded-answer-latency.svg",
+      "destination_path": "apps/vaidya-ai/reports/performance/recorded-answer-latency.svg",
+      "git_mode": "100644",
+      "source_git_blob": "c10fff6e60bd6145acae9e83d4f21efaa2804a10",
+      "sha256": "c443b0495c0622c266e2350ddef2f050796e21f5fe606d004a8b059516650d5e"
+    },
+    {
+      "source_path": "reports/performance/retrieval-comparison.svg",
+      "destination_path": "apps/vaidya-ai/reports/performance/retrieval-comparison.svg",
+      "git_mode": "100644",
+      "source_git_blob": "d0075e229123e7d4627952f320a4bc1025fc252b",
+      "sha256": "1491ea657ea215c0f2f915cfe6cd8ac3ada28dff742ca8461419ce8a7219b4c8"
+    },
+    {
+      "source_path": "reports/performance/verification.json",
+      "destination_path": "apps/vaidya-ai/reports/performance/verification.json",
+      "git_mode": "100644",
+      "source_git_blob": "d7f41505c1198f89a176d26f421140a9d276f523",
+      "sha256": "05642dc8aacc532dd65b5929fc36c1d28970a1962ea2cd91b765838e0c167664"
+    },
+    {
+      "source_path": "reports/query-enhancement-checks.json",
+      "destination_path": "apps/vaidya-ai/reports/query-enhancement-checks.json",
+      "git_mode": "100644",
+      "source_git_blob": "6031f1be9ffb933cb36deb8be5fbb892d787fc55",
+      "sha256": "c88d69597988a2d1dce9ea2150c958a0003e60844b9648c9b9436b5e95fe37ad"
+    },
+    {
+      "source_path": "reports/source-guide-checks.json",
+      "destination_path": "apps/vaidya-ai/reports/source-guide-checks.json",
+      "git_mode": "100644",
+      "source_git_blob": "a2213793103b66027afcb339abd3dd50f512e79b",
+      "sha256": "3cd1e71e7fdd092d922fba459c435c6cc3c1c37e68f3118b243c0079459dd6aa"
+    },
+    {
+      "source_path": "reports/source-manifest.json",
+      "destination_path": "apps/vaidya-ai/reports/source-manifest.json",
+      "git_mode": "100644",
+      "source_git_blob": "2b5b13de383628499d2a1f6da2790ef5c68f4efa",
+      "sha256": "b97a0363f4dc9b522790d0d881062c102f02ba7290649a1f554b8cb4858d0f91"
+    },
+    {
+      "source_path": "reports/translation-checks.json",
+      "destination_path": "apps/vaidya-ai/reports/translation-checks.json",
+      "git_mode": "100644",
+      "source_git_blob": "1687a32da8c8256f0fddac813521a4dbbaaab2b1",
+      "sha256": "65fc0e6bd005cc22733884d28049a00f88e9fa69cf2116aa79af81c7f7943642"
+    },
+    {
+      "source_path": "reports/validation.json",
+      "destination_path": "apps/vaidya-ai/reports/validation.json",
+      "git_mode": "100644",
+      "source_git_blob": "ef0331dbe9f9cf95ea3230d2bc834a96d609f68d",
+      "sha256": "069ce84cedd15f9420842a16a7adcfbc126bdae20edbb28b879f77a1b8ca23ea"
+    },
+    {
+      "source_path": "scripts/build_performance_report.py",
+      "destination_path": "apps/vaidya-ai/scripts/build_performance_report.py",
+      "git_mode": "100644",
+      "source_git_blob": "fcfb770da4c94f6581ca55aedd5e1ac68ce2e49a",
+      "sha256": "cce11c3a483cd253b25065922267a90d5f1294857c5eec429d84f408dc464d72"
+    },
+    {
+      "source_path": "tests/browser_sessions.py",
+      "destination_path": "apps/vaidya-ai/tests/browser_sessions.py",
+      "git_mode": "100644",
+      "source_git_blob": "cf707c7228452f1ab5d135b897093aff52663572",
+      "sha256": "d5b186f9c95715ad6aa24881cdaff887f2a29de365079553b1b9c8b757762e06"
+    },
+    {
+      "source_path": "tests/browser_smoke.py",
+      "destination_path": "apps/vaidya-ai/tests/browser_smoke.py",
+      "git_mode": "100644",
+      "source_git_blob": "2bb6201944c605d2b9b664f214fb8763f9259dd5",
+      "sha256": "828677a913c754be0b4a00b73c3af5536bfaf4387df2689cf394b3f2acef89ad"
+    },
+    {
+      "source_path": "tests/live_answers.py",
+      "destination_path": "apps/vaidya-ai/tests/live_answers.py",
+      "git_mode": "100644",
+      "source_git_blob": "6816145b5ccacf8a1951cad42ff18ece51e549cf",
+      "sha256": "c705af1252ca9cfe5ce6cd60e9abd89251b9ec5ea2b40d198afe04a6d301fd69"
+    },
+    {
+      "source_path": "tests/live_clinical.py",
+      "destination_path": "apps/vaidya-ai/tests/live_clinical.py",
+      "git_mode": "100644",
+      "source_git_blob": "5e24c47fda79c952a9928f337472fd4d38edb110",
+      "sha256": "81ad5400782cd024974e8a2f87a29e516b7f7c2092831cd8c66ca573cd9f423b"
+    },
+    {
+      "source_path": "tests/live_enhancement.py",
+      "destination_path": "apps/vaidya-ai/tests/live_enhancement.py",
+      "git_mode": "100644",
+      "source_git_blob": "5e40324053757c808795e86dd5a353a6ef41214e",
+      "sha256": "a499d51aa59e439628ba700a43f68fefff328e15a33a257ebfe49d0cb68ff85b"
+    },
+    {
+      "source_path": "tests/live_hosted.py",
+      "destination_path": "apps/vaidya-ai/tests/live_hosted.py",
+      "git_mode": "100644",
+      "source_git_blob": "5beacfd944a84c798877eebc758f813cd03a1ae8",
+      "sha256": "e42822b9c7994115dead57652cb7971ab56b217893bb6f76e91812b4525d85e5"
+    },
+    {
+      "source_path": "tests/live_translations.py",
+      "destination_path": "apps/vaidya-ai/tests/live_translations.py",
+      "git_mode": "100644",
+      "source_git_blob": "753172b887790daaf99362100fee913873e316d9",
+      "sha256": "1b5e5464fc0584552b27482d8c8d9a3489ef344a012e0e5e1ec1b6b616a57980"
+    },
+    {
+      "source_path": "tests/test_answers.py",
+      "destination_path": "apps/vaidya-ai/tests/test_answers.py",
+      "git_mode": "100644",
+      "source_git_blob": "00fcb85bcd6f8fe97adaccd140f7fe460176e67e",
+      "sha256": "ca493099cbc80641e66dbf350a094a08d37b145aa987202d319e82b1232a3e81"
+    },
+    {
+      "source_path": "tests/test_clinical.py",
+      "destination_path": "apps/vaidya-ai/tests/test_clinical.py",
+      "git_mode": "100644",
+      "source_git_blob": "aeda47570310d50ce28474fafc63f19f383a6d47",
+      "sha256": "2bc548e1614b123d7b86a68c32e901a737fb91732ce9cbb5575179a14f76f774"
+    },
+    {
+      "source_path": "tests/test_evaluation.py",
+      "destination_path": "apps/vaidya-ai/tests/test_evaluation.py",
+      "git_mode": "100644",
+      "source_git_blob": "4309f10bf785911560147a60c794c9872f304af4",
+      "sha256": "88af91e1051efaf76d41e74869e66ce17c90115ba61059bb59ff11b09a76cb2a"
+    },
+    {
+      "source_path": "tests/test_passages.py",
+      "destination_path": "apps/vaidya-ai/tests/test_passages.py",
+      "git_mode": "100644",
+      "source_git_blob": "93665068589c2718b6392cdbd774162d7930f723",
+      "sha256": "721e71838b6ad6197de0ed7f537d237b4142a8bac8ee14920b54f9c5ad1f9bbc"
+    },
+    {
+      "source_path": "tests/test_pipeline.py",
+      "destination_path": "apps/vaidya-ai/tests/test_pipeline.py",
+      "git_mode": "100644",
+      "source_git_blob": "8a979b2ca11f31efc8a12d3c94233daecefa39aa",
+      "sha256": "0308295f40bc01a80589009e6eeff647e4e1decc7a85f1a4d96c6e280b5e242d"
+    },
+    {
+      "source_path": "tests/test_query_planner.py",
+      "destination_path": "apps/vaidya-ai/tests/test_query_planner.py",
+      "git_mode": "100644",
+      "source_git_blob": "314e8b674692a9b30a934fc704ccb95026b5df0a",
+      "sha256": "1f17040164fc00e5bdb00acf274528ffc161cd15342e5c06ac67626be2bbf161"
+    },
+    {
+      "source_path": "tests/test_retrieval.py",
+      "destination_path": "apps/vaidya-ai/tests/test_retrieval.py",
+      "git_mode": "100644",
+      "source_git_blob": "066b55e07eb09b10ec8d9ba345c0f855a5f23174",
+      "sha256": "028a31856c59adab0d7baf4e82fe886226d5d6ef2b8a5ae02dd1bf7e4f48b800"
+    },
+    {
+      "source_path": "tests/test_scripts.py",
+      "destination_path": "apps/vaidya-ai/tests/test_scripts.py",
+      "git_mode": "100644",
+      "source_git_blob": "fb4189f18f0edfa417a3defab48ca8eec6b31a5f",
+      "sha256": "3ec58fb1a3d77687c58fc08aae5819fa74815dc6dc12d2a0f9020914ac3eac1b"
+    },
+    {
+      "source_path": "tests/test_server.py",
+      "destination_path": "apps/vaidya-ai/tests/test_server.py",
+      "git_mode": "100644",
+      "source_git_blob": "0307b457d24fa586f8ca26f1075882ab244e6471",
+      "sha256": "a2acd0f0c640588f959f222a80d001c2d3fc4f2ec366f601340f194a1e846089"
+    },
+    {
+      "source_path": "tests/test_source_guides.py",
+      "destination_path": "apps/vaidya-ai/tests/test_source_guides.py",
+      "git_mode": "100644",
+      "source_git_blob": "fcdce431edd009c871ee76c958f49050e05df971",
+      "sha256": "f56b9c9183dd5a4f8130fea3507d8430ec1316b6b06889cfdf2f4a6e36a6d25e"
+    },
+    {
+      "source_path": "tests/test_terminology.py",
+      "destination_path": "apps/vaidya-ai/tests/test_terminology.py",
+      "git_mode": "100644",
+      "source_git_blob": "36c9cfb69b8adece3acd60a13e9f96377dd9adab",
+      "sha256": "4cf93e6a94562c0bc399590ebc0bc376e811e6b0b366c56d963ededcd7f271c8"
+    },
+    {
+      "source_path": "vedai/__init__.py",
+      "destination_path": "apps/vaidya-ai/vedai/__init__.py",
+      "git_mode": "100644",
+      "source_git_blob": "e11f9f93938fcd55644363dfdc50599e7e3fdac1",
+      "sha256": "6b30a802ae9af4999316ea60e35fc5a8ab76c5b7a473c279c56497a5dafb0a3d"
+    },
+    {
+      "source_path": "vedai/__main__.py",
+      "destination_path": "apps/vaidya-ai/vedai/__main__.py",
+      "git_mode": "100644",
+      "source_git_blob": "06f36d6180e537554b078944335287e983d73995",
+      "sha256": "540453cf7fe1efc87c4b8a88d3eba03a18bbf19882cc421f6acc2cda6c803dee"
+    },
+    {
+      "source_path": "vedai/answers.py",
+      "destination_path": "apps/vaidya-ai/vedai/answers.py",
+      "git_mode": "100644",
+      "source_git_blob": "e6703567d1554ebff44cb8b998577174db5dd86a",
+      "sha256": "8a6086537d5c76f90883ba3ace3d9be79e8659bf7081390bb5d6ccf97190d264"
+    },
+    {
+      "source_path": "vedai/ayurveda_terms.json",
+      "destination_path": "apps/vaidya-ai/vedai/ayurveda_terms.json",
+      "git_mode": "100644",
+      "source_git_blob": "6c1bdd7e8f2acfeaa79d4abfd3dbb6b926b8ccf2",
+      "sha256": "b0c8ce05174c3893540192d5944b27257af722bd9049ddf2f61aaea080abf602"
+    },
+    {
+      "source_path": "vedai/clinical.py",
+      "destination_path": "apps/vaidya-ai/vedai/clinical.py",
+      "git_mode": "100644",
+      "source_git_blob": "829e6961c1486590587ae5077d74eaa52ac5cfd8",
+      "sha256": "b4f7ae9fe29f4436fdcaa182992470fcefd47b5dcb0766d871cffeb2e706b091"
+    },
+    {
+      "source_path": "vedai/corpus.py",
+      "destination_path": "apps/vaidya-ai/vedai/corpus.py",
+      "git_mode": "100644",
+      "source_git_blob": "7140554a98729ab73fae10b048bb41aa58eabb24",
+      "sha256": "de2bcb6f811d6d73fda23071be4ab9ba9e78cb72acec16dbde900a3d51301e28"
+    },
+    {
+      "source_path": "vedai/evaluation.py",
+      "destination_path": "apps/vaidya-ai/vedai/evaluation.py",
+      "git_mode": "100644",
+      "source_git_blob": "9c9ad1f7de64dbb49c8fa5919e787e12afb2e5a3",
+      "sha256": "b54ebd3e4377546e5024104d97c409a9d9f2e0893e5b788472c24ccd3aa71f99"
+    },
+    {
+      "source_path": "vedai/ollama.py",
+      "destination_path": "apps/vaidya-ai/vedai/ollama.py",
+      "git_mode": "100644",
+      "source_git_blob": "43f6dc2033f9982b30c4c1e1679aebf2ab99a964",
+      "sha256": "1ad5b9fe5ca22a4fec4cdc1fc2b0c1fc18aa0fdb92623361f5952083be31169d"
+    },
+    {
+      "source_path": "vedai/passages.py",
+      "destination_path": "apps/vaidya-ai/vedai/passages.py",
+      "git_mode": "100644",
+      "source_git_blob": "1ce84dc81d9cdee6d998467d2602f0dc1468f3ac",
+      "sha256": "50ef5c7acc898ba1ba0186c3af6f2602d34a7291e75ece5c2985feb552ac2a59"
+    },
+    {
+      "source_path": "vedai/query_planner.py",
+      "destination_path": "apps/vaidya-ai/vedai/query_planner.py",
+      "git_mode": "100644",
+      "source_git_blob": "1663daa9be9eabab2b5be6026bc01d914dbbecc1",
+      "sha256": "95882ccdfc0eff9b4d408c0b8bd9348a15772c7c484c4da10e54245c4609d0a9"
+    },
+    {
+      "source_path": "vedai/retrieval.py",
+      "destination_path": "apps/vaidya-ai/vedai/retrieval.py",
+      "git_mode": "100644",
+      "source_git_blob": "4f49d2622b2d73d357b4570562d85360fd2357ad",
+      "sha256": "1b77ac468f47b5d14758dd42ddb38941dab9d9d9465c4e39773fde4d4c0e6946"
+    },
+    {
+      "source_path": "vedai/scripts.py",
+      "destination_path": "apps/vaidya-ai/vedai/scripts.py",
+      "git_mode": "100644",
+      "source_git_blob": "1b492041e72a0b106be5577bac7818178d155693",
+      "sha256": "9ba18e3ab51e26371a32d074912021819deaa8966f8fb91ceb50fc8ab64c21d4"
+    },
+    {
+      "source_path": "vedai/search.py",
+      "destination_path": "apps/vaidya-ai/vedai/search.py",
+      "git_mode": "100644",
+      "source_git_blob": "b974fd940f99f19654fa976810f3f02211bde050",
+      "sha256": "26c5904c01501e61691ff4464d7548e5a7d76243ba1391b4c7c0d3aa37f76dd1"
+    },
+    {
+      "source_path": "vedai/server.py",
+      "destination_path": "apps/vaidya-ai/vedai/server.py",
+      "git_mode": "100644",
+      "source_git_blob": "17a5e9e2617c4b8677585a1217d1f83809e81365",
+      "sha256": "59dff5a4532777c26019255647dfaa5774a1af93437ae4eec5ce21c290bd2119"
+    },
+    {
+      "source_path": "vedai/settings.py",
+      "destination_path": "apps/vaidya-ai/vedai/settings.py",
+      "git_mode": "100644",
+      "source_git_blob": "cb6d85446df864fc2d01442f20cf1fc4f94f242e",
+      "sha256": "0c72cbed6cb6648a5b34bd01717524ee7a4199aa7ba2ffd9cdfc801923280df6"
+    },
+    {
+      "source_path": "vedai/source_guides.json",
+      "destination_path": "apps/vaidya-ai/vedai/source_guides.json",
+      "git_mode": "100644",
+      "source_git_blob": "c51514e4d065378b8381ecd092f7614604d00ef4",
+      "sha256": "50384123ef9ebb7fb824867375334f592528ced3fd2ff31623b265da3c0e94f3"
+    },
+    {
+      "source_path": "vedai/static/app.js",
+      "destination_path": "apps/vaidya-ai/vedai/static/app.js",
+      "git_mode": "100644",
+      "source_git_blob": "accbb4cc418a2f5e3782c51333b88b2fb253cdb6",
+      "sha256": "f7717375037291f2786de145ff85da9db3cd9be7bd268cbacb0d47f7367276d9"
+    },
+    {
+      "source_path": "vedai/static/ayurveda-clay.png",
+      "destination_path": "apps/vaidya-ai/vedai/static/ayurveda-clay.png",
+      "git_mode": "100644",
+      "source_git_blob": "06acb45d8b2fc60f9ce27949cb64e8c1f82c32cb",
+      "sha256": "5a8a068c3435d02ecebee360f30ba3b9aff50588489a0e774d1f94bcd66d3cce"
+    },
+    {
+      "source_path": "vedai/static/index.html",
+      "destination_path": "apps/vaidya-ai/vedai/static/index.html",
+      "git_mode": "100644",
+      "source_git_blob": "c929490132693f3ab91012954556b0b4c663b8a2",
+      "sha256": "6c8260fff758903b217fadcbe6ac7f9af4983797b82e73a50648b2987913fc35"
+    },
+    {
+      "source_path": "vedai/static/sessions.js",
+      "destination_path": "apps/vaidya-ai/vedai/static/sessions.js",
+      "git_mode": "100644",
+      "source_git_blob": "1c5d09b665cac7cbd452ceb1e34ce21d7bf82adf",
+      "sha256": "1f190708f733acaf4aa497ecfbc134180077e8957eb43428b24f7c5596e4142f"
+    },
+    {
+      "source_path": "vedai/static/style.css",
+      "destination_path": "apps/vaidya-ai/vedai/static/style.css",
+      "git_mode": "100644",
+      "source_git_blob": "f1c1c27bd6d7c8faf33bf0d153e06a04fc46898e",
+      "sha256": "6d36bf07aa5441b1d324087ceb719cb4de082ffab49f2b0321e0fc037edccbec"
+    },
+    {
+      "source_path": "vedai/terminology.py",
+      "destination_path": "apps/vaidya-ai/vedai/terminology.py",
+      "git_mode": "100644",
+      "source_git_blob": "aed8d231b725c8f2387b169cfa96ced13dcd19ca",
+      "sha256": "b03916066ecad2df2c155bfdc67db81eb5c57384a9dece194998848fe2b6c8cd"
+    },
+    {
+      "source_path": "vedai/verify.py",
+      "destination_path": "apps/vaidya-ai/vedai/verify.py",
+      "git_mode": "100644",
+      "source_git_blob": "66368b70c6b7a4195304bd4e95bc6216befc62d5",
+      "sha256": "08b699a07820de573019156415a6e8ea174845f481936849161c97a455e94ecc"
+    }
+  ],
+  "handover_path": "docs/rag-system",
+  "exclusions": [
+    "Nested Git metadata/history",
+    "Git-ignored local data and generated indexes",
+    "Private environment files and credentials",
+    "Local documentation build/capture helper scripts"
+  ]
+}
