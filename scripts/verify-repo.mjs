@@ -7,6 +7,11 @@ const required = [
   "README.md",
   "docs/platform/SYSTEM_MAP.md",
   ...apps.flatMap((app) => [`apps/${app}/package.json`, `apps/${app}/.env.example`]),
+  "apps/vaidya-ai/pyproject.toml",
+  "apps/vaidya-ai/.env.example",
+  "apps/vaidya-ai/vedai/server.py",
+  "docs/rag-system/README.md",
+  "docs/platform/RAG_IMPORT.md",
 ];
 
 const failures = [];
@@ -50,4 +55,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log("Repository structure verified: four applications, documentation, configuration templates and no generated dependency/build directories.");
+console.log("Repository structure verified: four JavaScript applications and one Python RAG application, documentation, configuration templates and no generated dependency/build directories.");

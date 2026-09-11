@@ -16,10 +16,12 @@
     "build:admin": "npm --prefix apps/admin-portal run build",
     "build:hospital": "npm --prefix apps/hospital-saas run build",
     "test:hospital": "npm --prefix apps/hospital-saas test",
-    "security:customer": "npm --prefix apps/customer-mobile run security:check"
+    "security:customer": "npm --prefix apps/customer-mobile run security:check",
+    "setup:rag": "python -m pip install \"./apps/vaidya-ai[rag,test]\"",
+    "dev:rag": "cd apps/vaidya-ai && python -m vedai serve --port 8765",
+    "verify:rag": "cd apps/vaidya-ai && python -m unittest discover -s tests -v"
   },
   "engines": {
     "node": ">=22.13.0"
   }
 }
-
