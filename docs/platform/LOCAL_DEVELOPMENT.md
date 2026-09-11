@@ -2,12 +2,13 @@
 
 ## Runtime matrix
 
-| Application | Node.js | Package manager | Start command |
+| Application | Runtime | Package manager | Start command |
 | --- | --- | --- | --- |
-| Customer mobile | 22.13.x | npm | `npm run dev:customer` |
-| Doctor mobile | 22.13.x | npm | `npm run dev:doctor` |
-| Admin portal | 22.13.x or newer | npm | `npm run dev:admin` |
-| Hospital SaaS | 24 or newer | npm | `npm run dev:hospital` |
+| Customer mobile | Node 22.13.x | npm | `npm run dev:customer` |
+| Doctor mobile | Node 22.13.x | npm | `npm run dev:doctor` |
+| Admin portal | Node 22.13.x or newer | npm | `npm run dev:admin` |
+| Hospital SaaS | Node 24 or newer | npm | `npm run dev:hospital` |
+| Vaidya AI / VedAI | Python 3.10+ with SQLite FTS5/trigram/JSON | pip + optional extras | `npm run dev:rag` |
 
 The repository intentionally does not use one hoisted dependency installation. Each application keeps its own lockfile because the hospital system and Expo applications have different runtime constraints.
 
@@ -28,3 +29,11 @@ npm run build:hospital
 
 For mobile validation, run Expo's dependency checks inside each mobile application and test on the relevant Android/iOS target. Expo SDK 57 targets React Native 0.86 and requires at least Node 22.13.x.
 
+
+## Vaidya AI / VedAI Python setup
+
+Run source commands from `apps/vaidya-ai`, not the monorepo root. Use its `MONOREPO.md` for venv creation and the full `download → process → index → terms-index → passages-index → verify` sequence. A normal clone excludes the corpus/indexes. Once built, `python -m vedai serve --port 8765` serves the app at `http://127.0.0.1:8765`.
+
+The root `setup:rag`, `dev:rag` and `verify:rag` scripts use `python` from the active environment and do not install npm dependencies. Use a Python virtual environment. Only the app's three OpenRouter settings are read from `apps/vaidya-ai/.env`; `VEDAI_*` access/host settings and `OLLAMA_HOST` must be process environment variables. Retrieval works without generation credentials.
+
+Run `npm run verify:rag` for the Python unit/API suite. Browser and live-provider scripts are separate checks; live-provider scripts can incur charges. Full setup and Linux deployment instructions are in `docs/rag-system/Markdown/06_Installation_and_Deployment_Guide.md`.
