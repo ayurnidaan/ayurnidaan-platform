@@ -1,0 +1,44 @@
+{
+  "checks": [
+    {
+      "question": "What are the three doshas in Ashtanga Hridaya?",
+      "model": "openai/gpt-5.6-luna",
+      "status": "supported",
+      "verses": [
+        "Ah.1.1.006"
+      ],
+      "source_texts_match": true,
+      "seconds": 5.595
+    },
+    {
+      "question": "How does Sushruta describe a healthy person?",
+      "model": "openai/gpt-5.6-luna",
+      "status": "supported",
+      "verses": [
+        "Su.1.15.44",
+        "Su.1.15.43",
+        null,
+        "Su.1.15.38"
+      ],
+      "source_texts_match": true,
+      "seconds": 9.595
+    },
+    {
+      "question": "Explain how a computer CPU executes machine instructions.",
+      "model": "openai/gpt-5.6-luna",
+      "status": "general_knowledge",
+      "verses": [],
+      "source_texts_match": true,
+      "seconds": 6.811
+    },
+    {
+      "question": "What is my bank account password?",
+      "model": "openai/gpt-5.6-luna",
+      "status": "insufficient_evidence",
+      "verses": [],
+      "source_texts_match": true,
+      "seconds": 3.025
+    }
+  ],
+  "scope": "Four live integration cases. Exact source text and reference checks; not expert validation or a general faithfulness benchmark."
+}

@@ -1,0 +1,193 @@
+{
+  "checks": [
+    {
+      "question": "sar dard and pet kharab lag raha h patli tatti aa rahi h",
+      "model": "openai/gpt-5.6-luna",
+      "status": "supported",
+      "searches": [
+        {
+          "id": "Q1",
+          "topic": "Headache",
+          "terms": [
+            "sirahsula",
+            "sirosula",
+            "sirahsulin",
+            "sirogaurava"
+          ],
+          "query": "sirahsula sirosula sirahsulin sirogaurava",
+          "retrieved_chunks": 6,
+          "source_passages": 10,
+          "evidence_passages": 10,
+          "cited_passages": 2
+        },
+        {
+          "id": "Q2",
+          "topic": "Stomach discomfort with loose stools",
+          "terms": [
+            "grahanidosa",
+            "atisara",
+            "drava mala",
+            "dravasakrt",
+            "malasaithilya"
+          ],
+          "query": "grahanidosa atisara drava mala dravasakrt malasaithilya",
+          "retrieved_chunks": 6,
+          "source_passages": 18,
+          "evidence_passages": 15,
+          "cited_passages": 2
+        }
+      ],
+      "sources": [
+        {
+          "title": "Bhela Samhita",
+          "work": "bhelasamhita",
+          "verse_label": "BS.6.10.20",
+          "form": "shloka",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/bhelasamhita.xml"
+        },
+        {
+          "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)",
+          "work": "arunadatta-sarvangasundara",
+          "verse_label": "64",
+          "form": "shloka",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/arunadatta-sarvangasundara.xml"
+        },
+        {
+          "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)",
+          "work": "arunadatta-sarvangasundara",
+          "verse_label": "26, 27",
+          "form": "shloka",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/arunadatta-sarvangasundara.xml"
+        },
+        {
+          "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)",
+          "work": "arunadatta-sarvangasundara",
+          "verse_label": null,
+          "form": "commentary",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/arunadatta-sarvangasundara.xml"
+        },
+        {
+          "title": "Bhela Samhita",
+          "work": "bhelasamhita",
+          "verse_label": "BS.6.10.21",
+          "form": "shloka",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/bhelasamhita.xml"
+        },
+        {
+          "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)",
+          "work": "arunadatta-sarvangasundara",
+          "verse_label": "2",
+          "form": "shloka",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/arunadatta-sarvangasundara.xml"
+        },
+        {
+          "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)",
+          "work": "arunadatta-sarvangasundara",
+          "verse_label": null,
+          "form": "commentary",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/arunadatta-sarvangasundara.xml"
+        },
+        {
+          "title": "Bhela Samhita",
+          "work": "bhelasamhita",
+          "verse_label": "BS.6.10.35",
+          "form": "shloka",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/bhelasamhita.xml"
+        }
+      ],
+      "source_texts_and_locators_match": true,
+      "seconds": 13.54
+    },
+    {
+      "question": "सिर में दर्द है और पेट खराब है, पतली टट्टी आ रही है",
+      "model": "openai/gpt-5.6-luna",
+      "status": "supported",
+      "searches": [
+        {
+          "id": "Q1",
+          "topic": "headache",
+          "terms": [
+            "sirahsula",
+            "sirosula",
+            "siroruk",
+            "sirassula"
+          ],
+          "query": "sirahsula sirosula siroruk sirassula",
+          "retrieved_chunks": 6,
+          "source_passages": 6,
+          "evidence_passages": 6,
+          "cited_passages": 3
+        },
+        {
+          "id": "Q2",
+          "topic": "loose stools with stomach upset",
+          "terms": [
+            "atisara",
+            "dravapurisa",
+            "dravasakrt",
+            "udaravikara"
+          ],
+          "query": "atisara dravapurisa dravasakrt udaravikara",
+          "retrieved_chunks": 6,
+          "source_passages": 12,
+          "evidence_passages": 12,
+          "cited_passages": 1
+        }
+      ],
+      "sources": [
+        {
+          "title": "Bhela Samhita",
+          "work": "bhelasamhita",
+          "verse_label": "BS.6.10.20",
+          "form": "shloka",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/bhelasamhita.xml"
+        },
+        {
+          "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)",
+          "work": "arunadatta-sarvangasundara",
+          "verse_label": "42",
+          "form": "shloka",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/arunadatta-sarvangasundara.xml"
+        },
+        {
+          "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)",
+          "work": "arunadatta-sarvangasundara",
+          "verse_label": "61",
+          "form": "shloka",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/arunadatta-sarvangasundara.xml"
+        },
+        {
+          "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)",
+          "work": "arunadatta-sarvangasundara",
+          "verse_label": "26, 27",
+          "form": "shloka",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/arunadatta-sarvangasundara.xml"
+        },
+        {
+          "title": "Bhela Samhita",
+          "work": "bhelasamhita",
+          "verse_label": "BS.6.10.21",
+          "form": "shloka",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/bhelasamhita.xml"
+        },
+        {
+          "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)",
+          "work": "arunadatta-sarvangasundara",
+          "verse_label": "25",
+          "form": "shloka",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/arunadatta-sarvangasundara.xml"
+        },
+        {
+          "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)",
+          "work": "arunadatta-sarvangasundara",
+          "verse_label": null,
+          "form": "commentary",
+          "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/arunadatta-sarvangasundara.xml"
+        }
+      ],
+      "source_texts_and_locators_match": true,
+      "seconds": 9.052
+    }
+  ],
+  "scope": "Two development smoke cases; source integrity and topic coverage, not expert assessment of Sanskrit interpretation or clinical validity."
+}

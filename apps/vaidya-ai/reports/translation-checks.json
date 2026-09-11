@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "question": "sar dard and pet kharab lag raha h patli tatti aa rahi h",
+      "language": "en",
+      "model": "openai/gpt-5.6-sol",
+      "reasoning_effort": "medium",
+      "status": "supported",
+      "translated_sources": 3,
+      "source_texts_and_locators_match": true,
+      "seconds": 42.626
+    },
+    {
+      "question": "चरक के अनुसार आयुर्वेद की परिभाषा क्या है?",
+      "language": "hi",
+      "model": "openai/gpt-5.6-sol",
+      "reasoning_effort": "medium",
+      "status": "supported",
+      "translated_sources": 2,
+      "source_texts_and_locators_match": true,
+      "seconds": 42.18
+    },
+    {
+      "question": "What does a computer CPU do?",
+      "language": "en",
+      "model": "openai/gpt-5.6-sol",
+      "reasoning_effort": "medium",
+      "status": "general_knowledge",
+      "translated_sources": 0,
+      "source_texts_and_locators_match": true,
+      "seconds": 5.634
+    }
+  ],
+  "scope": "Development checks for source binding, original text integrity, model configuration and translation presence. Translation accuracy and completeness have not been independently assessed by a Sanskrit expert."
+}

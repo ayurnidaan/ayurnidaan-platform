@@ -1,0 +1,445 @@
+{
+  "scope": "Locator coverage in pinned SARIT edition, not semantic or clinical validation",
+  "guides": [
+    {
+      "topic": "Haritaki property passage and its continuation",
+      "work": "astangahrdayasamhita",
+      "prefix": "Ah.1.6.",
+      "expected_verse_numbers": [
+        153,
+        154,
+        155,
+        156,
+        157
+      ],
+      "resolved_verse_numbers": [
+        153,
+        154,
+        155,
+        156,
+        157
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Sahacaradi formulation identity",
+      "work": "astangahrdayasamhita",
+      "prefix": "Ah.4.21.",
+      "expected_verse_numbers": [
+        67,
+        68,
+        69
+      ],
+      "resolved_verse_numbers": [
+        67,
+        68,
+        69
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Urustambha treatment exception and later reassessment",
+      "work": "astangahrdayasamhita",
+      "prefix": "Ah.4.21.",
+      "expected_verse_numbers": [
+        45,
+        46,
+        55
+      ],
+      "resolved_verse_numbers": [
+        45,
+        46,
+        55
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Dadhi and takra properties",
+      "work": "astangahrdayasamhita",
+      "prefix": "Ah.1.5.",
+      "expected_verse_numbers": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "resolved_verse_numbers": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Takra in grahani",
+      "work": "carakasamhita",
+      "prefix": "Ca.6.15.",
+      "expected_verse_numbers": [
+        117,
+        118,
+        119,
+        120
+      ],
+      "resolved_verse_numbers": [
+        117,
+        118,
+        119,
+        120
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Grahani definition and subtypes",
+      "work": "carakasamhita",
+      "prefix": "Ca.6.15.",
+      "expected_verse_numbers": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72
+      ],
+      "resolved_verse_numbers": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Pandu classification, pathogenesis and pitta features",
+      "work": "carakasamhita",
+      "prefix": "Ca.6.16.",
+      "expected_verse_numbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        19,
+        20,
+        21,
+        22
+      ],
+      "resolved_verse_numbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        19,
+        20,
+        21,
+        22
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Pandu treatment principles",
+      "work": "carakasamhita",
+      "prefix": "Ca.6.16.",
+      "expected_verse_numbers": [
+        116,
+        117
+      ],
+      "resolved_verse_numbers": [
+        116,
+        117
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Sama signs and preparation before intervention",
+      "work": "astangahrdayasamhita",
+      "prefix": "Ah.1.13.",
+      "expected_verse_numbers": [
+        23,
+        24,
+        28,
+        29,
+        30
+      ],
+      "resolved_verse_numbers": [
+        23,
+        24,
+        28,
+        29,
+        30
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Virechana eligibility and contraindications",
+      "work": "astangahrdayasamhita",
+      "prefix": "Ah.1.18.",
+      "expected_verse_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "resolved_verse_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Virechana preparation and aftercare",
+      "work": "astangahrdayasamhita",
+      "prefix": "Ah.1.18.",
+      "expected_verse_numbers": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        42,
+        43
+      ],
+      "resolved_verse_numbers": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        42,
+        43
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Virechana insufficient, adequate and excessive effects",
+      "work": "astangahrdayasamhita",
+      "prefix": "Ah.1.18.",
+      "expected_verse_numbers": [
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "resolved_verse_numbers": [
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Tenfold patient examination",
+      "work": "carakasamhita",
+      "prefix": "Ca.3.8.",
+      "expected_verse_numbers": [
+        94,
+        101,
+        120,
+        121,
+        122,
+        123
+      ],
+      "resolved_verse_numbers": [
+        94,
+        101,
+        120,
+        121,
+        122,
+        123
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Sandhigata vata signs",
+      "work": "astangahrdayasamhita",
+      "prefix": "Ah.3.15.",
+      "expected_verse_numbers": [
+        14,
+        15
+      ],
+      "resolved_verse_numbers": [
+        14,
+        15
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Dhatu depletion versus obstruction",
+      "work": "astangahrdayasamhita",
+      "prefix": "Ah.3.15.",
+      "expected_verse_numbers": [
+        5,
+        6
+      ],
+      "resolved_verse_numbers": [
+        5,
+        6
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Unobstructed vata treatment principles",
+      "work": "astangahrdayasamhita",
+      "prefix": "Ah.4.21.",
+      "expected_verse_numbers": [
+        1,
+        2,
+        3
+      ],
+      "resolved_verse_numbers": [
+        1,
+        2,
+        3
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Fever and limits of fasting",
+      "work": "carakasamhita",
+      "prefix": "Ca.6.3.",
+      "expected_verse_numbers": [
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "resolved_verse_numbers": [
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Raktapitta routes and assessment",
+      "work": "carakasamhita",
+      "prefix": "Ca.6.4.",
+      "expected_verse_numbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        62,
+        63,
+        64
+      ],
+      "resolved_verse_numbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        62,
+        63,
+        64
+      ],
+      "missing": []
+    },
+    {
+      "topic": "Historical description of cognitive and behavioural disturbance",
+      "work": "carakasamhita",
+      "prefix": "Ca.2.7.",
+      "expected_verse_numbers": [
+        4,
+        5
+      ],
+      "resolved_verse_numbers": [
+        4,
+        5
+      ],
+      "missing": []
+    }
+  ]
+}
