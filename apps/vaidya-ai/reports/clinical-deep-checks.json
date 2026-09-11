@@ -1,0 +1,176 @@
+{
+  "created_at": "2026-09-22T08:15:52.813170+00:00",
+  "live": true,
+  "review_status": "physician_review_pending",
+  "scope": "Mechanical source/structure checks only; not semantic or clinical validation.",
+  "cases": [
+    {
+      "id": "deep-01",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "patient_case",
+      "passages": 40,
+      "citations": 3,
+      "seconds": 79.38
+    },
+    {
+      "id": "deep-02",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "patient_case",
+      "passages": 40,
+      "citations": 4,
+      "seconds": 101.19
+    },
+    {
+      "id": "deep-03",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "patient_case",
+      "passages": 40,
+      "citations": 3,
+      "seconds": 73.02
+    },
+    {
+      "id": "deep-04",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "disease",
+      "passages": 40,
+      "citations": 4,
+      "seconds": 85.78
+    },
+    {
+      "id": "deep-05",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "patient_case",
+      "passages": 40,
+      "citations": 3,
+      "seconds": 113.26
+    },
+    {
+      "id": "deep-07",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "patient_case",
+      "passages": 40,
+      "citations": 7,
+      "seconds": 151.31
+    },
+    {
+      "id": "deep-08",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "patient_case",
+      "passages": 40,
+      "citations": 4,
+      "seconds": 104.53
+    },
+    {
+      "id": "deep-10",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "patient_case",
+      "passages": 40,
+      "citations": 3,
+      "seconds": 81.58
+    }
+  ]
+}

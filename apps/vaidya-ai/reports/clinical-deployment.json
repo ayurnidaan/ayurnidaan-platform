@@ -1,0 +1,21 @@
+{
+  "url": "https://matt-dining-outcomes-settlement.trycloudflare.com",
+  "access": "public",
+  "project": "tribe-v2-host",
+  "vm": "vedai-web",
+  "answer_contract": "clinical-v1",
+  "code_archive_sha256": "034727e3fd0947ea1c5c43632ee604eb8534c7773c5d54005c77e0afae8ec3c6",
+  "local_unit_tests_passed": 49,
+  "remote_unit_tests_passed": 44,
+  "remote_unit_tests_skipped_missing_test_dependencies": 5,
+  "hosted_browser_viewports_passed": 8,
+  "retrieval_replay": {
+    "case_id": "deep-06",
+    "seconds": 2.738,
+    "passages": 40,
+    "stored_text_and_locators_exact": true,
+    "paid_calls": 0,
+    "scope": "Observed replay of the hosted query plan after adding the source-locator index; not a controlled benchmark or latency guarantee."
+  },
+  "physician_review": "pending"
+}

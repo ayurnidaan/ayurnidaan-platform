@@ -1,0 +1,92 @@
+{
+  "created_at": "2026-09-22T08:12:42.271261+00:00",
+  "live": true,
+  "review_status": "physician_review_pending",
+  "scope": "Mechanical source/structure checks only; not semantic or clinical validation.",
+  "cases": [
+    {
+      "id": "deep-06",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "patient_case",
+      "passages": 40,
+      "citations": 4,
+      "seconds": 113.12
+    },
+    {
+      "id": "deep-09",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "patient_case",
+      "passages": 40,
+      "citations": 3,
+      "seconds": 123.84
+    },
+    {
+      "id": "reference-01",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "substance",
+      "passages": 40,
+      "citations": 1,
+      "seconds": 88.91
+    },
+    {
+      "id": "reference-09",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "patient_case",
+      "passages": 40,
+      "citations": 3,
+      "seconds": 115.03
+    }
+  ]
+}

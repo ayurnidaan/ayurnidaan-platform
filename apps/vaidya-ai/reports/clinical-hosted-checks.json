@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-09-22T08:35:53.306795+00:00",
+  "url": "https://matt-dining-outcomes-settlement.trycloudflare.com",
+  "access": "public",
+  "project": "tribe-v2-host",
+  "vm": "vedai-web",
+  "zone": "us-central1-a",
+  "model": "openai/gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "async_submission_status": 202,
+  "completed_poll_count": 80,
+  "generation_status": "complete",
+  "source_texts_and_locators_match": true,
+  "translations_rendered": 5,
+  "viewport_contained": true,
+  "javascript_errors": [],
+  "timing": {
+    "planning_seconds": 30.958,
+    "retrieval_seconds": 51.408,
+    "total_seconds": 155.87
+  },
+  "scope": "One paid hosted development reading; source integrity and UI checks, not expert translation assessment.",
+  "case_id": "deep-06",
+  "question_type": "patient_case",
+  "findings": 11,
+  "clinical_priority_first": true
+}
