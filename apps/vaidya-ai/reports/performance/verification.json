@@ -1,0 +1,78 @@
+{
+  "verified_at": "2026-09-24T00:15:17.370995+05:30",
+  "code_commit": "ea1e2f20b0b3fdc423f8a68182da9480665e84d8",
+  "target": "Local application with paid generation disabled in browser checks",
+  "paid_model_calls": 0,
+  "checks": {
+    "unit_tests": {
+      "passed": true,
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-q"
+      ],
+      "output": "----------------------------------------------------------------------\nRan 57 tests in 2.955s\n\nOK",
+      "count": 57,
+      "skipped": 0
+    },
+    "reading_interface": {
+      "passed": true,
+      "command": [
+        "tests/browser_smoke.py",
+        "--url",
+        "http://127.0.0.1:8766",
+        "--output",
+        "data/runtime/performance-report/interface"
+      ],
+      "output": "Eight viewport sizes, contained scrolling, mobile reading views, citation navigation, focus styling, preferences, retrieval, source dialog, clipboard, history and JavaScript checks passed",
+      "viewports": [
+        [
+          1440,
+          900
+        ],
+        [
+          1366,
+          768
+        ],
+        [
+          1024,
+          768
+        ],
+        [
+          768,
+          1024
+        ],
+        [
+          390,
+          844
+        ],
+        [
+          375,
+          667
+        ],
+        [
+          320,
+          568
+        ],
+        [
+          844,
+          390
+        ]
+      ]
+    },
+    "sessions": {
+      "passed": true,
+      "command": [
+        "tests/browser_sessions.py",
+        "--url",
+        "http://127.0.0.1:8766",
+        "--output",
+        "data/runtime/performance-report/sessions"
+      ],
+      "output": "Session CRUD, full-history persistence, context bounds/isolation, job recovery, multi-tab updates, mobile layout and unavailable storage passed; no paid calls."
+    }
+  }
+}
