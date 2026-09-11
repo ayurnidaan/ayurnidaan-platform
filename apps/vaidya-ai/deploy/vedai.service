@@ -1,0 +1,24 @@
+[Unit]
+Description=VedAI Sanskrit reading room
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=vedai
+Group=vedai
+WorkingDirectory=/opt/vedai/app
+EnvironmentFile=/etc/vedai.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/vedai/venv/bin/python -m vedai --data /opt/vedai/app/data serve --port 8765
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/vedai/app/data/index
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

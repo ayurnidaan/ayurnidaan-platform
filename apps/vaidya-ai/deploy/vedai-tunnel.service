@@ -1,0 +1,19 @@
+[Unit]
+Description=VedAI Cloudflare demo tunnel
+After=network-online.target vedai.service
+Wants=network-online.target vedai.service
+
+[Service]
+Type=simple
+User=vedai
+Group=vedai
+ExecStart=/usr/bin/cloudflared tunnel --no-autoupdate --url http://127.0.0.1:8765 --protocol http2 --metrics 127.0.0.1:20241
+Restart=always
+RestartSec=10
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target
