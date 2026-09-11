@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,interactive-widget=resizes-content">
+  <meta name="theme-color" content="#ffffff"><title>Vaidya AI | Read into the originals</title>
+  <link rel="stylesheet" href="/static/style.css"><script src="/static/sessions.js" defer></script><script src="/static/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#question">Skip to question</a>
+<header class="site-header">
+  <nav class="navigation" aria-label="Main navigation">
+    <a class="brand" href="/" aria-label="Vaidya AI home"><span class="brand-mark">व</span>Vaidya AI<span class="brand-caption">A READING COMPANION</span></a>
+    <div class="nav-actions"><a class="nav-link active" href="#question">Explore</a><button id="open-sessions" class="quiet-button" type="button" aria-haspopup="dialog" disabled>Sessions <span aria-hidden="true">↗</span></button><button id="new-reading" class="quiet-button" type="button" hidden>New question <span aria-hidden="true">＋</span></button></div>
+  </nav>
+</header>
+<main class="reading-desk">
+  <section class="workspace" aria-label="Explore the collection">
+    <div class="workspace-heading"><span class="eyebrow" id="composer-heading">ASK THE COLLECTION</span><button id="active-session" class="session-badge" type="button" aria-label="Open current session" disabled>New session</button></div>
+    <section class="composer" aria-label="Ask the collection"><form id="ask-form">
+      <label for="question" class="sr-only">Your question about the texts</label><textarea id="question" maxlength="2000" placeholder="What would you like to understand?" required rows="3"></textarea>
+      <div class="composer-bottom"><span class="composer-hint"><span class="hint-spark" aria-hidden="true">✳</span> Everyday words welcome<span class="shortcut">Ctrl + Enter to explore</span></span><div class="composer-actions"><button id="stop" class="quiet-button" type="button" hidden>Stop waiting</button><button id="submit" type="submit"><span id="submit-label">Find passages</span> <span aria-hidden="true">↗</span></button></div></div>
+    </form></section>
+    <details id="preferences" class="preferences"><summary><span class="settings-icon" aria-hidden="true">☷</span> Search preferences <span id="filter-summary">All works · English</span><span class="chevron" aria-hidden="true">⌄</span></summary><div class="filter-grid">
+      <div class="filter-field"><label for="work">Collection</label><select id="work"><option value="">All works</option></select></div>
+      <div class="filter-field"><label for="kind">Text layer</label><select id="kind"><option value="">Base texts & commentaries</option><option value="base-text">Base texts</option><option value="commentary">Commentaries</option></select></div>
+      <div class="filter-field"><label for="answer-language">Answer language</label><select id="answer-language"><option value="en">English</option><option value="hi">हिन्दी</option><option value="sa">संस्कृतम्</option></select></div>
+      <label class="fallback-option" for="allow-general"><input id="allow-general" type="checkbox" checked><span>Allow general knowledge<small>Clearly labeled when the texts don’t support an answer.</small></span></label>
+    </div></details>
+    <p id="message" role="status" aria-live="polite"></p>
+    <p id="storage-warning" role="status" hidden>History cannot be saved in this browser. Keep this tab open to retain your sessions.</p>
+    <details id="query-plan" class="query-plan" hidden><summary><div><span class="eyebrow">SEARCH TOPICS</span><h2>Your question, unpacked.</h2></div><span class="chevron" aria-hidden="true">⌄</span></summary><div class="plan-body"><span id="plan-status" class="soft-tag"></span><div id="plan-queries" class="plan-queries"></div><p id="plan-note" class="small muted"></p></div></details>
+    <div class="library-note"><span class="mini-book" aria-hidden="true">▤</span><div><strong><span id="work-count">15</span> classical works</strong><span>Book, chapter & verse. Always close.</span></div></div>
+    <span class="connection"><span class="status-dot"></span><span id="connection">Connecting to the library…</span></span>
+  </section>
+  <section id="empty" class="empty" aria-label="Start exploring">
+    <section class="intro" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow">THE SARIT READING ROOM</p><h1 id="hero-title">Your questions.<br><em>The original texts.</em></h1><p>Explore Ayurveda in your own words.<br>Follow each connection back to the Sanskrit.</p><div class="hero-note">English, हिन्दी, or Hinglish.</div></div>
+      <div class="hero-art"><img src="/static/ayurveda-clay.png" width="1374" height="1145" alt="An open green clay book with sculpted botanical leaves" fetchpriority="high"></div>
+    </section>
+    <div class="section-heading"><h2>A place to begin.</h2><span class="eyebrow">TRY A QUESTION ↙</span></div>
+    <div class="suggestions" id="suggestions">
+      <button type="button" data-prompt="definition"><span class="topic-icon" aria-hidden="true">अ</span><span class="topic-label">THE FOUNDATIONS</span><strong>What does Ayurveda <br>actually mean?</strong><span class="topic-bottom">Read Charaka’s definition <span aria-hidden="true">↗</span></span></button>
+      <button type="button" data-prompt="symptoms"><span class="topic-icon" aria-hidden="true">✳</span><span class="topic-label">IN YOUR OWN WORDS</span><strong>“Sar dard aur <br>pet kharab…”</strong><span class="topic-bottom">Find related passages <span aria-hidden="true">↗</span></span></button>
+      <button type="button" data-prompt="doshas"><span class="topic-icon" aria-hidden="true">≋</span><span class="topic-label">FOLLOW AN IDEA</span><strong>What are the <br>three doshas?</strong><span class="topic-bottom">Explore Ashtanga Hridaya <span aria-hidden="true">↗</span></span></button>
+    </div>
+    <div class="collection-strip"><span>Original shlokas</span><span>Traceable references</span><span>Visible term matches</span></div>
+  </section>
+  <section id="results" class="results" hidden aria-label="Reading results">
+    <div class="reading-switch" role="group" aria-label="Reading view"><button id="show-answer" type="button" aria-pressed="true" aria-controls="answer-panel">Answer</button><button id="show-sources" type="button" aria-pressed="false" aria-controls="evidence-panel">Original passages <span id="source-tab-count"></span></button></div>
+    <article id="answer-panel" class="answer-panel"><div class="panel-kicker"><span class="eyebrow">02 / YOUR READING</span><span id="model-label" class="model-pill">Local retrieval</span></div><div class="answer-scroll" tabindex="0" role="region" aria-label="Answer text"><h2 id="result-question"></h2><div id="answer"></div><p id="answer-note" class="small muted"></p><p id="timing" class="small muted"></p></div></article>
+    <section id="evidence-panel" class="evidence-panel" aria-label="Source passages"><div class="evidence-heading"><div><span class="eyebrow">03 / THE ORIGINALS</span><h2>In the original.</h2></div><span id="evidence-count"></span></div><div id="evidence" tabindex="0" role="region" aria-label="Original passages"></div></section>
+  </section>
+</main>
+<footer class="main-footer"><a href="https://github.com/sarit/SARIT-corpus" target="_blank" rel="noopener noreferrer">From the SARIT collection ↗</a><span>Historical texts. Interpretations open to review.</span></footer>
+<dialog id="sessions-dialog" aria-labelledby="sessions-title">
+  <div class="dialog-top"><div><p class="eyebrow">YOUR READING ROOM</p><h2 id="sessions-title">Sessions</h2></div><button id="close-sessions" type="button" aria-label="Close sessions">×</button></div>
+  <p id="storage-note" class="small muted">Saved in this browser for this address. Anyone using this browser profile can see them. Recent questions and answer summaries are sent with follow-ups.</p>
+  <div class="sessions-grid">
+    <section class="session-sidebar" aria-label="Saved sessions"><button id="create-session" type="button">＋ New session</button><div id="session-list" tabindex="0" aria-label="Session list"></div></section>
+    <section class="session-detail" aria-label="Session conversation">
+      <div class="session-toolbar"><h3 id="session-title"></h3><button id="rename-session" type="button">Rename</button><button id="delete-session" type="button">Delete</button></div>
+      <form id="rename-form" hidden><label for="session-name">Session name</label><div><input id="session-name" maxlength="80" required><button type="submit">Save</button><button id="cancel-rename" type="button">Cancel</button></div></form>
+      <div id="delete-confirm" hidden><p>Delete this session and all its readings from this browser?</p><button id="confirm-delete" type="button">Delete session</button><button id="cancel-delete" type="button">Keep session</button></div>
+      <div id="session-turns" tabindex="0" role="region" aria-label="Chat history"></div>
+      <p class="session-context-note small muted">Follow-ups use the latest four completed readings in this session. Open any reading to see its full answer and exact Sanskrit sources.</p>
+      <button id="continue-session" type="button">Continue this session ↗</button>
+    </section>
+  </div>
+</dialog>
+<dialog id="source-dialog"><div class="dialog-top"><p class="eyebrow">THE ORIGINAL / SOURCE READER</p><button id="close-dialog" type="button" aria-label="Close source reader">×</button></div><h2 id="dialog-title"></h2><div id="dialog-location" class="source-location"></div><p id="dialog-meta" class="small muted"></p><div id="dialog-sanskrit"></div><div id="dialog-translation"></div><details><summary>Original XML references</summary><pre id="dialog-references"></pre></details><a id="dialog-link" target="_blank" rel="noopener noreferrer">Open the original XML ↗</a></dialog>
+<p id="toast" class="toast" role="status" aria-live="polite" hidden></p>
+</body>
+</html>
