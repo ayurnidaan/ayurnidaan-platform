@@ -1,0 +1,497 @@
+{
+  "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+  "source": "https://github.com/sarit/SARIT-corpus",
+  "corpus_files": 110,
+  "corpus_xml_files": 88,
+  "archive_bytes": 33590787,
+  "extracted_bytes": 179358974,
+  "selected_works": 15,
+  "requested_works_found": 9,
+  "segments": 145600,
+  "chunks": 26585,
+  "works": [
+    {
+      "file": "carakasamhita.xml",
+      "title": "Charaka Samhita",
+      "requested": true,
+      "sha256": "9f8c1730ff16265b909236539eebcfaa6ddb365fb67c0e07ff4d406b1b583c71",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/carakasamhita.xml",
+      "language": "sa-Latn",
+      "tei_titles": [
+        "Carakasaṃhitā",
+        "A SARIT edition"
+      ],
+      "authors": [
+        "Caraka",
+        "Agniveśa"
+      ],
+      "availability": "Copyright Notice Copyright 2014-2018 SARIT Distributed by SARIT under a Creative Commons Attribution-ShareAlike 3.0 Unported License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/3.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 10866,
+      "characters": 1219938,
+      "kinds": {
+        "heading": 281,
+        "base-text": 10385,
+        "note": 200
+      },
+      "languages": {
+        "sa-Latn": 10866
+      },
+      "chunks": 775
+    },
+    {
+      "file": "susrutasamhita.xml",
+      "title": "Sushruta Samhita",
+      "requested": true,
+      "sha256": "d6e7618db94ae665f465e63d9c08a1cc1d5358a9f07f58cc5b079e53388c1002",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/susrutasamhita.xml",
+      "language": "sa-Latn",
+      "tei_titles": [
+        "Suśrutasaṃhitā",
+        "A SARIT edition"
+      ],
+      "authors": [
+        "Suśruta"
+      ],
+      "availability": "Copyright Notice Copyright (C) Tsutomu Yamashita and Yasutaka Muroya and SARIT. Distributed by SARIT under a Creative Commons Attribution-ShareAlike 3.0 Unported License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/3.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 10486,
+      "characters": 1031959,
+      "kinds": {
+        "heading": 380,
+        "base-text": 9961,
+        "note": 145
+      },
+      "languages": {
+        "sa-Latn": 10486
+      },
+      "chunks": 686
+    },
+    {
+      "file": "astangahrdayasamhita.xml",
+      "title": "Ashtanga Hridaya",
+      "requested": true,
+      "sha256": "21e5bff852108170f8cb6111edf2ebd2dfa3ddba2f85d97fcf88a5ae0cbda939",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astangahrdayasamhita.xml",
+      "language": "sa-Latn",
+      "tei_titles": [
+        "Aṣṭāṅgahṛdayasaṃhitā",
+        "A SARIT edition"
+      ],
+      "authors": [
+        "Vāgbhaṭa"
+      ],
+      "availability": "Copyright Notice Copyright 2014-2018 SARIT Distributed by SARIT under a Creative Commons Attribution-ShareAlike 3.0 Unported License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/3.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 11097,
+      "characters": 1022582,
+      "kinds": {
+        "heading": 252,
+        "note": 3119,
+        "base-text": 7726
+      },
+      "languages": {
+        "en": 252,
+        "sa-Latn": 10845
+      },
+      "chunks": 529
+    },
+    {
+      "file": "astangasangraha.xml",
+      "title": "Ashtanga Sangraha",
+      "requested": true,
+      "sha256": "1ebebaeb463c430c4b37bb6a6dd6fe0b098a054e9a2e7036ea26acc328b67a15",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astangasangraha.xml",
+      "language": "sa-Latn",
+      "tei_titles": [
+        "Aṣṭāṅgasaṅgraha",
+        "A SARIT edition"
+      ],
+      "authors": [
+        "Vṛddhavāgbhaṭa"
+      ],
+      "availability": "Copyright Notice Copyright 2014-2018 SARIT Distributed by SARIT under a Creative Commons Attribution-ShareAlike 3.0 Unported License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/3.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 22971,
+      "characters": 1239058,
+      "kinds": {
+        "heading": 302,
+        "base-text": 22669
+      },
+      "languages": {
+        "sa-Latn": 22971
+      },
+      "chunks": 786
+    },
+    {
+      "file": "bhelasamhita.xml",
+      "title": "Bhela Samhita",
+      "requested": true,
+      "sha256": "182d1122aba2cb9fb33057e1f39e2692cccae5fe17c04c6d6ab8dd44e3bbbdc7",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/bhelasamhita.xml",
+      "language": "sa-Latn",
+      "tei_titles": [
+        "Bhelasaṃhitā from Venkatasubramania Sastri and Rajeswara Sarma 1977"
+      ],
+      "authors": [],
+      "availability": "Copyright Notice Copyright (C) Tsutomu Yamashita| Distributed by SARIT under a Creative Commons Attribution-ShareAlike 3.0 Unported License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work)| Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one| More information and fuller details of this license are given on the Creative Commons website| SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown|",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/3.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 2821,
+      "characters": 295651,
+      "kinds": {
+        "heading": 1,
+        "base-text": 2820
+      },
+      "languages": {
+        "sa-Latn": 2821
+      },
+      "chunks": 215
+    },
+    {
+      "file": "cakradatta.xml",
+      "title": "Chakradatta",
+      "requested": true,
+      "sha256": "12ca74ed30eeaa86fc1c1b88e997961d36d2eca8aa85190e26a373bd2a62b7bc",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/cakradatta.xml",
+      "language": "sa-Deva",
+      "tei_titles": [
+        "Cakradatta"
+      ],
+      "authors": [
+        "Cakrapāṇidatta"
+      ],
+      "availability": "Copyright Notice Copyright 2018 SARIT and Dagmar Wujastyk Distributed by SARIT under a Creative Commons Attribution-ShareAlike 4.0 International License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/4.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 4788,
+      "characters": 447132,
+      "kinds": {
+        "heading": 79,
+        "base-text": 4709
+      },
+      "languages": {
+        "sa-Deva": 4710,
+        "en": 78
+      },
+      "chunks": 295
+    },
+    {
+      "file": "cakrapanidatta-ayurvedadipika.xml",
+      "title": "Chakrapani's Ayurvedadipika",
+      "requested": true,
+      "kind": "commentary",
+      "sha256": "b4f85da6828fcf20e1ce9f19c760940ba4901b478f182e5f8f2d94b82d56e4ed",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/cakrapanidatta-ayurvedadipika.xml",
+      "language": "und",
+      "tei_titles": [
+        "Carakasaṃhitā with Cakrapāṇidatta's commentary [a machine-readable transcription]"
+      ],
+      "authors": [
+        "Caraka",
+        "Agniveśa",
+        "Cakrapāṇidatta"
+      ],
+      "availability": "Copyright Notice Distributed by SARIT under a Creative Commons Attribution-ShareAlike 4.0 Unported License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/3.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 27010,
+      "characters": 3129096,
+      "kinds": {
+        "heading": 137,
+        "commentary": 3441,
+        "note": 4022,
+        "base-text": 19410
+      },
+      "languages": {
+        "und": 27010
+      },
+      "chunks": 5822
+    },
+    {
+      "file": "arunadatta-sarvangasundara.xml",
+      "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)",
+      "requested": true,
+      "sha256": "72cc8dde5ddc8969ff07607a8e06d62398c82105047a16b3307a8129a3cc6569",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/arunadatta-sarvangasundara.xml",
+      "language": "sa-Latn",
+      "tei_titles": [
+        "Aṣṭāṅgahṛdayasaṃhitā",
+        "Sarvāṅgasundarā",
+        "Āyurvedarasāyana"
+      ],
+      "authors": [
+        "Vāgbhaṭa",
+        "Aruṇadatta",
+        "Hemādri"
+      ],
+      "availability": "Copyright Notice Copyright AVP Research Foundation, Coimbatore, 2013 Distributed by SARIT under a Creative Commons Attribution-ShareAlike 3.0 Unported License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/3.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 27836,
+      "characters": 3636395,
+      "kinds": {
+        "heading": 13816,
+        "base-text": 5878,
+        "commentary": 7744,
+        "unknown": 398
+      },
+      "languages": {
+        "sa-Latn": 27836
+      },
+      "chunks": 13260
+    },
+    {
+      "file": "vagbhata-rasaratnasamuccaya-comms.xml",
+      "title": "Rasa Ratna Samuccaya with commentaries",
+      "requested": true,
+      "sha256": "cb34354054ab454fb7049da197a811c11517d3a98fb82e53d1fc9a7a735932ea",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/vagbhata-rasaratnasamuccaya-comms.xml",
+      "language": "sa-Latn",
+      "tei_titles": [
+        "Rasaratnasamuccaya",
+        "Rasaratnasamuccayabodhinī",
+        "Rasaratnasamuccayaṭīkā"
+      ],
+      "authors": [
+        "Vāgbhaṭa"
+      ],
+      "availability": "Copyright (C) Oliver Hellwig, 2013-2017 (chapters 1-17 and 22) Distributed by SARIT under a Creative Commons Attribution-ShareAlike 3.0 Unported License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/3.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 6639,
+      "characters": 609921,
+      "kinds": {
+        "heading": 46,
+        "base-text": 3976,
+        "note": 828,
+        "commentary": 1789
+      },
+      "languages": {
+        "sa-Latn": 6639
+      },
+      "chunks": 863
+    },
+    {
+      "file": "ayurvedasutram.xml",
+      "title": "Ayurvedasutram",
+      "requested": false,
+      "sha256": "b0241b324049b40c415757d2dbd943feb2a61bfbb1a78d3e63b25e9ba3cc7bfc",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/ayurvedasutram.xml",
+      "language": "sa-Latn",
+      "tei_titles": [
+        "Āyurvedasūtram",
+        "A SARIT edition of chapters 1–5"
+      ],
+      "authors": [
+        "Anonymous"
+      ],
+      "availability": "Copyright Notice Machine-readable version copyright (C) Zoe Slatoff, 2010. Distributed by SARIT under a Creative Commons Attribution-ShareAlike 3.0 Unported License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/3.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 466,
+      "characters": 22302,
+      "kinds": {
+        "heading": 6,
+        "base-text": 460
+      },
+      "languages": {
+        "en": 6,
+        "sa-Latn": 460
+      },
+      "chunks": 16
+    },
+    {
+      "file": "siddhayoga.xml",
+      "title": "Siddhayoga",
+      "requested": false,
+      "sha256": "ff2ed234ae0acd96cfe0677e80135e87a644962f159aff31ed7a995322042df2",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/siddhayoga.xml",
+      "language": "sa-Deva",
+      "tei_titles": [
+        "Vṛndamādhavāparanāmā Siddhayoga"
+      ],
+      "authors": [
+        "Vṛnda"
+      ],
+      "availability": "Copyright Notice Copyright 2018 SARIT and Dagmar Wujastyk Distributed by SARIT under a Creative Commons Attribution-ShareAlike 4.0 International License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/4.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 3861,
+      "characters": 351832,
+      "kinds": {
+        "base-text": 3780,
+        "heading": 81
+      },
+      "languages": {
+        "sa-Deva": 3780,
+        "en": 81
+      },
+      "chunks": 243
+    },
+    {
+      "file": "ugraditya-kalyanakaraka.xml",
+      "title": "Ugraditya's Kalyanakaraka",
+      "requested": false,
+      "sha256": "d0369a3fdded1f1a1604576210dd1efe96aaac563fc63135aa9a404ee83d3bea",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/ugraditya-kalyanakaraka.xml",
+      "language": "und",
+      "tei_titles": [
+        "Kalyāṇakāraka"
+      ],
+      "authors": [
+        "Ugrāditya"
+      ],
+      "availability": "Copyright Notice Copyright 2018 SARIT and Dagmar Wujastyk Distributed by SARIT under a Creative Commons Attribution-ShareAlike 4.0 International License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/4.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 7866,
+      "characters": 496792,
+      "kinds": {
+        "heading": 2112,
+        "base-text": 5644,
+        "note": 110
+      },
+      "languages": {
+        "und": 7866
+      },
+      "chunks": 1994
+    },
+    {
+      "file": "govindabhagavatpada-rasahrdayatantra.xml",
+      "title": "Rasahrdayatantra",
+      "requested": false,
+      "sha256": "96e76a6fbca1915340ae1e1af06c3c6b77f61539ec519135977cbd12f9ec8733",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/govindabhagavatpada-rasahrdayatantra.xml",
+      "language": "sa-Latn",
+      "tei_titles": [
+        "Rasahṛdayatantra",
+        "Mugdhāvabodhinī"
+      ],
+      "authors": [
+        "Govindabhagavatpāda",
+        "Caturbhuja Miśra"
+      ],
+      "availability": "Copyright Notice Copyright 2016-2018 SARIT Distributed by SARIT under a Creative Commons Attribution-ShareAlike 4.0 International License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/4.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 2865,
+      "characters": 295647,
+      "kinds": {
+        "base-text": 2863,
+        "heading": 2
+      },
+      "languages": {
+        "sa-Latn": 2865
+      },
+      "chunks": 750
+    },
+    {
+      "file": "nityanatha-rasaratnakara-rasayanakhanda.xml",
+      "title": "Rasaratnakara, Rasayanakhanda",
+      "requested": false,
+      "sha256": "b54df364c9afb7ff68ac3b1ec8b154cb8d3ec0f64b73aef37be9377e79a542ec",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/nityanatha-rasaratnakara-rasayanakhanda.xml",
+      "language": "sa-Latn",
+      "tei_titles": [
+        "Rasāyanakhaṇḍa",
+        "A SARIT edition"
+      ],
+      "authors": [
+        "Nityanātha Siddha"
+      ],
+      "availability": "Copyright Notice Copyright 2017-2018 SARIT and Dagmar Wujastyk Distributed by SARIT under a Creative Commons Attribution-ShareAlike 4.0 International License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/4.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 1302,
+      "characters": 108760,
+      "kinds": {
+        "heading": 187,
+        "base-text": 1040,
+        "note": 75
+      },
+      "languages": {
+        "sa-Latn": 1302
+      },
+      "chunks": 191
+    },
+    {
+      "file": "rasarnava.xml",
+      "title": "Rasarnava",
+      "requested": false,
+      "sha256": "1e12850db976a89e9162d0302f65a9bd19f59f4b53b413647f60b63f807e7209",
+      "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+      "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/rasarnava.xml",
+      "language": "und",
+      "tei_titles": [
+        "Rasārṇava etext from DSC and GRETIL",
+        "A SARIT edition"
+      ],
+      "authors": [
+        "Edition by Praphulla Chandra Ray and Hariśhchandra Kaviratna",
+        ""
+      ],
+      "availability": "Copyright Notice Copyright Oliver Hellwig and SARIT Distributed by SARIT under a Creative Commons Attribution-ShareAlike 4.0 International License. Under this licence, you are free to Share — to copy, distribute and transmit the work to Remix — to adapt the work Under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one. More information and fuller details of this license are given on the Creative Commons website. SARIT assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by-sa/4.0/"
+      ],
+      "body_text_coverage_verified": true,
+      "segments": 4726,
+      "characters": 262746,
+      "kinds": {
+        "heading": 12,
+        "base-text": 4714
+      },
+      "languages": {
+        "und": 4726
+      },
+      "chunks": 160
+    }
+  ]
+}

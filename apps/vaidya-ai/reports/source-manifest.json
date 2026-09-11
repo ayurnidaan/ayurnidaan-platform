@@ -1,0 +1,563 @@
+{
+  "repository": "https://github.com/sarit/SARIT-corpus",
+  "revision": "1eac9ee0b055c8d11147edac4a75c76008ccc363",
+  "archive_url": "https://github.com/sarit/SARIT-corpus/archive/1eac9ee0b055c8d11147edac4a75c76008ccc363.zip",
+  "archive_sha256": "6a4dd6701cb97a4274c2e3b79badd88e561096f84f1a24feb3dfaece7c5d831c",
+  "archive_bytes": 33590787,
+  "downloaded_at": "2026-09-13T14:31:30.227588+00:00",
+  "file_count": 110,
+  "xml_file_count": 88,
+  "extracted_bytes": 179358974,
+  "files": [
+    {
+      "path": ".Dockerfile",
+      "bytes": 765,
+      "sha256": "5b87aec730ab66f4ce3436af37739207ed32f0be676164ee71f653f93b080171"
+    },
+    {
+      "path": ".dockerignore",
+      "bytes": 11,
+      "sha256": "53848eefd29a98c15fd79b34e935895fa346c743be78d1529c187621a43ea839"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 11,
+      "sha256": "e7656d0a216017acf2a328e85e6b9a10074089fcc9ca06052fba9da9529c2b31"
+    },
+    {
+      "path": ".github/workflows/checks.yml",
+      "bytes": 1238,
+      "sha256": "2ff9a854dbee7f88e7ccd5d6393a8b0e65cd989d2a3b0faf8aad75175676426a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 124,
+      "sha256": "318c26aa7ad4618c11e3bbcdaa01dfecc7adb82bd8a293b8c5d7d47146a33cfb"
+    },
+    {
+      "path": ".gitmodules",
+      "bytes": 194,
+      "sha256": "7e2418e350d8d2e9f5dcdaa27fc24d75732e9f451fc6cd4724d41ef49276bfd8"
+    },
+    {
+      "path": ".travis.yml",
+      "bytes": 284,
+      "sha256": "1274ce1a803bb6ce4d430294ecac7f15c7db8904030c7a8e6b06c175ab89928a"
+    },
+    {
+      "path": "00-sarit-tei-header-template.xml",
+      "bytes": 8425,
+      "sha256": "28e12caf037ce9178cfc574c71d3ff9978d6fd50d3a6f0b2590a67847edf0f9e"
+    },
+    {
+      "path": "arunadatta-sarvangasundara.xml",
+      "bytes": 9002559,
+      "sha256": "72cc8dde5ddc8969ff07607a8e06d62398c82105047a16b3307a8129a3cc6569"
+    },
+    {
+      "path": "astangahrdayasamhita.xml",
+      "bytes": 2995470,
+      "sha256": "21e5bff852108170f8cb6111edf2ebd2dfa3ddba2f85d97fcf88a5ae0cbda939"
+    },
+    {
+      "path": "astangasangraha.xml",
+      "bytes": 2977515,
+      "sha256": "1ebebaeb463c430c4b37bb6a6dd6fe0b098a054e9a2e7036ea26acc328b67a15"
+    },
+    {
+      "path": "astavakragita.xml",
+      "bytes": 68528,
+      "sha256": "907a2e652b8757bc699cbd64a1e5db644993b76bb44e33d9f311b7308b21f708"
+    },
+    {
+      "path": "asvaghosa-buddhacarita.xml",
+      "bytes": 287924,
+      "sha256": "60da18bf9628804ff28014df67fc61d6cf69a7fbe96ad8835fab95a6e2fe7e4b"
+    },
+    {
+      "path": "avayavinirakarana.xml",
+      "bytes": 55621,
+      "sha256": "83ac74793118c2f172cadf61d7824ccc1286c517bf88cfa96ec4f0eb6bff4bf8"
+    },
+    {
+      "path": "ayurvedasutram.xml",
+      "bytes": 77508,
+      "sha256": "b0241b324049b40c415757d2dbd943feb2a61bfbb1a78d3e63b25e9ba3cc7bfc"
+    },
+    {
+      "path": "bana-kadambari.xml",
+      "bytes": 911109,
+      "sha256": "9b91b5247f4fa347e9b8d03ee54a540eb0d3f71e7b1517a0f4ab65e6a3a6e367"
+    },
+    {
+      "path": "bandimocana.xml",
+      "bytes": 15837,
+      "sha256": "1c7a65bd50e4a664c945d15cf34925b8ed7d26296ecfeabae85dc239665a2b29"
+    },
+    {
+      "path": "bhartrhari-vakyapadiya.xml",
+      "bytes": 370227,
+      "sha256": "6fc99eb15247dda1be03c87f594f1548457195b35e062bb9472504dfbfa67a93"
+    },
+    {
+      "path": "bhattojidiksita-siddhantakaumudi.xml",
+      "bytes": 3233651,
+      "sha256": "261a13a7a1e9d7d420c46777b0aa199e664073e6720c2035d6fbcae228cc5fd5"
+    },
+    {
+      "path": "bhelasamhita.xml",
+      "bytes": 630209,
+      "sha256": "182d1122aba2cb9fb33057e1f39e2692cccae5fe17c04c6d6ab8dd44e3bbbdc7"
+    },
+    {
+      "path": "bhoja-rajamartanda.xml",
+      "bytes": 292361,
+      "sha256": "5807ffb3b0d709ed3f87bca3f58f0fc0f410c915752f959db574283cf6a000af"
+    },
+    {
+      "path": "bib/README.org",
+      "bytes": 690,
+      "sha256": "cafe17d068ceb03353b4d8853e99a6807d564b1ea47f070d00bec564fbb6e2f3"
+    },
+    {
+      "path": "bib/sarit.bib",
+      "bytes": 6703,
+      "sha256": "6de11f9d83680a373e64735de7e372a1f7e92f4161e9b023be91cb484e976bd4"
+    },
+    {
+      "path": "bib/sarit.xml",
+      "bytes": 13205,
+      "sha256": "622b5bbfef467e8227f36d7a39252ec90bc9666b4803993d766007eba335225f"
+    },
+    {
+      "path": "brahmapurana.xml",
+      "bytes": 3756188,
+      "sha256": "6f4438f5d6ce9c3aa9c12f05fbdeb9485b4f08d68c7b6fbccfe58dcbdd6e5a0b"
+    },
+    {
+      "path": "cakradatta.xml",
+      "bytes": 1443462,
+      "sha256": "12ca74ed30eeaa86fc1c1b88e997961d36d2eca8aa85190e26a373bd2a62b7bc"
+    },
+    {
+      "path": "cakrapanidatta-ayurvedadipika.xml",
+      "bytes": 7116525,
+      "sha256": "b4f85da6828fcf20e1ce9f19c760940ba4901b478f182e5f8f2d94b82d56e4ed"
+    },
+    {
+      "path": "carakasamhita.xml",
+      "bytes": 3503235,
+      "sha256": "9f8c1730ff16265b909236539eebcfaa6ddb365fb67c0e07ff4d406b1b583c71"
+    },
+    {
+      "path": "caryamelapakapradipa.xml",
+      "bytes": 953804,
+      "sha256": "44477127d97e08884716292bccc8c10560ea2df62d48143622a17bc48e51ee87"
+    },
+    {
+      "path": "dasarupaka.xml",
+      "bytes": 1158596,
+      "sha256": "45ef25048d6033336201a8338425fdfca5c73505c38168c92d11eacf86b886f7"
+    },
+    {
+      "path": "dharmottarapradipa.xml",
+      "bytes": 2086252,
+      "sha256": "62d678a5f1dc286b184b9d2b9dfe14f1a531c5e6ea0d210c721d1041a2e79db1"
+    },
+    {
+      "path": "dharmottaratippanaka.xml",
+      "bytes": 705494,
+      "sha256": "421aba64235ad876c723c07c14b78741b5801a2df520a7f4784bc828bcd97437"
+    },
+    {
+      "path": "diksita-jivanacaritra.xml",
+      "bytes": 64274,
+      "sha256": "a3fe0beccd930af020be23eb4b2808a67fb303d61d7f9cb432caa5347a853348"
+    },
+    {
+      "path": "dudhadasa-ramasvamedhabhasa.xml",
+      "bytes": 316159,
+      "sha256": "059125a55ef3663ea85c17589d70880bb36f561f8471ac6e02fd38360a6f9ac0"
+    },
+    {
+      "path": "dvadasara_nayacakra.xml",
+      "bytes": 8419150,
+      "sha256": "6fa9fd1285682f9cc10ab0b319ee2a8a87966cb31ee6d557ed25c1be9658dcb4"
+    },
+    {
+      "path": "giridharadasa-bharatibhusana.xml",
+      "bytes": 111397,
+      "sha256": "a378ef8d0d07d191bcbe954b53d71811f05eded11e70830882947fd9cb390644"
+    },
+    {
+      "path": "govindabhagavatpada-rasahrdayatantra.xml",
+      "bytes": 626312,
+      "sha256": "96e76a6fbca1915340ae1e1af06c3c6b77f61539ec519135977cbd12f9ec8733"
+    },
+    {
+      "path": "hajarilala-srisivavivahakavitavali.xml",
+      "bytes": 42057,
+      "sha256": "3af5a190208db80f1ce24c27b05b70423084134c1af6c27077631a466d66b3aa"
+    },
+    {
+      "path": "jitari-isvaravadimatapariksa.xml",
+      "bytes": 31396,
+      "sha256": "755189e12f1ea2853ba1b0d274c61b6484eaf6d1342ab82f2cb57f0762fe4523"
+    },
+    {
+      "path": "jitari-jatinirakrti.xml",
+      "bytes": 62292,
+      "sha256": "2f37cca701310b780563b772a31c6be1e619b42bcf1dbd12a7112f72296d0c5e"
+    },
+    {
+      "path": "jitari-nairatmyasiddhi.xml",
+      "bytes": 10793,
+      "sha256": "89eceefccbe03831e9bb34f13f73f44823b5ed8c3a3c3d33eaf55aaccbc2ff3d"
+    },
+    {
+      "path": "jitari-sarvajnasiddhi.xml",
+      "bytes": 15472,
+      "sha256": "26730923d37177be92ddcae449a640891575688a5cc8f32499fa8fe3fb70cd12"
+    },
+    {
+      "path": "jitari-vedapramanyasiddhi.xml",
+      "bytes": 26769,
+      "sha256": "4f0833ea43c13fa6b933f8c15b80db0613cc629a28ffa7ca492cc8c28f28a478"
+    },
+    {
+      "path": "jnanadasa-aparoksanubhava-tika.xml",
+      "bytes": 99564,
+      "sha256": "cd3f89419460bd07cf06d03d31a84899f23a7a6c25920697f71e0bbf09f07fc5"
+    },
+    {
+      "path": "jnanasrimitra-nibandhavali.xml",
+      "bytes": 3019544,
+      "sha256": "c046e5dea164aac396f6c7f3959dd4adb838a6b76684a01c48d388097e6ac986"
+    },
+    {
+      "path": "kautalyarthasastra.xml",
+      "bytes": 973019,
+      "sha256": "9eed724dd0bc803e9d32fb8032aa432c352f53d0bb5355fb22a8767d7415e1d2"
+    },
+    {
+      "path": "kumarila-tantravarttika.xml",
+      "bytes": 4588745,
+      "sha256": "f01645a81b66427244323b5c7e6727b259a3c25b2df575cee041a74342c45875"
+    },
+    {
+      "path": "madhusudanasarasvati-atmabodhaprakarana.xml",
+      "bytes": 118218,
+      "sha256": "1c3cf47ce76dba54ffbc82cd5a7bcaf8cea3944424f4d4699aa8f24892ff2cc9"
+    },
+    {
+      "path": "mahabharata-devanagari.xml",
+      "bytes": 38593329,
+      "sha256": "35f6808ac45c6ee7386db70afea1f79f4b83a60760904c308fcea0bff2272100"
+    },
+    {
+      "path": "manusmrti.xml",
+      "bytes": 1332462,
+      "sha256": "eca7717e1543f60bc0784a02f9a900dc572496e74845a8f51c08aaf0c9490ee3"
+    },
+    {
+      "path": "naradasmrti.xml",
+      "bytes": 374518,
+      "sha256": "965dc6e3e68c183d700b4afb83de76b4f2b44ffed1a7335f2fd6581230ed9f87"
+    },
+    {
+      "path": "nityanatha-rasaratnakara-rasayanakhanda.xml",
+      "bytes": 288717,
+      "sha256": "b54df364c9afb7ff68ac3b1ec8b154cb8d3ec0f64b73aef37be9377e79a542ec"
+    },
+    {
+      "path": "nivajakavi-sakuntala-upakhyana.xml",
+      "bytes": 169652,
+      "sha256": "e394568e33d73b55250c02cdb6623397f7da6878fcd00c6c68ff7bcd13460cfe"
+    },
+    {
+      "path": "nyayakumudacandra.xml",
+      "bytes": 7827863,
+      "sha256": "3c95bce2e6ff5dce58b74624586dc909c8396568007d4b8755d7e1563d2cb992"
+    },
+    {
+      "path": "nyayamanjari.xml",
+      "bytes": 6943279,
+      "sha256": "8de5ffbdbbf65ffefec28500f30598576bc33e89b7cbd13d042b90745463bcfb"
+    },
+    {
+      "path": "nyayasudha.xml",
+      "bytes": 9828602,
+      "sha256": "e9aa78f7fc509b4e76edb63337d21a14be2fc544db6cb78d5f3c9ac8ed96bcdc"
+    },
+    {
+      "path": "nyayavarttikatatparyatika.xml",
+      "bytes": 3731181,
+      "sha256": "fc530267f203e6119c2b7e1971af8086f176c5993bdf57d946c1663ac3c121f8"
+    },
+    {
+      "path": "out/carakasamhita.odt",
+      "bytes": 617746,
+      "sha256": "e572e6d2b621788efc4c98dd65d92e3b308baae3f3e33cecfdb61b0af9e8fdbe"
+    },
+    {
+      "path": "patanjalayogasastra.xml",
+      "bytes": 207531,
+      "sha256": "50805a578d250dccbb9a26112d26bdd04115cc895d01509da59d9b8bf7c2e9a6"
+    },
+    {
+      "path": "pramanamimamsa-and-vrtti.xml",
+      "bytes": 586304,
+      "sha256": "0f913500146c0b0bd5f84a03c980beedd714e06c395e014db52118272e30d99f"
+    },
+    {
+      "path": "pramanantarbhava.xml",
+      "bytes": 183668,
+      "sha256": "9f013bb1e870c431ffab1fa1b589c4e708cde965ef476d886d2e675f2b4159d6"
+    },
+    {
+      "path": "pramanavarttikalankarabhasya.xml",
+      "bytes": 4776954,
+      "sha256": "c58c0999d66d9ee26fffc16e0c6da3d6e94c93497362ce47d27613882d2c7a1c"
+    },
+    {
+      "path": "pramanavarttikaparisista-1.xml",
+      "bytes": 119494,
+      "sha256": "552cb054ef2789bf2bd6547b00a1ed8df2ba44d1a5d0de4cd9785c72a5891a4d"
+    },
+    {
+      "path": "pramanavarttikasvavrttitika.xml",
+      "bytes": 3543080,
+      "sha256": "02bec7df2f7361e9d43496ca5bf7a975df09441d2ecccdc66748a269ca01fb70"
+    },
+    {
+      "path": "pramanavarttikavrtti.xml",
+      "bytes": 3025284,
+      "sha256": "166ba729c8de79b4bb26a0528c7f20af7d5fd5bee0856f7c419852592ed81962"
+    },
+    {
+      "path": "prasastapada-padarthadharmasangraha.xml",
+      "bytes": 293273,
+      "sha256": "bc93f626f56965872dcb33f53294329505b08c10a344e16a5cddba4ddcaebf31"
+    },
+    {
+      "path": "pravarasena-setubandha.xml",
+      "bytes": 351736,
+      "sha256": "f539c86587d48d356a578af0b66f80799653d0e284b64b7df2b2f5f06797d694"
+    },
+    {
+      "path": "pujyapada-sarvarthasiddhi.xml",
+      "bytes": 513076,
+      "sha256": "b2b767a893973aa92306ed9bd35566ee20368634e41db8efa5f2e1bb77250e9a"
+    },
+    {
+      "path": "pyarelala-ragabinoda.xml",
+      "bytes": 59815,
+      "sha256": "1884d7c90218b4f42e0b3d1ee79813f469f56a31cda5c1e7294290f4f4b9f488"
+    },
+    {
+      "path": "rasarnava.xml",
+      "bytes": 538061,
+      "sha256": "1e12850db976a89e9162d0302f65a9bd19f59f4b53b413647f60b63f807e7209"
+    },
+    {
+      "path": "ratnakirti-nibandhavali.xml",
+      "bytes": 527316,
+      "sha256": "35a7e0a01948c6289fb9b4c6a8e35c70a23d04881d3de17d1c58e5ad6d92b03b"
+    },
+    {
+      "path": "ratnasritika-dn.xml",
+      "bytes": 1270021,
+      "sha256": "3d763e8137031c0d638f4f20d50f6bda848c2130577fe7b026c337b57c8de627"
+    },
+    {
+      "path": "README.html",
+      "bytes": 17332,
+      "sha256": "8d620b7a82e7e5a433c250a37ea30a786d3a87051c851e25abc3bc7d12ae8b55"
+    },
+    {
+      "path": "README.org",
+      "bytes": 11583,
+      "sha256": "706ae1e226fc4f1c91c5ad002267b24808658076b7d03319271c19047fefd89d"
+    },
+    {
+      "path": "samanyadusana.xml",
+      "bytes": 34102,
+      "sha256": "a6f80ce9c51f530e898c9040a52ae86d34e53f1cf88b0a4886f37316766c8017"
+    },
+    {
+      "path": "sarasvatikanthabharana-dn.xml",
+      "bytes": 3205515,
+      "sha256": "e27156499e42c95ecf1745e83713a4f698a93361f5a5cbde2d5ba969aa69629b"
+    },
+    {
+      "path": "saritcorpus.xml",
+      "bytes": 5536,
+      "sha256": "120851dd01dd614f34eb71ae5b65072789c811373fa9b87edd45b23e065ceecf"
+    },
+    {
+      "path": "sarvadarsanasangraha.xml",
+      "bytes": 468798,
+      "sha256": "409af386c50dd98673154a8c85d5b07622e739085a4856847db77cb16a0cbe97"
+    },
+    {
+      "path": "schemas/mods-3-2.rnc",
+      "bytes": 10335,
+      "sha256": "5dc599243a4d87f45adec11607a1c92ef7eee7e61e162f64da77d0b0e88e50eb"
+    },
+    {
+      "path": "schemas/odd/README.org",
+      "bytes": 5798,
+      "sha256": "b90c678f1c55628f24cecfd101353a70af4756249efbb8368fb0cbf2371c7707"
+    },
+    {
+      "path": "schemas/odd/sarit-guidelines-full.xml",
+      "bytes": 47804,
+      "sha256": "3746a4c4db37de763aef9102ddef94759e47f5efc94cf8ecfe5ad2d718b24f17"
+    },
+    {
+      "path": "schemas/odd/sarit-guidelines.xml",
+      "bytes": 93557,
+      "sha256": "39d9b86aa5019a04a38a5c084074a670d2379fef449790e16d457fcedc05bdba"
+    },
+    {
+      "path": "schemas/odd/sarit.odd",
+      "bytes": 131261,
+      "sha256": "e27b55a38cdca1f2f9782fbd9645651b53d9f06ec16434e62a0e6c5056bc1da3"
+    },
+    {
+      "path": "schemas/sarit.rnc",
+      "bytes": 186218,
+      "sha256": "8a222d75ba7b245ae56af16dc4a62656ed8ee7eeb166f6e85d7bf30b4348e69a"
+    },
+    {
+      "path": "schemas/sarit.rng",
+      "bytes": 301111,
+      "sha256": "230df522485a96e0416f87578d49db4997f527aeb5e24cff9d6c266ea3a0854d"
+    },
+    {
+      "path": "siddhayoga.xml",
+      "bytes": 1118677,
+      "sha256": "ff2ed234ae0acd96cfe0677e80135e87a644962f159aff31ed7a995322042df2"
+    },
+    {
+      "path": "siddhiviniscayatika.xml",
+      "bytes": 6695593,
+      "sha256": "d673b4aa3c09ac0350a4105d2218c4c4d63b626b750e6133ad2daf3954063c44"
+    },
+    {
+      "path": "skandapurana.xml",
+      "bytes": 1287827,
+      "sha256": "28ad61d4867a7515d55c2628bab744ddc78e53afc452ba71ed9abda1fdaad821"
+    },
+    {
+      "path": "sridharadasa-saduktikarnamrta.xml",
+      "bytes": 1460412,
+      "sha256": "53d160adfe994cdd4bbf9f83d3ae2fcf6a97d150c2eb6da7e0f1be0755706fcd"
+    },
+    {
+      "path": "susrutasamhita.xml",
+      "bytes": 2808552,
+      "sha256": "d6e7618db94ae665f465e63d9c08a1cc1d5358a9f07f58cc5b079e53388c1002"
+    },
+    {
+      "path": "tarkabhasa.xml",
+      "bytes": 290561,
+      "sha256": "3624cb8bfb537e24bd6e6055864733abc264c3e4b286e7b88b7c67f221839a40"
+    },
+    {
+      "path": "tarkarahasya.xml",
+      "bytes": 494369,
+      "sha256": "6bafb72400ea76afc2777a44018a207990e939a01eedb20bf93d8dbdeed85858"
+    },
+    {
+      "path": "tattvasangrahapanjika.xml",
+      "bytes": 5561192,
+      "sha256": "a6a445e31c6477379f235bff879fbb7d3ee9e4406c582f1af749f8337be5f21f"
+    },
+    {
+      "path": "tools/bin/sarit-preflight.el",
+      "bytes": 15602,
+      "sha256": "8eca98ae80b78fdb64d0e69bf7646538adf25ae9c37804684fc5566f1b05a2df"
+    },
+    {
+      "path": "transliterated/devnag2roman.xsl",
+      "bytes": 7338,
+      "sha256": "2b38f93c8759272eb441a1e2c6d172edcc7d50d775e57a8cb930cdf889ef3196"
+    },
+    {
+      "path": "transliterated/roman2devnag-1.xsl",
+      "bytes": 7019,
+      "sha256": "a432d3be6de592e65d8251555cd7133a94c50b5f9bbbb1ae2ce5f88f3e003fdb"
+    },
+    {
+      "path": "transliterated/roman2devnag-2.xsl",
+      "bytes": 7011,
+      "sha256": "87665c97155f6095de733f967a170e79d4084f0b651d5e154d646ef1a06b406f"
+    },
+    {
+      "path": "transliterated/transliteration-notes",
+      "bytes": 3650,
+      "sha256": "c31de3209bb3ef0da25a9dad71214f020d86f59f3619e83bb2250392a4cc6c93"
+    },
+    {
+      "path": "trisuli-piyusalahari.xml",
+      "bytes": 53743,
+      "sha256": "d4847a6834a2ab08cc586525dd163d1d0fb5242a4bcbd90c58bf2e044f8c2a30"
+    },
+    {
+      "path": "trivikrama-nalacampu.xml",
+      "bytes": 362348,
+      "sha256": "49b5e1bfc25ad3c43a983b1a287d1bf08c456006693c1e81d3bd1202b4f64497"
+    },
+    {
+      "path": "tulasidasa-ramayanasatika.xml",
+      "bytes": 251153,
+      "sha256": "84a72878fd2ad06bb24168503fd03d92859f85660f3edff4f75f23dc210a4483"
+    },
+    {
+      "path": "ugraditya-kalyanakaraka.xml",
+      "bytes": 1504371,
+      "sha256": "d0369a3fdded1f1a1604576210dd1efe96aaac563fc63135aa9a404ee83d3bea"
+    },
+    {
+      "path": "vacaspati-tattvavaisaradi.xml",
+      "bytes": 412471,
+      "sha256": "010527d06955f0163729ec2ebfdd52251f8ba59aaa50e8b5e03fb76fc3cb1b3c"
+    },
+    {
+      "path": "vadanyayatika.xml",
+      "bytes": 826970,
+      "sha256": "ee5385c51382681e0cc3b43f512411eee0f50606d829893d304817ce669a44b2"
+    },
+    {
+      "path": "vadasthana.xml",
+      "bytes": 48585,
+      "sha256": "b1764e87061c95c740137e28f5d70ba773f9c3c08611dbf7e9c259df051f5a4b"
+    },
+    {
+      "path": "vagbhata-rasaratnasamuccaya-comms.xml",
+      "bytes": 1064027,
+      "sha256": "cb34354054ab454fb7049da197a811c11517d3a98fb82e53d1fc9a7a735932ea"
+    },
+    {
+      "path": "vatsyayana-nyayabhasya.xml",
+      "bytes": 579227,
+      "sha256": "f46b12b0b9cf00b8004498a9d6a1433f64b9f3dc1447aa58646398c5739bb3ba"
+    },
+    {
+      "path": "vidhiviveka-and-nyayakanika.xml",
+      "bytes": 2181949,
+      "sha256": "1f69504a41dcfcb88f769ab1f853953e9cad47ccb9c7ce33770acf0d04024735"
+    },
+    {
+      "path": "vijnanesvara-mitaksara.xml",
+      "bytes": 1845222,
+      "sha256": "784509084b553d2665be58ac97c80bb4e5a9826efbd73483b247bf7ed4fa346f"
+    },
+    {
+      "path": "yogapradipa.xml",
+      "bytes": 50307,
+      "sha256": "022b3d90cb2f60913435d23abfc638df78f57eaad327c541b6b3409391d16fb4"
+    }
+  ]
+}
