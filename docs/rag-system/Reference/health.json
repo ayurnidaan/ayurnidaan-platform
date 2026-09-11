@@ -1,0 +1,11 @@
+{
+  "status": "ready",
+  "retrieval": "expanded",
+  "answer_contract": "clinical-v1",
+  "embedding_model": null,
+  "indexed_chunks": null,
+  "generation_configured": false,
+  "generation_provider": "openrouter",
+  "generation_model": null,
+  "reasoning_effort": null
+}

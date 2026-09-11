@@ -1,0 +1,10 @@
+{
+  "question": "What are the three doshas in Ashtanga Hridaya?",
+  "answer_language": "en",
+  "filters": {
+    "work": "astangahrdayasamhita",
+    "kind": "base-text"
+  },
+  "generate": false,
+  "limit": 6
+}

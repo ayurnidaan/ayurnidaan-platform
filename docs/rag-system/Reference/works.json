@@ -1,0 +1,186 @@
+[
+  {
+    "id": "carakasamhita",
+    "title": "Charaka Samhita",
+    "segments": 10866,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/carakasamhita.xml",
+    "languages": {
+      "sa-Latn": 10866
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/3.0/"
+    ]
+  },
+  {
+    "id": "susrutasamhita",
+    "title": "Sushruta Samhita",
+    "segments": 10486,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/susrutasamhita.xml",
+    "languages": {
+      "sa-Latn": 10486
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/3.0/"
+    ]
+  },
+  {
+    "id": "astangahrdayasamhita",
+    "title": "Ashtanga Hridaya",
+    "segments": 11097,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astangahrdayasamhita.xml",
+    "languages": {
+      "en": 252,
+      "sa-Latn": 10845
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/3.0/"
+    ]
+  },
+  {
+    "id": "astangasangraha",
+    "title": "Ashtanga Sangraha",
+    "segments": 22971,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astangasangraha.xml",
+    "languages": {
+      "sa-Latn": 22971
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/3.0/"
+    ]
+  },
+  {
+    "id": "bhelasamhita",
+    "title": "Bhela Samhita",
+    "segments": 2821,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/bhelasamhita.xml",
+    "languages": {
+      "sa-Latn": 2821
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/3.0/"
+    ]
+  },
+  {
+    "id": "cakradatta",
+    "title": "Chakradatta",
+    "segments": 4788,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/cakradatta.xml",
+    "languages": {
+      "sa-Deva": 4710,
+      "en": 78
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/4.0/"
+    ]
+  },
+  {
+    "id": "cakrapanidatta-ayurvedadipika",
+    "title": "Chakrapani's Ayurvedadipika",
+    "segments": 27010,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/cakrapanidatta-ayurvedadipika.xml",
+    "languages": {
+      "und": 27010
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/3.0/"
+    ]
+  },
+  {
+    "id": "arunadatta-sarvangasundara",
+    "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)",
+    "segments": 27836,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/arunadatta-sarvangasundara.xml",
+    "languages": {
+      "sa-Latn": 27836
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/3.0/"
+    ]
+  },
+  {
+    "id": "vagbhata-rasaratnasamuccaya-comms",
+    "title": "Rasa Ratna Samuccaya with commentaries",
+    "segments": 6639,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/vagbhata-rasaratnasamuccaya-comms.xml",
+    "languages": {
+      "sa-Latn": 6639
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/3.0/"
+    ]
+  },
+  {
+    "id": "ayurvedasutram",
+    "title": "Ayurvedasutram",
+    "segments": 466,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/ayurvedasutram.xml",
+    "languages": {
+      "en": 6,
+      "sa-Latn": 460
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/3.0/"
+    ]
+  },
+  {
+    "id": "siddhayoga",
+    "title": "Siddhayoga",
+    "segments": 3861,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/siddhayoga.xml",
+    "languages": {
+      "sa-Deva": 3780,
+      "en": 81
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/4.0/"
+    ]
+  },
+  {
+    "id": "ugraditya-kalyanakaraka",
+    "title": "Ugraditya's Kalyanakaraka",
+    "segments": 7866,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/ugraditya-kalyanakaraka.xml",
+    "languages": {
+      "und": 7866
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/4.0/"
+    ]
+  },
+  {
+    "id": "govindabhagavatpada-rasahrdayatantra",
+    "title": "Rasahrdayatantra",
+    "segments": 2865,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/govindabhagavatpada-rasahrdayatantra.xml",
+    "languages": {
+      "sa-Latn": 2865
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/4.0/"
+    ]
+  },
+  {
+    "id": "nityanatha-rasaratnakara-rasayanakhanda",
+    "title": "Rasaratnakara, Rasayanakhanda",
+    "segments": 1302,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/nityanatha-rasaratnakara-rasayanakhanda.xml",
+    "languages": {
+      "sa-Latn": 1302
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/4.0/"
+    ]
+  },
+  {
+    "id": "rasarnava",
+    "title": "Rasarnava",
+    "segments": 4726,
+    "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/rasarnava.xml",
+    "languages": {
+      "und": 4726
+    },
+    "license_urls": [
+      "http://creativecommons.org/licenses/by-sa/4.0/"
+    ]
+  }
+]
