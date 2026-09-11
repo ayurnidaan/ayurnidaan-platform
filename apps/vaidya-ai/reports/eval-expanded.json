@@ -1,0 +1,1321 @@
+{
+  "dataset": "eval\\questions.jsonl",
+  "review_status": "draft; no expert validation",
+  "metrics": {
+    "natural_question": {
+      "count": 48,
+      "recall_at_10": 0.8541666666666666,
+      "mrr": 0.6306382275132275,
+      "returned_evidence_rate": 1.0
+    },
+    "natural_question/en": {
+      "count": 12,
+      "recall_at_10": 0.75,
+      "mrr": 0.5162037037037037,
+      "returned_evidence_rate": 1.0
+    },
+    "split/validation": {
+      "count": 29,
+      "recall_at_10": 0.7083333333333334,
+      "mrr": 0.42083333333333334,
+      "returned_evidence_rate": 0.896551724137931
+    },
+    "natural_question/hi": {
+      "count": 12,
+      "recall_at_10": 0.8333333333333334,
+      "mrr": 0.5410714285714285,
+      "returned_evidence_rate": 1.0
+    },
+    "natural_question/sa-Latn": {
+      "count": 12,
+      "recall_at_10": 0.9166666666666666,
+      "mrr": 0.7013888888888888,
+      "returned_evidence_rate": 1.0
+    },
+    "natural_question/sa-Deva": {
+      "count": 12,
+      "recall_at_10": 0.9166666666666666,
+      "mrr": 0.7638888888888888,
+      "returned_evidence_rate": 1.0
+    },
+    "split/development": {
+      "count": 24,
+      "recall_at_10": 1.0,
+      "mrr": 0.8404431216931217,
+      "returned_evidence_rate": 1.0
+    },
+    "exact_quote": {
+      "count": 15,
+      "recall_at_10": 1.0,
+      "mrr": 1.0,
+      "returned_evidence_rate": 1.0
+    },
+    "exact_quote/sa-Latn": {
+      "count": 10,
+      "recall_at_10": 1.0,
+      "mrr": 1.0,
+      "returned_evidence_rate": 1.0
+    },
+    "split/smoke": {
+      "count": 15,
+      "recall_at_10": 1.0,
+      "mrr": 1.0,
+      "returned_evidence_rate": 1.0
+    },
+    "exact_quote/sa-Deva": {
+      "count": 2,
+      "recall_at_10": 1.0,
+      "mrr": 1.0,
+      "returned_evidence_rate": 1.0
+    },
+    "exact_quote/und": {
+      "count": 3,
+      "recall_at_10": 1.0,
+      "mrr": 1.0,
+      "returned_evidence_rate": 1.0
+    },
+    "unanswerable": {
+      "count": 5,
+      "recall_at_10": null,
+      "mrr": null,
+      "returned_evidence_rate": 0.4
+    },
+    "unanswerable/en": {
+      "count": 4,
+      "recall_at_10": null,
+      "mrr": null,
+      "returned_evidence_rate": 0.25
+    },
+    "unanswerable/hi": {
+      "count": 1,
+      "recall_at_10": null,
+      "mrr": null,
+      "returned_evidence_rate": 1.0
+    }
+  },
+  "results": [
+    {
+      "id": "definition-en",
+      "recall_at_10": 0.0,
+      "reciprocal_rank": 0,
+      "returned_evidence": true,
+      "seconds": 0.208,
+      "retrieved_ids": [
+        "6417cec6b170c18dbf097495",
+        "6617e719347c141055f7906b",
+        "f12fb1cabc277f3e345af888",
+        "9b74e9a229c4bb642ed0e836",
+        "7bbb05b58d52ab1d48e836e0",
+        "92dedc4806308480abb5439a",
+        "950e34e48d539319c77e1597",
+        "93a22593f1ebedc1b093fd9d",
+        "25a00a05f7509a61a03a6ff3",
+        "7135d1f941b0967349a56c17"
+      ]
+    },
+    {
+      "id": "definition-hi",
+      "recall_at_10": 0.0,
+      "reciprocal_rank": 0,
+      "returned_evidence": true,
+      "seconds": 0.078,
+      "retrieved_ids": [
+        "6417cec6b170c18dbf097495",
+        "6617e719347c141055f7906b",
+        "67d8ec82d2c072c206cb8334",
+        "f12fb1cabc277f3e345af888",
+        "9b74e9a229c4bb642ed0e836",
+        "7bbb05b58d52ab1d48e836e0",
+        "92dedc4806308480abb5439a",
+        "950e34e48d539319c77e1597",
+        "93a22593f1ebedc1b093fd9d",
+        "25a00a05f7509a61a03a6ff3"
+      ]
+    },
+    {
+      "id": "definition-sa-Latn",
+      "recall_at_10": 0.0,
+      "reciprocal_rank": 0,
+      "returned_evidence": true,
+      "seconds": 0.08,
+      "retrieved_ids": [
+        "f12fb1cabc277f3e345af888",
+        "6617e719347c141055f7906b",
+        "6417cec6b170c18dbf097495",
+        "67d8ec82d2c072c206cb8334",
+        "9b74e9a229c4bb642ed0e836",
+        "12136da3e123cde6548f2616",
+        "17fdde5341c0b0b4475d1316",
+        "95941cbd050efb85a19feb24",
+        "3df2446652bed90cf21fdd22",
+        "e61cc47bd48e1b4e31a654ed"
+      ]
+    },
+    {
+      "id": "definition-sa-Deva",
+      "recall_at_10": 0.0,
+      "reciprocal_rank": 0,
+      "returned_evidence": true,
+      "seconds": 0.078,
+      "retrieved_ids": [
+        "f12fb1cabc277f3e345af888",
+        "6617e719347c141055f7906b",
+        "6417cec6b170c18dbf097495",
+        "67d8ec82d2c072c206cb8334",
+        "9b74e9a229c4bb642ed0e836",
+        "12136da3e123cde6548f2616",
+        "17fdde5341c0b0b4475d1316",
+        "95941cbd050efb85a19feb24",
+        "3df2446652bed90cf21fdd22",
+        "e61cc47bd48e1b4e31a654ed"
+      ]
+    },
+    {
+      "id": "health-foundation-en",
+      "recall_at_10": 0.0,
+      "reciprocal_rank": 0,
+      "returned_evidence": true,
+      "seconds": 0.02,
+      "retrieved_ids": [
+        "bcc6b7cab1f8813840db061f",
+        "7bbb05b58d52ab1d48e836e0",
+        "f12fb1cabc277f3e345af888",
+        "2c9762e343353b059a631ee3",
+        "870bde2ee34e4c0a1bb27932",
+        "544364aa2ce346d5ad714ada",
+        "aec9d4ac3173cacd5ab5b823",
+        "241a21eff074d8b46e632e3c",
+        "64c584019e500f1e1a09ba0e",
+        "e545ec8e9719ee1ad01d5aaa"
+      ]
+    },
+    {
+      "id": "health-foundation-hi",
+      "recall_at_10": 0.0,
+      "reciprocal_rank": 0,
+      "returned_evidence": true,
+      "seconds": 0.09,
+      "retrieved_ids": [
+        "2c9762e343353b059a631ee3",
+        "7bbb05b58d52ab1d48e836e0",
+        "64c584019e500f1e1a09ba0e",
+        "67d8ec82d2c072c206cb8334",
+        "e545ec8e9719ee1ad01d5aaa",
+        "f12fb1cabc277f3e345af888",
+        "d91771870b80611fc087a20e",
+        "f2ffb900b4e34528acf2a964",
+        "bcc6b7cab1f8813840db061f",
+        "16059b513da9404828f0774f"
+      ]
+    },
+    {
+      "id": "health-foundation-sa-Latn",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "returned_evidence": true,
+      "seconds": 0.073,
+      "retrieved_ids": [
+        "d2af7f9fa249399aed6af1fc",
+        "2c9762e343353b059a631ee3",
+        "762f492a533fdedf76ffca80",
+        "de284083bd32567c637f20ea",
+        "7bbb05b58d52ab1d48e836e0",
+        "e15bf9caf9e35eef35c990a6",
+        "f12fb1cabc277f3e345af888",
+        "05ef22adef8681b5ead2f8d4",
+        "64c584019e500f1e1a09ba0e",
+        "f1feb6559ab9c125fe304257"
+      ]
+    },
+    {
+      "id": "health-foundation-sa-Deva",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "returned_evidence": true,
+      "seconds": 0.055,
+      "retrieved_ids": [
+        "d2af7f9fa249399aed6af1fc",
+        "de284083bd32567c637f20ea",
+        "762f492a533fdedf76ffca80",
+        "e15bf9caf9e35eef35c990a6",
+        "09bdd8daeb5fecff603ba92f",
+        "8c7dff45ef319bd7f5ac3239",
+        "5611d92abd4847fbc80d9762",
+        "7dca082884084e8692b096df",
+        "3df2446652bed90cf21fdd22",
+        "6af951cc6005c6f980a98540"
+      ]
+    },
+    {
+      "id": "tripod-en",
+      "recall_at_10": 0.0,
+      "reciprocal_rank": 0,
+      "returned_evidence": true,
+      "seconds": 0.049,
+      "retrieved_ids": [
+        "44e6f55ae3b1d3b0839ed8c3",
+        "c0a08a94f125872e00c83955",
+        "3d790b6422fbc9550659aed3",
+        "03f0739e1064e9cb70034346",
+        "ca8a185426fe7518844c9c49",
+        "9fa4e40670c87e4d9ece41b3",
+        "017f687aa4c24d7032f55764",
+        "2b5b51756d478e6476477393",
+        "9886ad2c16d967e4fd26e557",
+        "6df11b206c7b3e1c0878a752"
+      ]
+    },
+    {
+      "id": "tripod-hi",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.1,
+      "returned_evidence": true,
+      "seconds": 0.07,
+      "retrieved_ids": [
+        "67d8ec82d2c072c206cb8334",
+        "44e6f55ae3b1d3b0839ed8c3",
+        "a41a9973d53d9602149df6cf",
+        "9fa4e40670c87e4d9ece41b3",
+        "c0a08a94f125872e00c83955",
+        "9886ad2c16d967e4fd26e557",
+        "601752f9f21d70c8fdd0f907",
+        "3d790b6422fbc9550659aed3",
+        "03f0739e1064e9cb70034346",
+        "c9c67340f20bbc2eb45e232d"
+      ]
+    },
+    {
+      "id": "tripod-sa-Latn",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.07,
+      "retrieved_ids": [
+        "c9c67340f20bbc2eb45e232d",
+        "64c584019e500f1e1a09ba0e",
+        "60fd20098bf18a3c6fe3a1f0",
+        "dca9a0ae8840ec6b4c65285c",
+        "bb0e9bbc89078809d378ac65",
+        "fbd934c5b5b258dc2e954eb9",
+        "fadbe35b4b609e8bf6a28dcb",
+        "aadf08b08d89f528556c6c30",
+        "16059b513da9404828f0774f",
+        "03f0739e1064e9cb70034346"
+      ]
+    },
+    {
+      "id": "tripod-sa-Deva",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.074,
+      "retrieved_ids": [
+        "c9c67340f20bbc2eb45e232d",
+        "64c584019e500f1e1a09ba0e",
+        "60fd20098bf18a3c6fe3a1f0",
+        "dca9a0ae8840ec6b4c65285c",
+        "bb0e9bbc89078809d378ac65",
+        "fbd934c5b5b258dc2e954eb9",
+        "fadbe35b4b609e8bf6a28dcb",
+        "aadf08b08d89f528556c6c30",
+        "16059b513da9404828f0774f",
+        "03f0739e1064e9cb70034346"
+      ]
+    },
+    {
+      "id": "six-tastes-en",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "returned_evidence": true,
+      "seconds": 0.124,
+      "retrieved_ids": [
+        "f882b46e569f99b0c287442a",
+        "5af82dd322b5b702d759b1f8",
+        "99c9a9f84ec26d4754fecba5",
+        "635dc68828fd6d11aa7ac8f0",
+        "b8aca4ff8cc6a56c50eac44e",
+        "03f0739e1064e9cb70034346",
+        "aea59f3076dfc10ab66d9095",
+        "d5a50e97683366cf7ecf932c",
+        "78dd5722efb61cadbcdfdce7",
+        "8299e1bb8212864c9b6fcc7c"
+      ]
+    },
+    {
+      "id": "six-tastes-hi",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.5,
+      "returned_evidence": true,
+      "seconds": 0.134,
+      "retrieved_ids": [
+        "f882b46e569f99b0c287442a",
+        "99c9a9f84ec26d4754fecba5",
+        "5af82dd322b5b702d759b1f8",
+        "635dc68828fd6d11aa7ac8f0",
+        "b8aca4ff8cc6a56c50eac44e",
+        "78dd5722efb61cadbcdfdce7",
+        "03f0739e1064e9cb70034346",
+        "aea59f3076dfc10ab66d9095",
+        "d5a50e97683366cf7ecf932c",
+        "8299e1bb8212864c9b6fcc7c"
+      ]
+    },
+    {
+      "id": "six-tastes-sa-Latn",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.5,
+      "returned_evidence": true,
+      "seconds": 0.115,
+      "retrieved_ids": [
+        "f882b46e569f99b0c287442a",
+        "99c9a9f84ec26d4754fecba5",
+        "5af82dd322b5b702d759b1f8",
+        "635dc68828fd6d11aa7ac8f0",
+        "b8aca4ff8cc6a56c50eac44e",
+        "78dd5722efb61cadbcdfdce7",
+        "03f0739e1064e9cb70034346",
+        "aea59f3076dfc10ab66d9095",
+        "d5a50e97683366cf7ecf932c",
+        "8299e1bb8212864c9b6fcc7c"
+      ]
+    },
+    {
+      "id": "six-tastes-sa-Deva",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.5,
+      "returned_evidence": true,
+      "seconds": 0.131,
+      "retrieved_ids": [
+        "5af82dd322b5b702d759b1f8",
+        "99c9a9f84ec26d4754fecba5",
+        "f882b46e569f99b0c287442a",
+        "635dc68828fd6d11aa7ac8f0",
+        "b8aca4ff8cc6a56c50eac44e",
+        "d5a50e97683366cf7ecf932c",
+        "61b822ea318c7d70b2c0b0cc",
+        "78dd5722efb61cadbcdfdce7",
+        "03f0739e1064e9cb70034346",
+        "aea59f3076dfc10ab66d9095"
+      ]
+    },
+    {
+      "id": "health-definition-en",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.5,
+      "returned_evidence": true,
+      "seconds": 0.066,
+      "retrieved_ids": [
+        "26e94516e3271f7018b9f8a7",
+        "56488d12a21aa95eb644d56f",
+        "92b6ce395d004412eb1f540d",
+        "81fad5d34a9f7d6ba9e002c9",
+        "24827bddfaad1d63722ea10f",
+        "dd410d9a6fcd74497a2e4411",
+        "9a274909d3bf860ef6bb8371",
+        "aeaeafdea0fada78efdc536c",
+        "394ad0d6643b58a940968243",
+        "588fe59087ce16b6cdf8e2fc"
+      ]
+    },
+    {
+      "id": "health-definition-hi",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.5,
+      "returned_evidence": true,
+      "seconds": 0.085,
+      "retrieved_ids": [
+        "26e94516e3271f7018b9f8a7",
+        "56488d12a21aa95eb644d56f",
+        "f16372e0c7827f2d441a54cb",
+        "92b6ce395d004412eb1f540d",
+        "24160517e178c141a560b633",
+        "81fad5d34a9f7d6ba9e002c9",
+        "d1ac306566886b5a215e2ddc",
+        "61c6b020cdff00de418fedfa",
+        "4e819d7dc48efa37dc5d93cd",
+        "d78665febb22f87b81d2c6a6"
+      ]
+    },
+    {
+      "id": "health-definition-sa-Latn",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.049,
+      "retrieved_ids": [
+        "56488d12a21aa95eb644d56f",
+        "81fad5d34a9f7d6ba9e002c9",
+        "b7182ee9e1f6a400e80d39fc",
+        "0545b1802e6be1498683baeb",
+        "ae6b1027dee18161389adbc5",
+        "ceebdbe1c03f19c56b565967",
+        "8b8ca8fb6e5e59b465f76c57",
+        "b3d53f9e88f58383908923a3",
+        "564de7d0c97b7528adaadac1",
+        "47662c19372361a8151823d5"
+      ]
+    },
+    {
+      "id": "health-definition-sa-Deva",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.048,
+      "retrieved_ids": [
+        "56488d12a21aa95eb644d56f",
+        "0545b1802e6be1498683baeb",
+        "26b37d218d35328de54049f9",
+        "a56bcfa9627e776cb749510c",
+        "81fad5d34a9f7d6ba9e002c9",
+        "b7182ee9e1f6a400e80d39fc",
+        "ae6b1027dee18161389adbc5",
+        "ceebdbe1c03f19c56b565967",
+        "8b8ca8fb6e5e59b465f76c57",
+        "564de7d0c97b7528adaadac1"
+      ]
+    },
+    {
+      "id": "eight-branches-en",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.25,
+      "returned_evidence": true,
+      "seconds": 0.071,
+      "retrieved_ids": [
+        "05482bdc23de846a74dec31e",
+        "bd387c11711ae2b7c399910e",
+        "24160517e178c141a560b633",
+        "05ce21e8ce6704744fb2bf5c",
+        "b3c783755522433461a5ff91",
+        "ba507d9899664ecf7c45d43a",
+        "f25b2ab6494716a2d582c3ef",
+        "a6e65db93af5661b896ace2b",
+        "2d959d24ba7b836aafc29517",
+        "7d8c1d4ec1568058c50a4154"
+      ]
+    },
+    {
+      "id": "eight-branches-hi",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.25,
+      "returned_evidence": true,
+      "seconds": 0.106,
+      "retrieved_ids": [
+        "05482bdc23de846a74dec31e",
+        "bd387c11711ae2b7c399910e",
+        "24160517e178c141a560b633",
+        "05ce21e8ce6704744fb2bf5c",
+        "b3c783755522433461a5ff91",
+        "ba507d9899664ecf7c45d43a",
+        "5ee8b6f77dc780393b4ee468",
+        "f25b2ab6494716a2d582c3ef",
+        "a6e65db93af5661b896ace2b",
+        "7d8c1d4ec1568058c50a4154"
+      ]
+    },
+    {
+      "id": "eight-branches-sa-Latn",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.134,
+      "retrieved_ids": [
+        "05ce21e8ce6704744fb2bf5c",
+        "c01143987bdcee2ffaa86ece",
+        "652dd454d9c0f0ca4bce415b",
+        "2936d9fb4c7c465445d337cd",
+        "543b02ec912946c428606126",
+        "2719dd66b76df27c2ecf0175",
+        "ad92e06684953626feedacba",
+        "8b0ada397acfeb9654305875",
+        "be8314016b604d71cd5ff14d",
+        "eea987e8b893c5c7e69253ee"
+      ]
+    },
+    {
+      "id": "eight-branches-sa-Deva",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.132,
+      "retrieved_ids": [
+        "05ce21e8ce6704744fb2bf5c",
+        "c01143987bdcee2ffaa86ece",
+        "652dd454d9c0f0ca4bce415b",
+        "2936d9fb4c7c465445d337cd",
+        "543b02ec912946c428606126",
+        "2719dd66b76df27c2ecf0175",
+        "ad92e06684953626feedacba",
+        "8b0ada397acfeb9654305875",
+        "be8314016b604d71cd5ff14d",
+        "eea987e8b893c5c7e69253ee"
+      ]
+    },
+    {
+      "id": "three-doshas-en",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.104,
+      "retrieved_ids": [
+        "170e63af069f2d76bea37e9b",
+        "83e7e119c89c30180bf45e19",
+        "7ccb403b01f7fb9b37acd76f",
+        "585b3d068c5e052b92879584",
+        "c0bf40a5fa58dd2ee42b81ae",
+        "b915f09891d11651f5e1dd06",
+        "e56d3cabe0bccbf6dedeecf9",
+        "7a456d928f3054867930b0e5",
+        "53a72f8905918477d03082f9",
+        "02b3f2c90c7570ada3946fa5"
+      ]
+    },
+    {
+      "id": "three-doshas-hi",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.11,
+      "retrieved_ids": [
+        "170e63af069f2d76bea37e9b",
+        "e56d3cabe0bccbf6dedeecf9",
+        "83e7e119c89c30180bf45e19",
+        "7ccb403b01f7fb9b37acd76f",
+        "1247a43135a124a03f1900c3",
+        "cdf330684002c370720e96cf",
+        "f65e78ed13310497564010a1",
+        "585b3d068c5e052b92879584",
+        "c0bf40a5fa58dd2ee42b81ae",
+        "b915f09891d11651f5e1dd06"
+      ]
+    },
+    {
+      "id": "three-doshas-sa-Latn",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.25,
+      "returned_evidence": true,
+      "seconds": 0.098,
+      "retrieved_ids": [
+        "7a456d928f3054867930b0e5",
+        "83e7e119c89c30180bf45e19",
+        "585b3d068c5e052b92879584",
+        "170e63af069f2d76bea37e9b",
+        "e56d3cabe0bccbf6dedeecf9",
+        "abaefa167490d3257f59c984",
+        "c0bf40a5fa58dd2ee42b81ae",
+        "5e2c911d87a2c28f9547b457",
+        "8ee606eed3af653ca9340ac3",
+        "fd0fa10f9c9f7a6cf1beeae5"
+      ]
+    },
+    {
+      "id": "three-doshas-sa-Deva",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.108,
+      "retrieved_ids": [
+        "170e63af069f2d76bea37e9b",
+        "83e7e119c89c30180bf45e19",
+        "7a456d928f3054867930b0e5",
+        "d685baa092c7115268bd3185",
+        "742003c3b16536a31b249017",
+        "524dbf2aa7ee51075f367f62",
+        "a0ea9a040900875ac7489030",
+        "4c07c53bafd64575c36163c5",
+        "abaefa167490d3257f59c984",
+        "47a83da565f56bda2983a042"
+      ]
+    },
+    {
+      "id": "daily-routine-en",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.036,
+      "retrieved_ids": [
+        "d2a6c0f48f17e520dd2d403a",
+        "ac27bb238f70bf5b9fc892ba",
+        "2c31205bca745ba00eae5452",
+        "ff920ce064d9a030d24c4f7a",
+        "27721b27954581e93da44851",
+        "df4d72d4d5f6176aac3c4e74",
+        "e4bcc735156aabe9483393a6",
+        "233ef7c169d7c90488457504",
+        "b156f6eac6201d7ad26e4355",
+        "3a190f5aad08133e72a7388a"
+      ]
+    },
+    {
+      "id": "daily-routine-hi",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.055,
+      "retrieved_ids": [
+        "d2a6c0f48f17e520dd2d403a",
+        "ac27bb238f70bf5b9fc892ba",
+        "2c31205bca745ba00eae5452",
+        "ff920ce064d9a030d24c4f7a",
+        "df4d72d4d5f6176aac3c4e74",
+        "ee2c67897f6e2e26d5511ec3",
+        "27721b27954581e93da44851",
+        "c35284d263bd970c5023febe",
+        "8236c248fdf07c60998b0afa",
+        "ec9a428d4792b3bcc163c595"
+      ]
+    },
+    {
+      "id": "daily-routine-sa-Latn",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.03,
+      "retrieved_ids": [
+        "d2a6c0f48f17e520dd2d403a",
+        "ac27bb238f70bf5b9fc892ba",
+        "2c31205bca745ba00eae5452",
+        "ff920ce064d9a030d24c4f7a",
+        "df4d72d4d5f6176aac3c4e74",
+        "233ef7c169d7c90488457504",
+        "0ae9bacd3242613f6e771354",
+        "3a190f5aad08133e72a7388a",
+        "ce3b0b04e4e00df260370d40",
+        "584c7fb9533d7a1a45d249d4"
+      ]
+    },
+    {
+      "id": "daily-routine-sa-Deva",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.034,
+      "retrieved_ids": [
+        "d2a6c0f48f17e520dd2d403a",
+        "ac27bb238f70bf5b9fc892ba",
+        "2c31205bca745ba00eae5452",
+        "ff920ce064d9a030d24c4f7a",
+        "170e63af069f2d76bea37e9b",
+        "df4d72d4d5f6176aac3c4e74",
+        "233ef7c169d7c90488457504",
+        "0ae9bacd3242613f6e771354",
+        "3a190f5aad08133e72a7388a",
+        "ce3b0b04e4e00df260370d40"
+      ]
+    },
+    {
+      "id": "tissues-en",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.1111111111111111,
+      "returned_evidence": true,
+      "seconds": 0.104,
+      "retrieved_ids": [
+        "837f10f582ebffa18432db90",
+        "07575c3f4be91007390d2757",
+        "5d360d8f3254d181ea30b4b5",
+        "4f6cdc928c84bb0490b70629",
+        "d411d4b74949d6b05bb60f21",
+        "1a325002c3a042854a783fa1",
+        "b562fd92cd997d92589b6481",
+        "f65e78ed13310497564010a1",
+        "170e63af069f2d76bea37e9b",
+        "27502c09b6406cd49db2b33c"
+      ]
+    },
+    {
+      "id": "tissues-hi",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.14285714285714285,
+      "returned_evidence": true,
+      "seconds": 0.112,
+      "retrieved_ids": [
+        "07575c3f4be91007390d2757",
+        "837f10f582ebffa18432db90",
+        "4f6cdc928c84bb0490b70629",
+        "5d360d8f3254d181ea30b4b5",
+        "f65e78ed13310497564010a1",
+        "1a325002c3a042854a783fa1",
+        "170e63af069f2d76bea37e9b",
+        "27502c09b6406cd49db2b33c",
+        "d411d4b74949d6b05bb60f21",
+        "b562fd92cd997d92589b6481"
+      ]
+    },
+    {
+      "id": "tissues-sa-Latn",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "returned_evidence": true,
+      "seconds": 0.115,
+      "retrieved_ids": [
+        "237330f5900b093d0986f1b9",
+        "34893cfec84878d95346c987",
+        "170e63af069f2d76bea37e9b",
+        "585b3d068c5e052b92879584",
+        "1a325002c3a042854a783fa1",
+        "07aa6a9850a7f4d73a1d367e",
+        "4c0004de137ba5394629b204",
+        "4f6cdc928c84bb0490b70629",
+        "e56d3cabe0bccbf6dedeecf9",
+        "e570f53401ca1704a92017a7"
+      ]
+    },
+    {
+      "id": "tissues-sa-Deva",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "returned_evidence": true,
+      "seconds": 0.117,
+      "retrieved_ids": [
+        "237330f5900b093d0986f1b9",
+        "34893cfec84878d95346c987",
+        "170e63af069f2d76bea37e9b",
+        "585b3d068c5e052b92879584",
+        "1a325002c3a042854a783fa1",
+        "07aa6a9850a7f4d73a1d367e",
+        "4c0004de137ba5394629b204",
+        "4f6cdc928c84bb0490b70629",
+        "e56d3cabe0bccbf6dedeecf9",
+        "b562fd92cd997d92589b6481"
+      ]
+    },
+    {
+      "id": "disease-balance-en",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.111,
+      "retrieved_ids": [
+        "2c31205bca745ba00eae5452",
+        "a0ea9a040900875ac7489030",
+        "df4d72d4d5f6176aac3c4e74",
+        "170e63af069f2d76bea37e9b",
+        "587b04b884745c0493f65c0e",
+        "34893cfec84878d95346c987",
+        "b7e21e1c099b341ca98ad7d0",
+        "60da46b36b4dedea55c56ce4",
+        "4d646a24f2b1be8bc64b6f11",
+        "15b6d2285ec16f44b8fbbd97"
+      ]
+    },
+    {
+      "id": "disease-balance-hi",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.078,
+      "retrieved_ids": [
+        "2c31205bca745ba00eae5452",
+        "ee2c67897f6e2e26d5511ec3",
+        "c284ebbb46844f9c24feca7b",
+        "a0ea9a040900875ac7489030",
+        "9fb3bdac1b9f27370db8d08c",
+        "3a190f5aad08133e72a7388a",
+        "b915f09891d11651f5e1dd06",
+        "ac27bb238f70bf5b9fc892ba",
+        "bd23fa5f4bf5c80b1277cff1",
+        "781bf8c7589f34d3955eb513"
+      ]
+    },
+    {
+      "id": "disease-balance-sa-Latn",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.113,
+      "retrieved_ids": [
+        "2c31205bca745ba00eae5452",
+        "a0ea9a040900875ac7489030",
+        "e71296191ec120ab2f317a62",
+        "9bef9bc6c428e6bdb25539f3",
+        "c284ebbb46844f9c24feca7b",
+        "585b3d068c5e052b92879584",
+        "abaefa167490d3257f59c984",
+        "587b04b884745c0493f65c0e",
+        "754e30756b4ec7ee7e98c398",
+        "34893cfec84878d95346c987"
+      ]
+    },
+    {
+      "id": "disease-balance-sa-Deva",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.115,
+      "retrieved_ids": [
+        "2c31205bca745ba00eae5452",
+        "a0ea9a040900875ac7489030",
+        "e71296191ec120ab2f317a62",
+        "9bef9bc6c428e6bdb25539f3",
+        "c284ebbb46844f9c24feca7b",
+        "585b3d068c5e052b92879584",
+        "abaefa167490d3257f59c984",
+        "587b04b884745c0493f65c0e",
+        "754e30756b4ec7ee7e98c398",
+        "34893cfec84878d95346c987"
+      ]
+    },
+    {
+      "id": "examination-en",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.072,
+      "retrieved_ids": [
+        "2c31205bca745ba00eae5452",
+        "48bceed09329954e09de3c4e",
+        "470a5d6a50cf26e3f2961907",
+        "3418bcab5cd8766bbe02e8b5",
+        "b3c29a83937d7437aad212f2",
+        "119ca95cbb862fd933523e93",
+        "77bcae19fac7f218fc00f80b",
+        "2ed2f867d88afb1018b89d80",
+        "199ef672bdc897aa37d6c4f5",
+        "1c7791d13b4c175ca05520c9"
+      ]
+    },
+    {
+      "id": "examination-hi",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.074,
+      "retrieved_ids": [
+        "2c31205bca745ba00eae5452",
+        "48bceed09329954e09de3c4e",
+        "470a5d6a50cf26e3f2961907",
+        "3418bcab5cd8766bbe02e8b5",
+        "b3c29a83937d7437aad212f2",
+        "119ca95cbb862fd933523e93",
+        "2f3e91f1517eef3dc66e8631",
+        "77bcae19fac7f218fc00f80b",
+        "d685baa092c7115268bd3185",
+        "2ed2f867d88afb1018b89d80"
+      ]
+    },
+    {
+      "id": "examination-sa-Latn",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.048,
+      "retrieved_ids": [
+        "2c31205bca745ba00eae5452",
+        "2ed2f867d88afb1018b89d80",
+        "48bceed09329954e09de3c4e",
+        "4548fe93719534da4a45bd1b",
+        "ae10e687782fcb151efa102b",
+        "119ca95cbb862fd933523e93",
+        "77bcae19fac7f218fc00f80b",
+        "6f2d1b08c0d6c1882a44a238",
+        "470a5d6a50cf26e3f2961907",
+        "b3c29a83937d7437aad212f2"
+      ]
+    },
+    {
+      "id": "examination-sa-Deva",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.047,
+      "retrieved_ids": [
+        "2c31205bca745ba00eae5452",
+        "2ed2f867d88afb1018b89d80",
+        "48bceed09329954e09de3c4e",
+        "4548fe93719534da4a45bd1b",
+        "ae10e687782fcb151efa102b",
+        "119ca95cbb862fd933523e93",
+        "77bcae19fac7f218fc00f80b",
+        "6f2d1b08c0d6c1882a44a238",
+        "470a5d6a50cf26e3f2961907",
+        "b3c29a83937d7437aad212f2"
+      ]
+    },
+    {
+      "id": "four-supports-en",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.069,
+      "retrieved_ids": [
+        "2c31205bca745ba00eae5452",
+        "3b4fad26c045345563f975c9",
+        "9d8cb616441d4ebab79667fb",
+        "b5edaed70d5ed70c5ddd4f79",
+        "46cb2085c98b150504808b58",
+        "e208774fe0ee80b35bbe4a3b",
+        "d689685d3b496f5edcbd42e9",
+        "0ae9bacd3242613f6e771354",
+        "b1dc3b57f98f35f1bfcb3260",
+        "2f8649ac391c322027fdbdf5"
+      ]
+    },
+    {
+      "id": "four-supports-hi",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.081,
+      "retrieved_ids": [
+        "2c31205bca745ba00eae5452",
+        "3b4fad26c045345563f975c9",
+        "9d8cb616441d4ebab79667fb",
+        "b5edaed70d5ed70c5ddd4f79",
+        "2f8649ac391c322027fdbdf5",
+        "46cb2085c98b150504808b58",
+        "2f3e91f1517eef3dc66e8631",
+        "0ae9bacd3242613f6e771354",
+        "e208774fe0ee80b35bbe4a3b",
+        "d689685d3b496f5edcbd42e9"
+      ]
+    },
+    {
+      "id": "four-supports-sa-Latn",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.068,
+      "retrieved_ids": [
+        "2c31205bca745ba00eae5452",
+        "48bceed09329954e09de3c4e",
+        "470a5d6a50cf26e3f2961907",
+        "2ed2f867d88afb1018b89d80",
+        "6f2d1b08c0d6c1882a44a238",
+        "9d8cb616441d4ebab79667fb",
+        "119ca95cbb862fd933523e93",
+        "199ef672bdc897aa37d6c4f5",
+        "9a3beaf466bea2e7af839914",
+        "2f3e91f1517eef3dc66e8631"
+      ]
+    },
+    {
+      "id": "four-supports-sa-Deva",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.071,
+      "retrieved_ids": [
+        "2c31205bca745ba00eae5452",
+        "48bceed09329954e09de3c4e",
+        "470a5d6a50cf26e3f2961907",
+        "2ed2f867d88afb1018b89d80",
+        "119ca95cbb862fd933523e93",
+        "2f3e91f1517eef3dc66e8631",
+        "199ef672bdc897aa37d6c4f5",
+        "9a3beaf466bea2e7af839914",
+        "6f2d1b08c0d6c1882a44a238",
+        "4840c76f0230d9d2e33491c0"
+      ]
+    },
+    {
+      "id": "quote-arunadatta-sarvangasundara",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.184,
+      "retrieved_ids": [
+        "094cd7b583778e873ae94145",
+        "95395a2f93cba2641e14b4a2",
+        "4852da2f3275925e7c34cafa",
+        "7cf291ee1b44e3157c19f97a",
+        "017e493a74505d00b24f5a23",
+        "69b6148bf5e08ad5f48cf3b2",
+        "25b516811caf4d2f8c6f50b4",
+        "6db6df07ede1cf9f246d0824",
+        "2f645b87fa8584cbd9e901e9",
+        "b9b3ffad031a5aeb5799594f"
+      ]
+    },
+    {
+      "id": "quote-astangahrdayasamhita",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.038,
+      "retrieved_ids": [
+        "034766732f83398c515a95b0"
+      ]
+    },
+    {
+      "id": "quote-astangasangraha",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.058,
+      "retrieved_ids": [
+        "0c8f98e7ec227afc157c6af3",
+        "a7a3b64a2efdbc344a5af895",
+        "4e1d48d34502d0d93ae3d8bd",
+        "be6ad234dc2954ca1bed55aa",
+        "516c61b66f41f25c0d05f852",
+        "d4f8f08516d64c76f73bf45f",
+        "a2051483d271c1f61c49a924",
+        "085e92ec2496c5f2562aecec",
+        "9aa4a6d65a80587c59a0991c",
+        "d1168cece4dc4aee2e3fcb77"
+      ]
+    },
+    {
+      "id": "quote-ayurvedasutram",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.051,
+      "retrieved_ids": [
+        "b75880f9877f982d912f3fde"
+      ]
+    },
+    {
+      "id": "quote-bhelasamhita",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.132,
+      "retrieved_ids": [
+        "e3138cdab6ea381bd949588a",
+        "3d87115adf2fb7f97263ba72",
+        "06f7c945151d60a804bae02b",
+        "b84af75c07eac43d386981e3",
+        "bfa2b06bbfb91046655ce565",
+        "fab122654c486d7ff9131d5d",
+        "f1b4e3d0d8aef885c80244f3",
+        "85cbfddf03ec87fcfb2d53d0",
+        "1a61ee9264130c6a0770af11",
+        "3ccbcc282c9f126ad6dd931a"
+      ]
+    },
+    {
+      "id": "quote-cakradatta",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.079,
+      "retrieved_ids": [
+        "8226e55366263d67add8f517",
+        "dfc3d7c16908747d8237af29",
+        "f8dd0d2ca298ce4f575d0e36",
+        "0e475c381bfc0b8c7b77a166",
+        "c4d9a24c48dcd0eae8243f61",
+        "e8a78cccc695dbec26b40db1",
+        "0867efcfffc4a608c667d4fd",
+        "6215292d6d90653c1d5ed998",
+        "53f9336495b9a0cac67c2df1",
+        "5174b5da6509ae02dd3e6179"
+      ]
+    },
+    {
+      "id": "quote-cakrapanidatta-ayurvedadipika",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.047,
+      "retrieved_ids": [
+        "e97519b7f9ac6609bccba412",
+        "4144ae450fe0451635c2ff96",
+        "a69f70a1fef9a8b2d4cbb3e0",
+        "145b866394a71917d9c2083b",
+        "e403ed3fa62edb00aef0453c",
+        "0f2d4bcf7c066b6c1be6de6e",
+        "1cd0bb24e3669168d02dd5c8",
+        "8697f1dd13b524ce83b2f226",
+        "7ad92600fd658a792029065b",
+        "5a120e446825051f652f2e00"
+      ]
+    },
+    {
+      "id": "quote-carakasamhita",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.063,
+      "retrieved_ids": [
+        "9778d15a3c21b462bc8c7bb6",
+        "2ff6ec13daec4a265b93793a",
+        "241a21eff074d8b46e632e3c",
+        "09bdd8daeb5fecff603ba92f",
+        "70e8e007455f4cc750c75966",
+        "de284083bd32567c637f20ea",
+        "07aed963ddaf89feeff8a732",
+        "206290ad5b4a05d4db7befe2",
+        "d826f6cb37bc62753b02ec96",
+        "64c584019e500f1e1a09ba0e"
+      ]
+    },
+    {
+      "id": "quote-govindabhagavatpada-rasahrdayatantra",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.11,
+      "retrieved_ids": [
+        "f5af54e64534c281c7f3db5c",
+        "7a3919a92e0ede7ea96bfb60",
+        "8a7de36efcdf0b86ed01c8dc",
+        "c20d9beae75013da0cbd5da4",
+        "7f70fe379ae6f7940d8cd8c7",
+        "06220b5a9f4df9e1246b8885",
+        "28892ba0e9f26b8cbe4178d5",
+        "70ed6cadd56051eeae554b86",
+        "e6b5f38540281a26ee14a68b",
+        "d0836ab7a0ed1ef84589bce5"
+      ]
+    },
+    {
+      "id": "quote-nityanatha-rasaratnakara-rasayanakhanda",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.139,
+      "retrieved_ids": [
+        "7c92669e72bf974b783fd87d",
+        "d0a6be72de1d9e708ce20abe",
+        "84a5c05e1e398b82cb2dbd7a",
+        "5a20361aaf3ad19fd58027f4",
+        "63ae42b703ecd7b8f627e322",
+        "7faa01b3f04ca00003785abf",
+        "7cab2fe49eccf00640459d0f",
+        "7e96066b0d634d2ceab5a9a9",
+        "8d9c5f8a45e5d96221441b7a",
+        "68f943a421408a8e552e6f6d"
+      ]
+    },
+    {
+      "id": "quote-rasarnava",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.06,
+      "retrieved_ids": [
+        "8af851aaec597fab7c593783",
+        "76e4fa5cfef657fa007a2199",
+        "3743bbe429cf94d506489162",
+        "9c97d1266a78c0a6f990ba7c",
+        "ad2e38c9d54a2242d594f80b",
+        "0305b576221bbd6bdc154860",
+        "28bcec836fb6cfd2d8831288",
+        "489a446b12e6f05f9246ad4a",
+        "0c21981f7eb3527c4bef102f",
+        "243bb8a6fb282024367fe741"
+      ]
+    },
+    {
+      "id": "quote-siddhayoga",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.069,
+      "retrieved_ids": [
+        "da3edf95a515423d2031fc09",
+        "fedb85436952a3615c3fd27e",
+        "ac5f2e93ece15c310857ec9c",
+        "770330c6c53dda03f5a4b4cf",
+        "cb874fb0c7a8dde59a213122",
+        "1dca948fe5264e2ddb758fa3",
+        "07ce1651b6790d969f8d678a",
+        "754704c113af79b7f5c8e92c",
+        "377024883944c0897c4eab05",
+        "efb9d61fc08f81a2c40009af"
+      ]
+    },
+    {
+      "id": "quote-susrutasamhita",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.041,
+      "retrieved_ids": [
+        "0bff4453da2584b828f46b6a",
+        "8ec275e02a27727e8de80d34"
+      ]
+    },
+    {
+      "id": "quote-ugraditya-kalyanakaraka",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.061,
+      "retrieved_ids": [
+        "3a9066557e0a8f7f5421dfdb",
+        "f978220909ca2160bc869a11",
+        "d2985d8738d1faf623c1017f",
+        "ad33e8c2db3b2520cccd1e92",
+        "98c83772979e6c6c3e3ea95a",
+        "38cb865bd8e70a28ac2cc457",
+        "4da0e7175a3e81dea563d666",
+        "a76fb7ef07283daa507e48a7",
+        "6f089fe70e342e9d77e292dc",
+        "186e73df1dd9c8d3b0895ccd"
+      ]
+    },
+    {
+      "id": "quote-vagbhata-rasaratnasamuccaya-comms",
+      "recall_at_10": 1.0,
+      "reciprocal_rank": 1.0,
+      "returned_evidence": true,
+      "seconds": 0.165,
+      "retrieved_ids": [
+        "30e6e3b66c4fdf4dc9f5b174",
+        "19c2c99167a3d4dace54b484",
+        "75f0e3c2ca2a6248a92bbcb0",
+        "62600e33ef44ded6ed0dafa0",
+        "edc0f39931ad7f29a232eab0",
+        "1cd3066ed0415b26f4e96391",
+        "bbdf45d309ec8497803b6f45",
+        "6adf3a489bda3e699666e023",
+        "c7a110a8dac87e792a590a4f",
+        "e946369bdf1f5eafb387efa8"
+      ]
+    },
+    {
+      "id": "unanswerable-0",
+      "recall_at_10": null,
+      "reciprocal_rank": null,
+      "returned_evidence": false,
+      "seconds": 0.004,
+      "retrieved_ids": []
+    },
+    {
+      "id": "unanswerable-1",
+      "recall_at_10": null,
+      "reciprocal_rank": null,
+      "returned_evidence": false,
+      "seconds": 0.002,
+      "retrieved_ids": []
+    },
+    {
+      "id": "unanswerable-2",
+      "recall_at_10": null,
+      "reciprocal_rank": null,
+      "returned_evidence": true,
+      "seconds": 0.012,
+      "retrieved_ids": [
+        "5cab2d0e3e3502a4f4ec25b0",
+        "2b1bedcb7881d63d9251d1b5",
+        "06b45bf7fcef0b79a9555668",
+        "aed3bdcbf3493f9bce2b8225",
+        "02ec9b86a08ef42b9e035b28",
+        "9f10bb4ab3853009f27752ec",
+        "51662c851f1cdb9864ffcf1b",
+        "db5465ebfeb43cb6c9c628af"
+      ]
+    },
+    {
+      "id": "unanswerable-3",
+      "recall_at_10": null,
+      "reciprocal_rank": null,
+      "returned_evidence": true,
+      "seconds": 0.006,
+      "retrieved_ids": [
+        "d42f2353cbe2d646c625be54"
+      ]
+    },
+    {
+      "id": "unanswerable-4",
+      "recall_at_10": null,
+      "reciprocal_rank": null,
+      "returned_evidence": false,
+      "seconds": 0.003,
+      "retrieved_ids": []
+    }
+  ],
+  "limitations": "Work-filtered, small draft relevance set. Missing judgments can penalize other valid evidence. Exact-quote smoke scores are separate. Evidence return is not answer abstention."
+}
