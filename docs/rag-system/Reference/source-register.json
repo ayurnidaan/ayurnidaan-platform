@@ -1,0 +1,554 @@
+{
+  "commit": "73beef60490f97bfbd2902db152ff99a6484456d",
+  "files": [
+    {
+      "path": "deploy/package.py",
+      "sha256": "79e905c10f28238e20174085f9413028ce02bc604eb8242ab684eb573427992f",
+      "symbols": [
+        {
+          "line": 13,
+          "symbol": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "eval/import_clinical_cases.py",
+      "sha256": "6dde66f73c84ed1f550c4b4580f80f6c0cfe1791510e315f62d0fd6607f4bd82",
+      "symbols": [
+        {
+          "line": 9,
+          "symbol": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "scripts/build_performance_report.py",
+      "sha256": "4cc053a8ae2d2a1b65536d8a379c0ed8dbdbff4f7d8297e6d4a6c69db52388cb",
+      "symbols": [
+        {
+          "line": 26,
+          "symbol": "def read(name):"
+        },
+        {
+          "line": 30,
+          "symbol": "def verify(url):"
+        },
+        {
+          "line": 61,
+          "symbol": "def chart_image(fig, filename):"
+        },
+        {
+          "line": 86,
+          "symbol": "def build(date, verification):"
+        },
+        {
+          "line": 354,
+          "symbol": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "tests/browser_sessions.py",
+      "sha256": "426243f8de24fea263f53991a5ca2993642368a60a5eed66fef3528201ff7b82",
+      "symbols": [
+        {
+          "line": 7,
+          "symbol": "def result(question):"
+        },
+        {
+          "line": 23,
+          "symbol": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "tests/browser_smoke.py",
+      "sha256": "adb6613b65fc0d1f98f46638fd0b7b5f50ddab9f219fa866388cec109f90533a",
+      "symbols": [
+        {
+          "line": 8,
+          "symbol": "def assert_fixed_viewport(page):"
+        },
+        {
+          "line": 17,
+          "symbol": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "tests/live_answers.py",
+      "sha256": "e854f75f3413ab7d1166b8b4ce9bc67d3aa4cf2da0ac354b84813f0559e0f50a",
+      "symbols": [
+        {
+          "line": 8,
+          "symbol": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "tests/live_clinical.py",
+      "sha256": "fa6ceace3a72fca0cb37d0ead7fb38dd8a7a412fb0b98207ee0235f45831464a",
+      "symbols": [
+        {
+          "line": 20,
+          "symbol": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "tests/live_enhancement.py",
+      "sha256": "fedb88b36d165ab79b0248fd44559331dbe12cd4cc8ea6e95804e300789f9c6c",
+      "symbols": [
+        {
+          "line": 12,
+          "symbol": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "tests/live_hosted.py",
+      "sha256": "a683702025dc14d43d2d005377569b1ac73b9aab476cb3ebe307af5aaf4c297c",
+      "symbols": [
+        {
+          "line": 11,
+          "symbol": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "tests/live_translations.py",
+      "sha256": "bd5e28574684b3608c3ea504fbe82170ab61888de5d1b4828c625f52d0a612a3",
+      "symbols": [
+        {
+          "line": 8,
+          "symbol": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_answers.py",
+      "sha256": "42a6b8055996197c8a7cd0cf223dc0c15722ac61e25fdbf18d8e01f70924aa58",
+      "symbols": [
+        {
+          "line": 14,
+          "symbol": "class AnswerTests(unittest.TestCase):"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_clinical.py",
+      "sha256": "460ce5f4f89a16c4193429954cc81e8424ac60f6581ab201e11eeb1554d44c6c",
+      "symbols": [
+        {
+          "line": 13,
+          "symbol": "class ClinicalTests(unittest.TestCase):"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_evaluation.py",
+      "sha256": "a13029e9dbdcf3ceef61fde4c29be32b5d66a7b6bb0c76e5a0b3331d1f0ab4ab",
+      "symbols": [
+        {
+          "line": 5,
+          "symbol": "class EvaluationTests(unittest.TestCase):"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_passages.py",
+      "sha256": "c9816ea214ed26866fb30bbf5608e30d16dba92e11316817fd9cf36ef06ed768",
+      "symbols": [
+        {
+          "line": 14,
+          "symbol": "class PassageTests(unittest.TestCase):"
+        },
+        {
+          "line": 59,
+          "symbol": "class FallbackTests(unittest.TestCase):"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "sha256": "1a18f0ff748c58fe7b2cb40f87edbeaf8578bb7401d49dc7d3e28f5565fbb712",
+      "symbols": [
+        {
+          "line": 11,
+          "symbol": "class PipelineTests(unittest.TestCase):"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_query_planner.py",
+      "sha256": "41afac4dc04468a722c9f1663816cbc92b5b46a5c6d141a55f616e64a2085792",
+      "symbols": [
+        {
+          "line": 13,
+          "symbol": "class QueryPlannerTests(unittest.TestCase):"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_retrieval.py",
+      "sha256": "07029c1f97be0eeddd81642b979034537576e2ab5c122f1b90914e6652f29511",
+      "symbols": [
+        {
+          "line": 17,
+          "symbol": "class FakeEmbedding:"
+        },
+        {
+          "line": 31,
+          "symbol": "class RetrievalTests(unittest.TestCase):"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_scripts.py",
+      "sha256": "9001b31236cac12ead237a4b60484c54180f7ca7b81ac2363f4c09e343d644b1",
+      "symbols": [
+        {
+          "line": 10,
+          "symbol": "class ScriptTests(unittest.TestCase):"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_server.py",
+      "sha256": "b15859e38a9aee8d7ba918c9dd488e7e4f47ed07aabbafa2c01dd1e9797c9abd",
+      "symbols": [
+        {
+          "line": 21,
+          "symbol": "class ServerTests(unittest.TestCase):"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_source_guides.py",
+      "sha256": "a179309215a1da84d07d2cb4c4123f4d15fecc9d87c4605e0b64d0bc9b8826a5",
+      "symbols": [
+        {
+          "line": 13,
+          "symbol": "class SourceGuideTests(unittest.TestCase):"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_terminology.py",
+      "sha256": "5b12e3db4082abfeff3b8e72e6dbd42838c229bb46ebebd41173c2d14afd7696",
+      "symbols": [
+        {
+          "line": 11,
+          "symbol": "class TerminologyTests(unittest.TestCase):"
+        }
+      ]
+    },
+    {
+      "path": "vedai/__init__.py",
+      "sha256": "837e9739df051bc9a3a289cae832b912a97c9da96f9cc7be329cc8490155f2dd",
+      "symbols": []
+    },
+    {
+      "path": "vedai/__main__.py",
+      "sha256": "8a5f391915fc9e6745a3e305b09007540ff6b5d02e035d1dddb5e98fd250d46a",
+      "symbols": [
+        {
+          "line": 11,
+          "symbol": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "vedai/answers.py",
+      "sha256": "ddf10ab51d41815c3bfddc3bbd1d900a2dfeac94289d05edb7f0d918d6e5a399",
+      "symbols": [
+        {
+          "line": 73,
+          "symbol": "class OpenRouter:"
+        },
+        {
+          "line": 116,
+          "symbol": "def evidence_packet(hits, max_characters=10000):"
+        },
+        {
+          "line": 129,
+          "symbol": "def validate_answer(raw, packet):"
+        },
+        {
+          "line": 181,
+          "symbol": "def citation_schema(packet):"
+        },
+        {
+          "line": 215,
+          "symbol": "def resolve_citations(raw, packet, question=\"\", prior_questions=None):"
+        },
+        {
+          "line": 254,
+          "symbol": "def answer(question, hits, answer_language=\"en\", provider=None, generate=True, packet=None, allow_general=True, query_plan=None, conversation=None):"
+        }
+      ]
+    },
+    {
+      "path": "vedai/clinical.py",
+      "sha256": "16ac45582eaac6ae8068913a56cf30af14132e136180a3bba4656dc6eda4a041",
+      "symbols": [
+        {
+          "line": 74,
+          "symbol": "def unverified_reference(text):"
+        },
+        {
+          "line": 81,
+          "symbol": "def validate_findings(findings, question, prior_questions=None):"
+        }
+      ]
+    },
+    {
+      "path": "vedai/corpus.py",
+      "sha256": "4e385bbc33d206ecfc2b4ebec4a3ccb650858cadcf39bfddfac32936446bf930",
+      "symbols": [
+        {
+          "line": 23,
+          "symbol": "def tag(node):"
+        },
+        {
+          "line": 27,
+          "symbol": "def clean(value):"
+        },
+        {
+          "line": 31,
+          "symbol": "def dump(path, value):"
+        },
+        {
+          "line": 36,
+          "symbol": "def digest(path):"
+        },
+        {
+          "line": 44,
+          "symbol": "def extract_archive(archive, destination):"
+        },
+        {
+          "line": 57,
+          "symbol": "def download(data, revision=REVISION):"
+        },
+        {
+          "line": 86,
+          "symbol": "def visible(node):"
+        },
+        {
+          "line": 108,
+          "symbol": "def extract_work(path, spec, revision):"
+        },
+        {
+          "line": 184,
+          "symbol": "def split_text(text, limit):"
+        },
+        {
+          "line": 198,
+          "symbol": "def make_chunks(segments, max_chars=1800):"
+        },
+        {
+          "line": 229,
+          "symbol": "def write_jsonl(path, rows):"
+        },
+        {
+          "line": 236,
+          "symbol": "def process(data, config, report_dir):"
+        }
+      ]
+    },
+    {
+      "path": "vedai/evaluation.py",
+      "sha256": "69ba4f33913af7a09d0909ab89fd0a2294ccd6cd6e1c68462e8a33563f7cf22e",
+      "symbols": [
+        {
+          "line": 10,
+          "symbol": "def create_dataset(data, destination=Path(\"eval/questions.jsonl\")):"
+        },
+        {
+          "line": 48,
+          "symbol": "def score_results(expected, results):"
+        },
+        {
+          "line": 62,
+          "symbol": "def evaluate(data, retriever, output, dataset=Path(\"eval/questions.jsonl\")):"
+        }
+      ]
+    },
+    {
+      "path": "vedai/ollama.py",
+      "sha256": "ba9bd35106790efe01660e0958ef6fab6e9effa3e4eb35a15b0fb550549d8698",
+      "symbols": [
+        {
+          "line": 8,
+          "symbol": "class ModelError(RuntimeError):"
+        },
+        {
+          "line": 12,
+          "symbol": "class Ollama:"
+        }
+      ]
+    },
+    {
+      "path": "vedai/passages.py",
+      "sha256": "00eadc7fd925f7dac2fe6b12307f68ce3286d66238caf654d690df911debf1a7",
+      "symbols": [
+        {
+          "line": 15,
+          "symbol": "def verse_identity(segment):"
+        },
+        {
+          "line": 31,
+          "symbol": "def build_passages(data):"
+        },
+        {
+          "line": 82,
+          "symbol": "def match_score(question, text, terms=None):"
+        },
+        {
+          "line": 91,
+          "symbol": "class PassageStore:"
+        }
+      ]
+    },
+    {
+      "path": "vedai/query_planner.py",
+      "sha256": "9796f5bc78be8e94b58eccf377b7c681cbb527c4489f1e2870886a9e894ab68d",
+      "symbols": [
+        {
+          "line": 43,
+          "symbol": "def validate_plan(raw):"
+        },
+        {
+          "line": 75,
+          "symbol": "def local_plan(question):"
+        },
+        {
+          "line": 84,
+          "symbol": "def enhance_query(question, provider, enabled=True, conversation=None):"
+        },
+        {
+          "line": 103,
+          "symbol": "def retrieve_plan(question, plan, retriever, passages, limit=6, filters=None):"
+        }
+      ]
+    },
+    {
+      "path": "vedai/retrieval.py",
+      "sha256": "e16c86e4d897801ae390967db7b9e83f1bb4e94201605e48968f75eb0c6eac3f",
+      "symbols": [
+        {
+          "line": 16,
+          "symbol": "def unit_vectors(values):"
+        },
+        {
+          "line": 27,
+          "symbol": "def build_vectors(data, model=\"embeddinggemma\", batch_size=32, client=None):"
+        },
+        {
+          "line": 98,
+          "symbol": "def reciprocal_rank_fusion(rankings, k=60):"
+        },
+        {
+          "line": 111,
+          "symbol": "class Retriever:"
+        }
+      ]
+    },
+    {
+      "path": "vedai/scripts.py",
+      "sha256": "23dcda2a6eb6bfa01db92f4c3017b638a3d0ccdcb5dd08ceee07f275deb42ebb",
+      "symbols": [
+        {
+          "line": 6,
+          "symbol": "def with_devanagari(source):"
+        }
+      ]
+    },
+    {
+      "path": "vedai/search.py",
+      "sha256": "5ba26d8887ac4e66a2c01ebbe7c88c72cc2c60374e96211ca25b889e5b959a4b",
+      "symbols": [
+        {
+          "line": 8,
+          "symbol": "def normalize(text):"
+        },
+        {
+          "line": 21,
+          "symbol": "def build_index(data):"
+        },
+        {
+          "line": 36,
+          "symbol": "def search(data, query, limit=5, work=None, kind=None, language=None, chapter=None):"
+        }
+      ]
+    },
+    {
+      "path": "vedai/server.py",
+      "sha256": "7d436f97131cf2dbe9621be934b60aa8a37500a1f932db83d6a216e5b582b841",
+      "symbols": [
+        {
+          "line": 29,
+          "symbol": "class Filters(BaseModel):"
+        },
+        {
+          "line": 36,
+          "symbol": "class ConversationTurn(BaseModel):"
+        },
+        {
+          "line": 42,
+          "symbol": "class AskRequest(BaseModel):"
+        },
+        {
+          "line": 53,
+          "symbol": "def create_app(data=Path(\"data\"), mode=\"expanded\", retriever=None, provider=None):"
+        }
+      ]
+    },
+    {
+      "path": "vedai/settings.py",
+      "sha256": "4560d49156ba10a527ca94b8edad2b32725e99f39887155be069eff58ba90ea5",
+      "symbols": [
+        {
+          "line": 5,
+          "symbol": "def local_settings(path=Path(\".env\")):"
+        }
+      ]
+    },
+    {
+      "path": "vedai/terminology.py",
+      "sha256": "e54039936aaa74557875144c7501c9a44b397704dd8ef7fd5f4389e1c70fd9e4",
+      "symbols": [
+        {
+          "line": 15,
+          "symbol": "def canonical(text):"
+        },
+        {
+          "line": 22,
+          "symbol": "def symptom_concepts(query):"
+        },
+        {
+          "line": 38,
+          "symbol": "def query_terms(query):"
+        },
+        {
+          "line": 61,
+          "symbol": "def build_terms(data):"
+        },
+        {
+          "line": 77,
+          "symbol": "def term_search(data, query, limit=100, work=None, kind=None, language=None, chapter=None):"
+        }
+      ]
+    },
+    {
+      "path": "vedai/verify.py",
+      "sha256": "cb746f1be64934ea193838a3ca85773b1a0a4fbb09cea01bdc694c305aee8396",
+      "symbols": [
+        {
+          "line": 9,
+          "symbol": "def verify(data, reports):"
+        }
+      ]
+    }
+  ]
+}

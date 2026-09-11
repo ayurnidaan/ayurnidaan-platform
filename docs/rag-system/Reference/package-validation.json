@@ -1,0 +1,61 @@
+{
+  "prepared": "2026-11-11",
+  "documents": [
+    {
+      "document": "03_Software_Architecture_Document",
+      "pdf_pages": 11,
+      "pdf_outline_sections": 13,
+      "word_tables": 7,
+      "word_embedded_images": 2,
+      "word_xml_valid": true,
+      "word_contents_links_valid": true
+    },
+    {
+      "document": "04_API_Documentation",
+      "pdf_pages": 14,
+      "pdf_outline_sections": 13,
+      "word_tables": 11,
+      "word_embedded_images": 0,
+      "word_xml_valid": true,
+      "word_contents_links_valid": true
+    },
+    {
+      "document": "05_Database_Documentation",
+      "pdf_pages": 13,
+      "pdf_outline_sections": 10,
+      "word_tables": 14,
+      "word_embedded_images": 1,
+      "word_xml_valid": true,
+      "word_contents_links_valid": true
+    },
+    {
+      "document": "06_Installation_and_Deployment_Guide",
+      "pdf_pages": 13,
+      "pdf_outline_sections": 14,
+      "word_tables": 7,
+      "word_embedded_images": 0,
+      "word_xml_valid": true,
+      "word_contents_links_valid": true
+    },
+    {
+      "document": "07_User_Manual",
+      "pdf_pages": 16,
+      "pdf_outline_sections": 16,
+      "word_tables": 6,
+      "word_embedded_images": 7,
+      "word_xml_valid": true,
+      "word_contents_links_valid": true
+    }
+  ],
+  "total_pdf_pages": 67,
+  "expected_document_count": 5,
+  "all_document_formats_present": true,
+  "markdown_image_links_checked": 10,
+  "json_files_parse": true,
+  "openapi_internal_references_resolve": true,
+  "actual_api_examples_match_enriched_schemas": true,
+  "pdf_text_within_margins": true,
+  "pdf_toc_destinations_checked": true,
+  "docx_validation": "Reopened with python-docx; XML parsed; embedded image/table counts and section links checked. Word pagination not independently rendered.",
+  "visual_review": "Cover, contents, representative tables/code and screenshot pages visually reviewed from rendered PDFs."
+}

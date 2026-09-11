@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-11",
+  "repository_commit": "73beef60490f97bfbd2902db152ff99a6484456d",
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 57,
+    "failed": 0,
+    "skipped": 0,
+    "result": "Passed during initial repository inspection"
+  },
+  "corpus_integrity": {
+    "source_files_verified": 110,
+    "unique_segments": 145600,
+    "unique_chunks": 26585,
+    "citation_spans_verified": 119774,
+    "chunk_coverage_verified": true,
+    "index_ids_verified": true
+  },
+  "health": {
+    "status": "ready",
+    "retrieval": "expanded",
+    "answer_contract": "clinical-v1",
+    "embedding_model": null,
+    "indexed_chunks": null,
+    "generation_configured": false,
+    "generation_provider": "openrouter",
+    "generation_model": null,
+    "reasoning_effort": null
+  },
+  "api_examples": "Captured from actual FastAPI TestClient requests with generation disabled",
+  "scope_exclusions": [
+    "No live hosted deployment inspection",
+    "No paid OpenRouter calls",
+    "No Ollama model download or embedding rebuild"
+  ],
+  "counts": {
+    "works": 15,
+    "segments": 145600,
+    "chunks": 26585,
+    "passages": 111195
+  },
+  "screenshots": {
+    "count": 9,
+    "source": "Unmodified repository frontend against a freshly regenerated full corpus; hosted generation unavailable by design",
+    "browser_errors": [],
+    "desktop_viewport": "1440x960",
+    "mobile_viewport": "390x844",
+    "details": "Seven full-viewport screenshots plus two direct element screenshots for readable preference/source details"
+  }
+}
