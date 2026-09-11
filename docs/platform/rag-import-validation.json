@@ -1,0 +1,32 @@
+{
+  "actual_verification_date": "2026-11-11",
+  "source_files_byte_verified": 94,
+  "rag_unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "working_directory": "apps/vaidya-ai",
+    "passed": 57,
+    "failed": 0,
+    "skipped": 0
+  },
+  "platform_structure_check": {
+    "command": "npm run verify",
+    "status": "fails_on_preexisting_missing_templates",
+    "missing_paths": [
+      "apps/customer-mobile/.env.example",
+      "apps/hospital-saas/.env.example"
+    ],
+    "baseline_commit": "678cba397143724d97a243547d6094035a58d00e",
+    "baseline_absence_confirmed_with_git_cat_file": true,
+    "rag_required_files_present": true
+  },
+  "credential_pattern_scan": {
+    "scope": "new and modified import text files",
+    "findings": 0,
+    "note": "Targeted common token/private-key patterns; not an external security audit"
+  },
+  "handover_integrity": {
+    "sha256_manifest_valid": true,
+    "zip_crc_check": "passed"
+  },
+  "timestamp_policy": "New import commits use requested 2026-09-11 author/committer timestamps. Actual transfer remains documented as 2026-11-11."
+}
