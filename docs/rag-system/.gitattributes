@@ -1,0 +1,2 @@
+# Keep documentation bytes and SHA-256 checks stable across Git checkouts.
+* -text
