@@ -1,0 +1,17 @@
+[
+  {"file": "carakasamhita.xml", "title": "Charaka Samhita", "requested": true},
+  {"file": "susrutasamhita.xml", "title": "Sushruta Samhita", "requested": true},
+  {"file": "astangahrdayasamhita.xml", "title": "Ashtanga Hridaya", "requested": true},
+  {"file": "astangasangraha.xml", "title": "Ashtanga Sangraha", "requested": true},
+  {"file": "bhelasamhita.xml", "title": "Bhela Samhita", "requested": true},
+  {"file": "cakradatta.xml", "title": "Chakradatta", "requested": true},
+  {"file": "cakrapanidatta-ayurvedadipika.xml", "title": "Chakrapani's Ayurvedadipika", "requested": true, "kind": "commentary"},
+  {"file": "arunadatta-sarvangasundara.xml", "title": "Arunadatta's Sarvangasundara (with base text and Ayurvedarasayana)", "requested": true},
+  {"file": "vagbhata-rasaratnasamuccaya-comms.xml", "title": "Rasa Ratna Samuccaya with commentaries", "requested": true},
+  {"file": "ayurvedasutram.xml", "title": "Ayurvedasutram", "requested": false},
+  {"file": "siddhayoga.xml", "title": "Siddhayoga", "requested": false},
+  {"file": "ugraditya-kalyanakaraka.xml", "title": "Ugraditya's Kalyanakaraka", "requested": false},
+  {"file": "govindabhagavatpada-rasahrdayatantra.xml", "title": "Rasahrdayatantra", "requested": false},
+  {"file": "nityanatha-rasaratnakara-rasayanakhanda.xml", "title": "Rasaratnakara, Rasayanakhanda", "requested": false},
+  {"file": "rasarnava.xml", "title": "Rasarnava", "requested": false}
+]
