@@ -1,0 +1,1240 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Vaidya AI reading room",
+    "version": "0.7.0",
+    "description": "Handover-enriched specification for repository commit 73beef60490f97bfbd2902db152ff99a6484456d. Request models are generated from FastAPI; response descriptions are maintained from source and actual retrieval examples. /docs and /redoc are disabled. Host/auth policy is deployment dependent."
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Home",
+        "operationId": "home__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful response; inspect business status fields where applicable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Optional authentication failure",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Missing/stale artifacts or handled service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Host rejected; framework can return plain text",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/works": {
+      "get": {
+        "summary": "Works",
+        "operationId": "works_works_get",
+        "responses": {
+          "200": {
+            "description": "Successful response; inspect business status fields where applicable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Work"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Optional authentication failure",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Missing/stale artifacts or handled service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Host rejected; framework can return plain text",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ask": {
+      "post": {
+        "summary": "Ask",
+        "operationId": "ask_ask_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AskRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response; inspect business status fields where applicable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reading"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Optional authentication failure",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Missing/stale artifacts or handled service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Host rejected; framework can return plain text",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Accepted background reading",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JobAccepted"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Job polling route"
+              },
+              "Retry-After": {
+                "schema": {
+                  "type": "string"
+                },
+                "example": "2"
+              }
+            }
+          },
+          "429": {
+            "description": "One-query process slot is occupied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "Prefer",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "respond-async",
+            "description": "Select background execution and job polling"
+          }
+        ]
+      }
+    },
+    "/jobs/{identity}": {
+      "get": {
+        "summary": "Job Status",
+        "operationId": "job_status_jobs__identity__get",
+        "parameters": [
+          {
+            "name": "identity",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Identity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response; inspect business status fields where applicable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JobState"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Optional authentication failure",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Missing/stale artifacts or handled service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Host rejected; framework can return plain text",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown, malformed, expired or evicted resource",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sources/{chunk_id}": {
+      "get": {
+        "summary": "Source",
+        "operationId": "source_sources__chunk_id__get",
+        "parameters": [
+          {
+            "name": "chunk_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Chunk Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response; inspect business status fields where applicable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Chunk"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Optional authentication failure",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Missing/stale artifacts or handled service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Host rejected; framework can return plain text",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown, malformed, expired or evicted resource",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/passages/{passage_id}": {
+      "get": {
+        "summary": "Passage",
+        "operationId": "passage_passages__passage_id__get",
+        "parameters": [
+          {
+            "name": "passage_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Passage Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response; inspect business status fields where applicable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StoredPassage"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Optional authentication failure",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Missing/stale artifacts or handled service error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Host rejected; framework can return plain text",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown, malformed, expired or evicted resource",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AskRequest": {
+        "properties": {
+          "question": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Question"
+          },
+          "answer_language": {
+            "type": "string",
+            "enum": [
+              "en",
+              "hi",
+              "sa"
+            ],
+            "title": "Answer Language",
+            "default": "en"
+          },
+          "filters": {
+            "$ref": "#/components/schemas/Filters"
+          },
+          "limit": {
+            "type": "integer",
+            "maximum": 10.0,
+            "minimum": 1.0,
+            "title": "Limit",
+            "default": 6
+          },
+          "generate": {
+            "type": "boolean",
+            "title": "Generate",
+            "default": true
+          },
+          "allow_general_knowledge": {
+            "type": "boolean",
+            "title": "Allow General Knowledge",
+            "default": true
+          },
+          "enhance": {
+            "type": "boolean",
+            "title": "Enhance",
+            "default": true
+          },
+          "conversation": {
+            "items": {
+              "$ref": "#/components/schemas/ConversationTurn"
+            },
+            "type": "array",
+            "maxItems": 4,
+            "title": "Conversation"
+          }
+        },
+        "type": "object",
+        "required": [
+          "question"
+        ],
+        "title": "AskRequest"
+      },
+      "ConversationTurn": {
+        "properties": {
+          "question": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Question"
+          },
+          "answer": {
+            "type": "string",
+            "maxLength": 2000,
+            "title": "Answer",
+            "default": ""
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "question"
+        ],
+        "title": "ConversationTurn"
+      },
+      "Filters": {
+        "properties": {
+          "work": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Work"
+          },
+          "kind": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "base-text",
+                  "commentary",
+                  "unknown"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Kind"
+          },
+          "language": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 20
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Language"
+          },
+          "chapter": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 30
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Chapter"
+          }
+        },
+        "type": "object",
+        "title": "Filters"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "StoredPassage": {
+        "type": "object",
+        "required": [
+          "passage_id",
+          "work",
+          "title",
+          "sanskrit",
+          "references"
+        ],
+        "properties": {
+          "passage_id": {
+            "type": "string"
+          },
+          "work": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "layer": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          },
+          "form": {
+            "type": "string"
+          },
+          "sanskrit": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "source_text_sha256": {
+            "type": "string"
+          },
+          "verse_label": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "sanskrit_devanagari": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "devanagari_method": {
+            "type": "string",
+            "enum": [
+              "original",
+              "iast_transliteration",
+              "unavailable"
+            ]
+          }
+        }
+      },
+      "Citation": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/StoredPassage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "citation_id": {
+                "type": "string"
+              },
+              "chunk_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "search_topics": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "match_percent": {
+                "type": "number"
+              },
+              "matched_terms": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "query_term_count": {
+                "type": "integer"
+              },
+              "match_label": {
+                "type": "string"
+              },
+              "match_method": {
+                "type": "string"
+              },
+              "retrieval_rank": {
+                "type": "integer"
+              },
+              "retrieval_method": {
+                "type": "string"
+              },
+              "quote_verified": {
+                "type": "boolean"
+              },
+              "translation": {
+                "$ref": "#/components/schemas/Translation"
+              }
+            }
+          }
+        ]
+      },
+      "Translation": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "en",
+              "hi",
+              "sa"
+            ]
+          },
+          "model": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "generated",
+              "unavailable"
+            ]
+          },
+          "review_status": {
+            "type": "string",
+            "enum": [
+              "not_expert_reviewed"
+            ]
+          }
+        }
+      },
+      "Claim": {
+        "type": "object",
+        "required": [
+          "text",
+          "evidence"
+        ],
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "heading": {
+            "type": "string"
+          },
+          "basis": {
+            "type": "string",
+            "enum": [
+              "textual",
+              "interpretation",
+              "general_knowledge",
+              "modern_context",
+              "clinical_priority",
+              "evidence_gap",
+              "follow_up"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "citation_id",
+                "quote"
+              ],
+              "properties": {
+                "citation_id": {
+                  "type": "string"
+                },
+                "quote": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Reading": {
+        "type": "object",
+        "description": "Response fields vary by generation branch. Additional source annotations are possible. This schema documents source-derived behavior; not an application response_model.",
+        "required": [
+          "question",
+          "answer_language",
+          "citations",
+          "claims",
+          "answer",
+          "evidence_status",
+          "generation_status",
+          "query_plan",
+          "timing"
+        ],
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "answer_language": {
+            "type": "string"
+          },
+          "generation_provider": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "validation_error": {
+            "type": "string"
+          },
+          "answer_source": {
+            "type": "string"
+          },
+          "citation_validation": {
+            "type": "string"
+          },
+          "question_type": {
+            "type": "string"
+          },
+          "answer": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reasoning_effort": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_status": {
+            "type": "string",
+            "enum": [
+              "retrieved",
+              "supported",
+              "general_knowledge",
+              "insufficient_evidence"
+            ]
+          },
+          "generation_status": {
+            "type": "string",
+            "enum": [
+              "disabled",
+              "not_configured",
+              "not_needed",
+              "error",
+              "rejected",
+              "complete"
+            ]
+          },
+          "citations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Citation"
+            }
+          },
+          "claims": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Claim"
+            }
+          },
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string",
+                  "enum": [
+                    "present",
+                    "absent",
+                    "unknown"
+                  ]
+                },
+                "question_quote": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "query_plan": {
+            "type": "object"
+          },
+          "timing": {
+            "type": "object",
+            "properties": {
+              "planning_seconds": {
+                "type": "number"
+              },
+              "retrieval_seconds": {
+                "type": "number"
+              },
+              "total_seconds": {
+                "type": "number"
+              }
+            }
+          },
+          "fallback_used": {
+            "type": "boolean"
+          }
+        }
+      },
+      "Health": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "ready",
+              "indexing_required"
+            ]
+          },
+          "retrieval": {
+            "type": "string"
+          },
+          "answer_contract": {
+            "type": "string"
+          },
+          "embedding_model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "indexed_chunks": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "generation_configured": {
+            "type": "boolean"
+          },
+          "generation_provider": {
+            "type": "string"
+          },
+          "generation_model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reasoning_effort": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      },
+      "Work": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "segments": {
+            "type": "integer"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "languages": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer"
+            }
+          },
+          "license_urls": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "Chunk": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "work": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "layer": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "JobAccepted": {
+        "type": "object",
+        "required": [
+          "job_id",
+          "status"
+        ],
+        "properties": {
+          "job_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{32}$"
+          },
+          "status": {
+            "const": "running"
+          }
+        }
+      },
+      "JobState": {
+        "oneOf": [
+          {
+            "type": "object",
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "status": {
+                "const": "running"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "required": [
+              "status",
+              "result"
+            ],
+            "properties": {
+              "status": {
+                "const": "complete"
+              },
+              "result": {
+                "$ref": "#/components/schemas/Reading"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "required": [
+              "status",
+              "detail"
+            ],
+            "properties": {
+              "status": {
+                "const": "error"
+              },
+              "detail": {
+                "type": "string"
+              }
+            }
+          }
+        ]
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "detail": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "OptionalBasic": {
+        "type": "http",
+        "scheme": "basic",
+        "description": "Enabled only when VEDAI_ACCESS_PASSWORD is nonempty. Shared app credential; not OpenRouter key."
+      }
+    }
+  },
+  "security": [
+    {},
+    {
+      "OptionalBasic": []
+    }
+  ],
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8765",
+      "description": "Explicit example port; CLI default without --port is 8000"
+    }
+  ],
+  "x-handover": {
+    "source_commit": "73beef60490f97bfbd2902db152ff99a6484456d",
+    "prepared": "2026-11-11",
+    "generated_base": "openapi.generated.json",
+    "response_models": "Documented additions; application has no declared route response_models"
+  }
+}
