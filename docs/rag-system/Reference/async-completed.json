@@ -1,0 +1,443 @@
+{
+  "status": "complete",
+  "result": {
+    "question": "What are the three doshas in Ashtanga Hridaya?",
+    "answer_language": "en",
+    "citations": [
+      {
+        "passage_id": "f69983d71353cf69c46d390c",
+        "work": "astangahrdayasamhita",
+        "title": "Ashtanga Hridaya",
+        "kind": "base-text",
+        "layer": "base-text",
+        "language": "sa-Latn",
+        "sections": [
+          {
+            "type": "part",
+            "subtype": null,
+            "n": "1",
+            "xml_id": null,
+            "xpath": "/TEI/text[1]/body[1]/div[1]",
+            "heading": "Part 1 | Sūtrasthānam"
+          },
+          {
+            "type": "chapter",
+            "subtype": null,
+            "n": "1",
+            "xml_id": null,
+            "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]",
+            "heading": "Chapter 1 | Athāyuṣkāmīyādhyāyaḥ prathamaḥ"
+          }
+        ],
+        "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astangahrdayasamhita.xml",
+        "form": "shloka",
+        "verse_label": "Ah.1.1.006",
+        "sanskrit": "aṣṭāv aṅgāni tasyāhuś cikitsā yeṣu saṃśritā | vāyuḥ pittaṃ kaphaś ceti trayo doṣāḥ samāsataḥ || 6 ||",
+        "references": [
+          {
+            "segment_id": "e7e76ad1f0103e8eb763dd92",
+            "xml_ids": [
+              "Ah.1.1.006a",
+              "Ah.1.1.006c"
+            ],
+            "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[6]",
+            "labels": [
+              "Ah.1.1.006a",
+              "Ah.1.1.006c"
+            ],
+            "page": "1",
+            "start": 0,
+            "end": 100
+          }
+        ],
+        "source_text_sha256": "48b6898936605e6fb9eeaacfc474c0f29c5f080767bc386ae8cb1f0865bc1032",
+        "chunk_id": "170e63af069f2d76bea37e9b",
+        "retrieval_rank": 2,
+        "match_percent": 50.0,
+        "match_label": "Query-term match",
+        "matched_terms": [
+          "dosa",
+          "kapha",
+          "pitta",
+          "trayo",
+          "vayu"
+        ],
+        "query_term_count": 10,
+        "match_method": "Percent of unique script-normalized, vocabulary-expanded query terms appearing in this passage. Not answer confidence or factual accuracy.",
+        "citation_id": "S1",
+        "search_topics": [
+          "Your question"
+        ],
+        "sanskrit_devanagari": "अष्टाव् अङ्गानि तस्याहुश् चिकित्सा येषु संश्रिता । वायुः पित्तं कफश् चेति त्रयो दोषाः समासतः ॥ ६ ॥",
+        "devanagari_method": "iast_transliteration"
+      },
+      {
+        "passage_id": "2d2b014a764dd353f9e83079",
+        "work": "astangahrdayasamhita",
+        "title": "Ashtanga Hridaya",
+        "kind": "base-text",
+        "layer": "base-text",
+        "language": "sa-Latn",
+        "sections": [
+          {
+            "type": "part",
+            "subtype": null,
+            "n": "1",
+            "xml_id": null,
+            "xpath": "/TEI/text[1]/body[1]/div[1]",
+            "heading": "Part 1 | Sūtrasthānam"
+          },
+          {
+            "type": "chapter",
+            "subtype": null,
+            "n": "6",
+            "xml_id": null,
+            "xpath": "/TEI/text[1]/body[1]/div[1]/div[6]",
+            "heading": "Chapter 6 | Athānnasvarūpavijñānīyādhyāyaḥ ṣaṣṭhaḥ"
+          }
+        ],
+        "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astangahrdayasamhita.xml",
+        "form": "shloka",
+        "verse_label": "Ah.1.6.105",
+        "sanskrit": "vāta-śleṣma-haraṃ śuṣkaṃ sarvam āmaṃ tu doṣalam | kaṭūṣṇo vāta-kapha-hā piṇḍāluḥ pitta-vardhanaḥ || 105 ||",
+        "references": [
+          {
+            "segment_id": "3770e45d5cc5b2ca291ceb71",
+            "xml_ids": [
+              "Ah.1.6.105a",
+              "Ah.1.6.105c"
+            ],
+            "xpath": "/TEI/text[1]/body[1]/div[1]/div[6]/lg[113]",
+            "labels": [
+              "Ah.1.6.105a",
+              "Ah.1.6.105c"
+            ],
+            "page": "40",
+            "start": 0,
+            "end": 106
+          }
+        ],
+        "source_text_sha256": "bc25e5c46c77071b0d68183ffafb58665e81b3272e5b8312229d2fd6540aa3e1",
+        "chunk_id": "83e7e119c89c30180bf45e19",
+        "retrieval_rank": 3,
+        "match_percent": 40.0,
+        "match_label": "Query-term match",
+        "matched_terms": [
+          "dosa",
+          "kapha",
+          "pitta",
+          "vata"
+        ],
+        "query_term_count": 10,
+        "match_method": "Percent of unique script-normalized, vocabulary-expanded query terms appearing in this passage. Not answer confidence or factual accuracy.",
+        "citation_id": "S2",
+        "search_topics": [
+          "Your question"
+        ],
+        "sanskrit_devanagari": "वात-श्लेष्म-हरं शुष्कं सर्वम् आमं तु दोषलम् । कटूष्णो वात-कफ-हा पिण्डालुः पित्त-वर्धनः ॥ १०५ ॥",
+        "devanagari_method": "iast_transliteration"
+      },
+      {
+        "passage_id": "917e3f9fffafad14be861cef",
+        "work": "astangahrdayasamhita",
+        "title": "Ashtanga Hridaya",
+        "kind": "base-text",
+        "layer": "base-text",
+        "language": "sa-Latn",
+        "sections": [
+          {
+            "type": "part",
+            "subtype": null,
+            "n": "1",
+            "xml_id": null,
+            "xpath": "/TEI/text[1]/body[1]/div[1]",
+            "heading": "Part 1 | Sūtrasthānam"
+          },
+          {
+            "type": "chapter",
+            "subtype": null,
+            "n": "6",
+            "xml_id": null,
+            "xpath": "/TEI/text[1]/body[1]/div[1]/div[6]",
+            "heading": "Chapter 6 | Athānnasvarūpavijñānīyādhyāyaḥ ṣaṣṭhaḥ"
+          }
+        ],
+        "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astangahrdayasamhita.xml",
+        "form": "shloka",
+        "verse_label": "Ah.1.6.112",
+        "sanskrit": "palāṇḍus tad-guṇa-nyūnaḥ śleṣmalo nāti-pittalaḥ | kapha-vātārśasāṃ pathyaḥ svede 'bhyavahṛtau tathā || 112 ||",
+        "references": [
+          {
+            "segment_id": "5cef40702d77e91966dfdbb2",
+            "xml_ids": [
+              "Ah.1.6.112a",
+              "Ah.1.6.112c"
+            ],
+            "xpath": "/TEI/text[1]/body[1]/div[1]/div[6]/lg[120]",
+            "labels": [
+              "Ah.1.6.112a",
+              "Ah.1.6.112c"
+            ],
+            "page": "41",
+            "start": 0,
+            "end": 109
+          }
+        ],
+        "source_text_sha256": "82a0eea8d109403d5151f28d9b59717bf10fa9ce57c8d3b33ab66cee588fee67",
+        "chunk_id": "e56d3cabe0bccbf6dedeecf9",
+        "retrieval_rank": 1,
+        "match_percent": 30.0,
+        "match_label": "Query-term match",
+        "matched_terms": [
+          "kapha",
+          "pitta",
+          "vata"
+        ],
+        "query_term_count": 10,
+        "match_method": "Percent of unique script-normalized, vocabulary-expanded query terms appearing in this passage. Not answer confidence or factual accuracy.",
+        "citation_id": "S3",
+        "search_topics": [
+          "Your question"
+        ],
+        "sanskrit_devanagari": "पलाण्डुस् तद्-गुण-न्यूनः श्लेष्मलो नाति-पित्तलः । कफ-वातार्शसां पथ्यः स्वेदे ऽभ्यवहृतौ तथा ॥ ११२ ॥",
+        "devanagari_method": "iast_transliteration"
+      },
+      {
+        "passage_id": "8adc072a67ccee6925b8fa02",
+        "work": "astangahrdayasamhita",
+        "title": "Ashtanga Hridaya",
+        "kind": "base-text",
+        "layer": "base-text",
+        "language": "sa-Latn",
+        "sections": [
+          {
+            "type": "part",
+            "subtype": null,
+            "n": "1",
+            "xml_id": null,
+            "xpath": "/TEI/text[1]/body[1]/div[1]",
+            "heading": "Part 1 | Sūtrasthānam"
+          },
+          {
+            "type": "chapter",
+            "subtype": null,
+            "n": "6",
+            "xml_id": null,
+            "xpath": "/TEI/text[1]/body[1]/div[1]/div[6]",
+            "heading": "Chapter 6 | Athānnasvarūpavijñānīyādhyāyaḥ ṣaṣṭhaḥ"
+          }
+        ],
+        "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astangahrdayasamhita.xml",
+        "form": "shloka",
+        "verse_label": "Ah.1.6.099",
+        "sanskrit": "śatāvary-aṅkurās tiktā vṛṣyā doṣa-trayāpahāḥ | rūkṣo vaṃśa-karīras tu vidāhī vāta-pittalaḥ || 99 ||",
+        "references": [
+          {
+            "segment_id": "fe757cd64b55fdfa2e87f0be",
+            "xml_ids": [
+              "Ah.1.6.099a",
+              "Ah.1.6.099c"
+            ],
+            "xpath": "/TEI/text[1]/body[1]/div[1]/div[6]/lg[107]",
+            "labels": [
+              "Ah.1.6.099a",
+              "Ah.1.6.099c"
+            ],
+            "page": "40",
+            "start": 0,
+            "end": 99
+          }
+        ],
+        "source_text_sha256": "2c7fcfb1f2cc0b7bf62a4f9b044dee9b861aecb3bd975b75ae1916f9ae2e399b",
+        "chunk_id": "83e7e119c89c30180bf45e19",
+        "retrieval_rank": 3,
+        "match_percent": 40.0,
+        "match_label": "Query-term match",
+        "matched_terms": [
+          "dosa",
+          "pitta",
+          "traya",
+          "vata"
+        ],
+        "query_term_count": 10,
+        "match_method": "Percent of unique script-normalized, vocabulary-expanded query terms appearing in this passage. Not answer confidence or factual accuracy.",
+        "citation_id": "S4",
+        "search_topics": [
+          "Your question"
+        ],
+        "sanskrit_devanagari": "शतावर्य्-अङ्कुरास् तिक्ता वृष्या दोष-त्रयापहाः । रूक्षो वंश-करीरस् तु विदाही वात-पित्तलः ॥ ९९ ॥",
+        "devanagari_method": "iast_transliteration"
+      },
+      {
+        "passage_id": "9d450e818e9e767576ad990e",
+        "work": "astangahrdayasamhita",
+        "title": "Ashtanga Hridaya",
+        "kind": "base-text",
+        "layer": "base-text",
+        "language": "sa-Latn",
+        "sections": [
+          {
+            "type": "part",
+            "subtype": null,
+            "n": "1",
+            "xml_id": null,
+            "xpath": "/TEI/text[1]/body[1]/div[1]",
+            "heading": "Part 1 | Sūtrasthānam"
+          },
+          {
+            "type": "chapter",
+            "subtype": null,
+            "n": "6",
+            "xml_id": null,
+            "xpath": "/TEI/text[1]/body[1]/div[1]/div[6]",
+            "heading": "Chapter 6 | Athānnasvarūpavijñānīyādhyāyaḥ ṣaṣṭhaḥ"
+          }
+        ],
+        "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astangahrdayasamhita.xml",
+        "form": "shloka",
+        "verse_label": "Ah.1.6.118",
+        "sanskrit": "pittā-virodhi nāty-uṣṇam amlaṃ vāta-kaphāpaham | sarvaṃ hṛdyaṃ laghu snigdhaṃ grāhi rocana-dīpanam || 118 ||",
+        "references": [
+          {
+            "segment_id": "f97f32f48d17cae4ab13bd2b",
+            "xml_ids": [
+              "Ah.1.6.118a",
+              "Ah.1.6.118c"
+            ],
+            "xpath": "/TEI/text[1]/body[1]/div[1]/div[6]/lg[126]",
+            "labels": [
+              "Ah.1.6.118a",
+              "Ah.1.6.118c"
+            ],
+            "page": "42",
+            "start": 0,
+            "end": 108
+          }
+        ],
+        "source_text_sha256": "6519adcc5a31b5a2cfc17fb0df608fa0fea53beeac91864d460707044f5de7eb",
+        "chunk_id": "e56d3cabe0bccbf6dedeecf9",
+        "retrieval_rank": 1,
+        "match_percent": 30.0,
+        "match_label": "Query-term match",
+        "matched_terms": [
+          "kapha",
+          "pitta",
+          "vata"
+        ],
+        "query_term_count": 10,
+        "match_method": "Percent of unique script-normalized, vocabulary-expanded query terms appearing in this passage. Not answer confidence or factual accuracy.",
+        "citation_id": "S5",
+        "search_topics": [
+          "Your question"
+        ],
+        "sanskrit_devanagari": "पित्ता-विरोधि नात्य्-उष्णम् अम्लं वात-कफापहम् । सर्वं हृद्यं लघु स्निग्धं ग्राहि रोचन-दीपनम् ॥ ११८ ॥",
+        "devanagari_method": "iast_transliteration"
+      },
+      {
+        "passage_id": "94d3a09284eb49abb867c008",
+        "work": "astangahrdayasamhita",
+        "title": "Ashtanga Hridaya",
+        "kind": "base-text",
+        "layer": "base-text",
+        "language": "sa-Latn",
+        "sections": [
+          {
+            "type": "part",
+            "subtype": null,
+            "n": "1",
+            "xml_id": null,
+            "xpath": "/TEI/text[1]/body[1]/div[1]",
+            "heading": "Part 1 | Sūtrasthānam"
+          },
+          {
+            "type": "chapter",
+            "subtype": null,
+            "n": "6",
+            "xml_id": null,
+            "xpath": "/TEI/text[1]/body[1]/div[1]/div[6]",
+            "heading": "Chapter 6 | Athānnasvarūpavijñānīyādhyāyaḥ ṣaṣṭhaḥ"
+          }
+        ],
+        "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astangahrdayasamhita.xml",
+        "form": "shloka",
+        "verse_label": "Ah.1.6.123",
+        "sanskrit": "śakṛn-mūtra-vibandha-ghnaṃ keśyaṃ medhyaṃ rasāyanam | vātāmādy uṣṇa-vīryaṃ tu kapha-pitta-karaṃ saram || 123 ||",
+        "references": [
+          {
+            "segment_id": "2a1ae3d39214b4cb0d5df7fa",
+            "xml_ids": [
+              "Ah.1.6.123a",
+              "Ah.1.6.123c"
+            ],
+            "xpath": "/TEI/text[1]/body[1]/div[1]/div[6]/lg[131]",
+            "labels": [
+              "Ah.1.6.123a",
+              "Ah.1.6.123c"
+            ],
+            "page": "42",
+            "start": 0,
+            "end": 111
+          }
+        ],
+        "source_text_sha256": "6eefc7e60e688c1d3e599ff27ecdffe10ae7a637bc5e456ecbc0428540193de7",
+        "chunk_id": "e56d3cabe0bccbf6dedeecf9",
+        "retrieval_rank": 1,
+        "match_percent": 30.0,
+        "match_label": "Query-term match",
+        "matched_terms": [
+          "kapha",
+          "pitta",
+          "vata"
+        ],
+        "query_term_count": 10,
+        "match_method": "Percent of unique script-normalized, vocabulary-expanded query terms appearing in this passage. Not answer confidence or factual accuracy.",
+        "citation_id": "S6",
+        "search_topics": [
+          "Your question"
+        ],
+        "sanskrit_devanagari": "शकृन्-मूत्र-विबन्ध-घ्नं केश्यं मेध्यं रसायनम् । वातामाद्य् उष्ण-वीर्यं तु कफ-पित्त-करं सरम् ॥ १२३ ॥",
+        "devanagari_method": "iast_transliteration"
+      }
+    ],
+    "claims": [],
+    "answer": null,
+    "generation_provider": "openrouter",
+    "model": null,
+    "reasoning_effort": null,
+    "evidence_status": "retrieved",
+    "generation_status": "disabled",
+    "query_plan": {
+      "status": "local",
+      "queries": [
+        {
+          "id": "Q1",
+          "topic": "Your question",
+          "terms": [
+            "dosa",
+            "doshas",
+            "kapha",
+            "pitta",
+            "three",
+            "traya",
+            "trayo",
+            "tridha",
+            "vata",
+            "vayu"
+          ],
+          "query": "dosa doshas kapha pitta three traya trayo tridha vata vayu",
+          "retrieved_chunks": 6,
+          "source_passages": 40,
+          "evidence_passages": 40,
+          "cited_passages": 0
+        }
+      ],
+      "note": "Search interpretations are tentative; they are not diagnoses or source evidence.",
+      "source_guides": []
+    },
+    "timing": {
+      "planning_seconds": 0.009,
+      "retrieval_seconds": 0.47,
+      "total_seconds": 0.483
+    }
+  }
+}

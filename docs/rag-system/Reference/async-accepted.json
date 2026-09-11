@@ -1,0 +1,11 @@
+{
+  "status_code": 202,
+  "headers": {
+    "Location": "/jobs/0a71910059c84293eea365ead5ea176e",
+    "Retry-After": "2"
+  },
+  "body": {
+    "job_id": "0a71910059c84293eea365ead5ea176e",
+    "status": "running"
+  }
+}

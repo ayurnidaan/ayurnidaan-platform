@@ -1,0 +1,270 @@
+{
+  "id": "170e63af069f2d76bea37e9b",
+  "work": "astangahrdayasamhita",
+  "title": "Ashtanga Hridaya",
+  "kind": "base-text",
+  "layer": "base-text",
+  "language": "sa-Latn",
+  "sections": [
+    {
+      "type": "part",
+      "subtype": null,
+      "n": "1",
+      "xml_id": null,
+      "xpath": "/TEI/text[1]/body[1]/div[1]",
+      "heading": "Part 1 | Sūtrasthānam"
+    },
+    {
+      "type": "chapter",
+      "subtype": null,
+      "n": "1",
+      "xml_id": null,
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]",
+      "heading": "Chapter 1 | Athāyuṣkāmīyādhyāyaḥ prathamaḥ"
+    }
+  ],
+  "source_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astangahrdayasamhita.xml",
+  "text": "rāgādi-rogān satatānuṣaktān a-śeṣa-kāya-prasṛtān a-śeṣān | autsukya-mohā-rati-dāñ jaghāna yo '-pūrva-vaidyāya namo 'stu tasmai || 1 ||\nāyuḥ-kāmayamānena dharmārtha-sukha-sādhanam | āyur-vedopadeśeṣu vidheyaḥ param ādaraḥ || 2 ||\nbrahmā smṛtvāyuṣo vedaṃ prajāpatim ajigrahat | so 'śvinau tau sahasrākṣaṃ so 'tri-putrādikān munīn || 3 ||\nte 'gniveśādikāṃs te tu pṛthak tantrāṇi tenire | tebhyo 'ti-viprakīrṇebhyaḥ prāyaḥ sāra-taroccayaḥ || 4 ||\nkriyate 'ṣṭāṅga-hṛdayaṃ nāti-saṅkṣepa-vistaram | kāya-bāla-grahordhvāṅga-śalya-daṃṣṭrā-jarā-vṛṣān || 5 ||\naṣṭāv aṅgāni tasyāhuś cikitsā yeṣu saṃśritā | vāyuḥ pittaṃ kaphaś ceti trayo doṣāḥ samāsataḥ || 6 ||\nvikṛtā-vikṛtā dehaṃ ghnanti te vartayanti ca | te vyāpino 'pi hṛn-nābhyor adho-madhyordhva-saṃśrayāḥ || 7 ||\nvayo-'ho-rātri-bhuktānāṃ te 'nta-madhyādi-gāḥ kramāt | tair bhaved viṣamas tīkṣṇo mandaś cāgniḥ samaiḥ samaḥ || 8 ||\nkoṣṭhaḥ krūro mṛdur madhyo madhyaḥ syāt taiḥ samair api | śukrārtava-sthair janmādau viṣeṇeva viṣa-krimeḥ || 9 ||\ntaiś ca tisraḥ prakṛtayo hīna-madhyottamāḥ pṛthak | sama-dhātuḥ samastāsu śreṣṭhā nindyā dvi-doṣa-jāḥ || 10 ||\ntatra rūkṣo laghuḥ śītaḥ kharaḥ sūkṣmaś calo 'nilaḥ | pittaṃ sa-sneha-tīkṣṇoṣṇaṃ laghu visraṃ saraṃ dravam || 11 ||\nsnigdhaḥ śīto gurur mandaḥ ślakṣṇo mṛtsnaḥ sthiraḥ kaphaḥ | saṃsargaḥ sannipātaś ca tad-dvi-tri-kṣaya-kopataḥ || 12 ||\nrasāsṛṅ-māṃsa-medo-'sthi-majja-śukrāṇi dhātavaḥ | sapta dūṣyā malā mūtra-śakṛt-svedādayo 'pi ca || 13 ||\nvṛddhiḥ samānaiḥ sarveṣāṃ viparītair viparyayaḥ | rasāḥ svādv-amla-lavaṇa-tiktoṣaṇa-kaṣāyakāḥ || 14 ||\nṣaḍ dravyam āśritās te ca yathā-pūrvaṃ balāvahāḥ | tatrādyā mārutaṃ ghnanti trayas tiktādayaḥ kapham || 15 ||\nkaṣāya-tikta-madhurāḥ pittam anye tu kurvate | śamanaṃ kopanaṃ svastha-hitaṃ dravyam iti tri-dhā || 16 ||",
+  "references": [
+    {
+      "segment_id": "060bcdfd6441e0beed1c6d6e",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[1]",
+      "xml_ids": [
+        "Ah.1.1.001a",
+        "Ah.1.1.001c"
+      ],
+      "labels": [
+        "Ah.1.1.001a",
+        "Ah.1.1.001c"
+      ],
+      "page": "1",
+      "start": 0,
+      "end": 134
+    },
+    {
+      "segment_id": "df72e555db34e56c16f6a0f3",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[2]",
+      "xml_ids": [
+        "Ah.1.1.002a",
+        "Ah.1.1.002c"
+      ],
+      "labels": [
+        "Ah.1.1.002a",
+        "Ah.1.1.002c"
+      ],
+      "page": "1",
+      "start": 0,
+      "end": 93
+    },
+    {
+      "segment_id": "00158785361674ee7b47ac97",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[3]",
+      "xml_ids": [
+        "Ah.1.1.003a",
+        "Ah.1.1.003c"
+      ],
+      "labels": [
+        "Ah.1.1.003a",
+        "Ah.1.1.003c"
+      ],
+      "page": "1",
+      "start": 0,
+      "end": 106
+    },
+    {
+      "segment_id": "a92f589e0f4e2c36f026c924",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[4]",
+      "xml_ids": [
+        "Ah.1.1.004a",
+        "Ah.1.1.004c"
+      ],
+      "labels": [
+        "Ah.1.1.004a",
+        "Ah.1.1.004c"
+      ],
+      "page": "1",
+      "start": 0,
+      "end": 106
+    },
+    {
+      "segment_id": "b4e02808e0be3e1abbdec491",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[5]",
+      "xml_ids": [
+        "Ah.1.1.005a",
+        "Ah.1.1.005c"
+      ],
+      "labels": [
+        "Ah.1.1.005a",
+        "Ah.1.1.005c"
+      ],
+      "page": "1",
+      "start": 0,
+      "end": 105
+    },
+    {
+      "segment_id": "e7e76ad1f0103e8eb763dd92",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[6]",
+      "xml_ids": [
+        "Ah.1.1.006a",
+        "Ah.1.1.006c"
+      ],
+      "labels": [
+        "Ah.1.1.006a",
+        "Ah.1.1.006c"
+      ],
+      "page": "1",
+      "start": 0,
+      "end": 100
+    },
+    {
+      "segment_id": "d83aa5fd0755c01f43da8050",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[7]",
+      "xml_ids": [
+        "Ah.1.1.007a",
+        "Ah.1.1.007c"
+      ],
+      "labels": [
+        "Ah.1.1.007a",
+        "Ah.1.1.007c"
+      ],
+      "page": "1",
+      "start": 0,
+      "end": 108
+    },
+    {
+      "segment_id": "8cb75af761168696cc3c0533",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[8]",
+      "xml_ids": [
+        "Ah.1.1.008a",
+        "Ah.1.1.008c"
+      ],
+      "labels": [
+        "Ah.1.1.008a",
+        "Ah.1.1.008c"
+      ],
+      "page": "1",
+      "start": 0,
+      "end": 116
+    },
+    {
+      "segment_id": "2b1cf97707ddf43fc914389c",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[9]",
+      "xml_ids": [
+        "Ah.1.1.009a",
+        "Ah.1.1.009c"
+      ],
+      "labels": [
+        "Ah.1.1.009a",
+        "Ah.1.1.009c"
+      ],
+      "page": "1",
+      "start": 0,
+      "end": 113
+    },
+    {
+      "segment_id": "91d6f0b96db04f82572b4ff5",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[10]",
+      "xml_ids": [
+        "Ah.1.1.010a",
+        "Ah.1.1.010c"
+      ],
+      "labels": [
+        "Ah.1.1.010a",
+        "Ah.1.1.010c"
+      ],
+      "page": "1",
+      "start": 0,
+      "end": 110
+    },
+    {
+      "segment_id": "6e06ee7caddaf3dbf7bea401",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[11]",
+      "xml_ids": [
+        "Ah.1.1.011a",
+        "Ah.1.1.011c"
+      ],
+      "labels": [
+        "Ah.1.1.011a",
+        "Ah.1.1.011c"
+      ],
+      "page": "2",
+      "start": 0,
+      "end": 115
+    },
+    {
+      "segment_id": "147304c97859979bc7c9ba13",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[12]",
+      "xml_ids": [
+        "Ah.1.1.012a",
+        "Ah.1.1.012c"
+      ],
+      "labels": [
+        "Ah.1.1.012a",
+        "Ah.1.1.012c"
+      ],
+      "page": "2",
+      "start": 0,
+      "end": 118
+    },
+    {
+      "segment_id": "9d882dbf18cd2049e40d28e8",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[13]",
+      "xml_ids": [
+        "Ah.1.1.013a",
+        "Ah.1.1.013c"
+      ],
+      "labels": [
+        "Ah.1.1.013a",
+        "Ah.1.1.013c"
+      ],
+      "page": "2",
+      "start": 0,
+      "end": 104
+    },
+    {
+      "segment_id": "22a72b99bde025fe65ea2f9b",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[14]",
+      "xml_ids": [
+        "Ah.1.1.014a",
+        "Ah.1.1.014c"
+      ],
+      "labels": [
+        "Ah.1.1.014a",
+        "Ah.1.1.014c"
+      ],
+      "page": "2",
+      "start": 0,
+      "end": 102
+    },
+    {
+      "segment_id": "1cb0f0ea5501d7bf05a5c68e",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[15]",
+      "xml_ids": [
+        "Ah.1.1.015a",
+        "Ah.1.1.015c"
+      ],
+      "labels": [
+        "Ah.1.1.015a",
+        "Ah.1.1.015c"
+      ],
+      "page": "2",
+      "start": 0,
+      "end": 109
+    },
+    {
+      "segment_id": "cebe5a9d917ac9bbac99e7f4",
+      "xpath": "/TEI/text[1]/body[1]/div[1]/div[1]/lg[16]",
+      "xml_ids": [
+        "Ah.1.1.016a",
+        "Ah.1.1.016c"
+      ],
+      "labels": [
+        "Ah.1.1.016a",
+        "Ah.1.1.016c"
+      ],
+      "page": "2",
+      "start": 0,
+      "end": 105
+    }
+  ]
+}
