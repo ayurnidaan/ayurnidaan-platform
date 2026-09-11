@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-09-22T08:37:38.529507+00:00",
+  "live": true,
+  "review_status": "physician_review_pending",
+  "scope": "Mechanical source/structure checks only; not semantic or clinical validation.",
+  "cases": [
+    {
+      "id": "reference-06",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "procedure",
+      "passages": 40,
+      "citations": 4,
+      "seconds": 67.54
+    }
+  ]
+}

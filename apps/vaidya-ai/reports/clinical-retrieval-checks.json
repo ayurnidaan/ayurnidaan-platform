@@ -1,0 +1,308 @@
+{
+  "created_at": "2026-09-22T08:45:10.908526+00:00",
+  "live": false,
+  "review_status": "physician_review_pending",
+  "scope": "Mechanical source/structure checks only; not semantic or clinical validation.",
+  "cases": [
+    {
+      "id": "deep-01",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 11,
+      "citations": 11,
+      "seconds": 0.39
+    },
+    {
+      "id": "deep-02",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 15,
+      "citations": 15,
+      "seconds": 0.3
+    },
+    {
+      "id": "deep-03",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 6,
+      "citations": 6,
+      "seconds": 0.33
+    },
+    {
+      "id": "deep-04",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 32,
+      "citations": 32,
+      "seconds": 0.44
+    },
+    {
+      "id": "deep-05",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 32,
+      "citations": 32,
+      "seconds": 0.4
+    },
+    {
+      "id": "deep-06",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 26,
+      "citations": 26,
+      "seconds": 0.33
+    },
+    {
+      "id": "deep-07",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 32,
+      "citations": 32,
+      "seconds": 0.31
+    },
+    {
+      "id": "deep-08",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 40,
+      "citations": 40,
+      "seconds": 1.14
+    },
+    {
+      "id": "deep-09",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 23,
+      "citations": 23,
+      "seconds": 0.18
+    },
+    {
+      "id": "deep-10",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 40,
+      "citations": 40,
+      "seconds": 0.73
+    },
+    {
+      "id": "reference-01",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 26,
+      "citations": 26,
+      "seconds": 0.5
+    },
+    {
+      "id": "reference-02",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 16,
+      "citations": 16,
+      "seconds": 0.22
+    },
+    {
+      "id": "reference-03",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 40,
+      "citations": 40,
+      "seconds": 0.66
+    },
+    {
+      "id": "reference-04",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 24,
+      "citations": 24,
+      "seconds": 0.28
+    },
+    {
+      "id": "reference-05",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 29,
+      "citations": 29,
+      "seconds": 0.34
+    },
+    {
+      "id": "reference-06",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 40,
+      "citations": 40,
+      "seconds": 0.44
+    },
+    {
+      "id": "reference-07",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 39,
+      "citations": 39,
+      "seconds": 0.49
+    },
+    {
+      "id": "reference-08",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 34,
+      "citations": 34,
+      "seconds": 0.57
+    },
+    {
+      "id": "reference-09",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 11,
+      "citations": 11,
+      "seconds": 0.21
+    },
+    {
+      "id": "reference-10",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true
+      },
+      "passed": true,
+      "planning": "local",
+      "generation": "disabled",
+      "validation_error": null,
+      "question_type": null,
+      "passages": 29,
+      "citations": 29,
+      "seconds": 0.39
+    }
+  ]
+}

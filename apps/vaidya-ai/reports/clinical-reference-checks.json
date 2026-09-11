@@ -1,0 +1,197 @@
+{
+  "created_at": "2026-09-22T08:24:12.094337+00:00",
+  "live": true,
+  "review_status": "physician_review_pending",
+  "scope": "Mechanical source/structure checks only; not semantic or clinical validation.",
+  "cases": [
+    {
+      "id": "reference-01",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "substance",
+      "passages": 40,
+      "citations": 8,
+      "seconds": 102.3
+    },
+    {
+      "id": "reference-02",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "formulation",
+      "passages": 40,
+      "citations": 6,
+      "seconds": 101.7
+    },
+    {
+      "id": "reference-03",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "diet",
+      "passages": 40,
+      "citations": 7,
+      "seconds": 113.28
+    },
+    {
+      "id": "reference-04",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "disease",
+      "passages": 40,
+      "citations": 15,
+      "seconds": 125.45
+    },
+    {
+      "id": "reference-05",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "disease",
+      "passages": 40,
+      "citations": 10,
+      "seconds": 100.75
+    },
+    {
+      "id": "reference-06",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": false,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": false,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "procedure",
+      "passages": 40,
+      "citations": 7,
+      "seconds": 81.69
+    },
+    {
+      "id": "reference-07",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "procedure",
+      "passages": 40,
+      "citations": 15,
+      "seconds": 165.92
+    },
+    {
+      "id": "reference-08",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "examination",
+      "passages": 40,
+      "citations": 9,
+      "seconds": 123.7
+    },
+    {
+      "id": "reference-10",
+      "checks": {
+        "has_retrieved_passages": true,
+        "source_text_and_locators_exact": true,
+        "generation_complete": true,
+        "question_type": true,
+        "priority_first": true,
+        "case_findings": true,
+        "context_not_cited": true,
+        "translations_present": true
+      },
+      "passed": true,
+      "planning": "enhanced",
+      "generation": "complete",
+      "validation_error": null,
+      "question_type": "patient_case",
+      "passages": 40,
+      "citations": 7,
+      "seconds": 141.93
+    }
+  ]
+}
