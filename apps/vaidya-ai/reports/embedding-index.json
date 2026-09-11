@@ -1,0 +1,11 @@
+{
+  "model": "embeddinggemma",
+  "model_digest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+  "prompt_version": "embeddinggemma-retrieval-v1",
+  "source_sha256": "1f7addc351699ad84c01f483895e291877ec1bd4fd1cc104816af9508f361182",
+  "complete": true,
+  "chunks": 26585,
+  "dimensions": 768,
+  "newly_embedded": 26585,
+  "seconds": 1088.89
+}
