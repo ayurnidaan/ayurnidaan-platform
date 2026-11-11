@@ -1,0 +1,45 @@
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+web-build/
+.expo/
+.vercel/
+coverage/
+test-results/
+playwright-report/
+*.tsbuildinfo
+*.log
+
+# Local runtime data
+data/
+uploads/
+backups/
+*.sqlite
+*.sqlite-*
+
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p8
+*.p12
+*.jks
+*.mobileprovision
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Native Expo output
+apps/customer-mobile/android/
+apps/customer-mobile/ios/
+apps/doctor-mobile/android/
+apps/doctor-mobile/ios/
+

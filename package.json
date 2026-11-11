@@ -1,0 +1,25 @@
+{
+  "name": "ayurnidaan-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Consolidated source and handover repository for the Ayurnidaan platform",
+  "scripts": {
+    "verify": "node scripts/verify-repo.mjs",
+    "setup:customer": "npm --prefix apps/customer-mobile ci",
+    "setup:doctor": "npm --prefix apps/doctor-mobile ci",
+    "setup:admin": "npm --prefix apps/admin-portal ci",
+    "setup:hospital": "npm --prefix apps/hospital-saas ci",
+    "dev:customer": "npm --prefix apps/customer-mobile start",
+    "dev:doctor": "npm --prefix apps/doctor-mobile start",
+    "dev:admin": "npm --prefix apps/admin-portal run dev",
+    "dev:hospital": "npm --prefix apps/hospital-saas run dev",
+    "build:admin": "npm --prefix apps/admin-portal run build",
+    "build:hospital": "npm --prefix apps/hospital-saas run build",
+    "test:hospital": "npm --prefix apps/hospital-saas test",
+    "security:customer": "npm --prefix apps/customer-mobile run security:check"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
+

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <title>Ayurnidaan Payment</title>
+    <style>
+      body { margin: 0; background: #f8f5ec; color: #164d39; display: grid; font-family: system-ui, sans-serif; min-height: 100vh; place-items: center; }
+      .card { padding: 30px; text-align: center; }
+      .spin { animation: spin 1s linear infinite; border: 3px solid #dce5df; border-radius: 50%; border-top-color: #164d39; height: 30px; margin: auto; width: 30px; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="spin" aria-hidden="true"></div>
+      <p id="status">Opening secure payment...</p>
+    </main>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+      (async function () {
+        const status = document.getElementById('status');
+        const token = new URLSearchParams(location.search).get('token');
+        if (!token) { status.textContent = 'This payment link is invalid.'; return; }
+        try {
+          const response = await fetch('https://dnkbegjnymwoyeksvuoy.supabase.co/functions/v1/razorpay-payment', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action: 'checkout_config', token: token })
+          });
+          const config = await response.json();
+          if (!response.ok || !config.options || !config.cancel_url) throw new Error(config.error || 'Could not start payment.');
+          config.options.modal = { ondismiss: function () { location.href = config.cancel_url; } };
+          const checkout = new Razorpay(config.options);
+          checkout.on('payment.failed', function () { status.textContent = 'Payment failed. Please close this page and try again.'; });
+          checkout.open();
+        } catch (error) {
+          status.textContent = error instanceof Error ? error.message : 'Could not start payment.';
+        }
+      }());
+    </script>
+  </body>
+</html>

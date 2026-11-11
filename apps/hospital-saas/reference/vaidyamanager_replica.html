@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VaidyaManager | Software — IPD Case #25559</title>
+  <style>
+    :root {
+      --teal-dark: #4a8485;
+      --teal-main: #538d8e;
+      --teal-light: #7fb1b2;
+      --teal-row-highlight: #d2e8e8;
+      --gray-header: #dcdcdc;
+      --border-color: #cccccc;
+      --text-main: #333333;
+      --text-muted: #666666;
+      --bg-light: #f9f9f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: var(--text-main);
+      font-size: 13px;
+      padding-bottom: 60px;
+    }
+
+    /* Top Control Bar for Developer / Coding Agent Mode Switch */
+    .agent-control-bar {
+      background: #1e293b;
+      color: #f8fafc;
+      padding: 8px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      border-bottom: 2px solid #0f172a;
+    }
+    .agent-control-bar .badge {
+      background: #10b981;
+      color: #064e3b;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 8px;
+    }
+    .mode-switch {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .mode-switch button {
+      background: #334155;
+      color: #e2e8f0;
+      border: 1px solid #475569;
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .mode-switch button.active {
+      background: #38bdf8;
+      color: #0f172a;
+      border-color: #38bdf8;
+      font-weight: 600;
+    }
+
+    /* Main Header / Navbar */
+    .top-navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 40px;
+      border-bottom: 1px solid #e0e0e0;
+      background: #fff;
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-emblem {
+      width: 95px;
+      height: 58px;
+      border: 1px solid #d4af37;
+      border-radius: 6px;
+      background: linear-gradient(180deg, #fffdf5 0%, #f7e9c6 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 10px;
+      color: #8b4513;
+      font-weight: bold;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .logo-emblem span.sub {
+      font-size: 8px;
+      color: #a0522d;
+      letter-spacing: 1px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+      color: #666;
+      font-size: 14px;
+    }
+    .nav-links li {
+      cursor: pointer;
+      position: relative;
+      padding: 4px 0;
+    }
+    .nav-links li:hover {
+      color: var(--teal-dark);
+    }
+    .nav-badge-icon {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--teal-dark);
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .nav-badge-count {
+      position: absolute;
+      top: -8px;
+      right: -12px;
+      background: var(--teal-dark);
+      color: #fff;
+      font-size: 10px;
+      padding: 1px 5px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+    .physicians-btn {
+      background: #d8ecec;
+      color: #333;
+      border: 1px solid #b5d5d5;
+      padding: 8px 18px;
+      border-radius: 3px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1260px;
+      margin: 14px auto;
+      padding: 0 15px;
+    }
+
+    /* Sub-navigation Tabs */
+    .sub-tabs {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 4px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+    }
+    .sub-tab {
+      padding: 7px 14px;
+      color: #555;
+      cursor: pointer;
+      border-radius: 3px;
+      font-size: 13px;
+      user-select: none;
+      transition: background 0.15s;
+    }
+    .sub-tab:hover {
+      background: #f0f4f4;
+    }
+    .sub-tab.active {
+      background: var(--teal-main);
+      color: #fff;
+      font-weight: 500;
+    }
+
+    /* Patient Info Teal Banner */
+    .patient-banner {
+      background: var(--teal-main);
+      color: #fff;
+      padding: 9px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      border-radius: 2px;
+    }
+    .patient-banner-left {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+    .patient-banner-right {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    .fav-btn {
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.4);
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 3px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    /* Action Buttons Row */
+    .action-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .btn-teal {
+      background: var(--teal-light);
+      color: #fff;
+      border: none;
+      padding: 7px 14px;
+      border-radius: 3px;
+      font-size: 13px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .btn-teal:hover {
+      background: var(--teal-main);
+    }
+
+    /* Tables */
+    table.vm-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--border-color);
+      background: #fff;
+    }
+    table.vm-table th {
+      background: var(--gray-header);
+      color: #222;
+      font-weight: 700;
+      text-align: left;
+      padding: 8px 10px;
+      border: 1px solid var(--border-color);
+      font-size: 13px;
+    }
+    table.vm-table td {
+      padding: 10px;
+      border: 1px solid var(--border-color);
+      vertical-align: middle;
+      font-size: 12.5px;
+      line-height: 1.45;
+      color: #333;
+    }
+    table.vm-table tr.highlight-row td {
+      background-color: var(--teal-row-highlight);
+    }
+
+    /* Interactive Cells */
+    .clickable-cell {
+      cursor: pointer;
+      transition: background-color 0.12s;
+      position: relative;
+    }
+    .clickable-cell:hover {
+      background-color: #f2f9f9 !important;
+      outline: 1px dashed var(--teal-main);
+    }
+    .progress-cell {
+      min-width: 195px;
+      vertical-align: top !important;
+    }
+    .therapy-session-cell {
+      width: 24%;
+    }
+    .evening-cell-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+    .comment-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 18px;
+      border: 1.5px solid #555;
+      border-radius: 10px;
+      font-size: 10px;
+      cursor: pointer;
+      flex-shrink: 0;
+      color: #555;
+      background: #fff;
+    }
+    .comment-icon:hover {
+      border-color: var(--teal-dark);
+      color: var(--teal-dark);
+      background: #eef7f7;
+    }
+
+    /* 3-Session Vitals Mini Sub-blocks */
+    .session-vitals-box {
+      border-left: 3px solid var(--teal-main);
+      padding-left: 6px;
+      margin-bottom: 6px;
+      background: #f8fcfc;
+      border-radius: 2px;
+      padding: 4px 6px;
+    }
+    .session-vitals-box .session-tag {
+      font-weight: 700;
+      color: var(--teal-dark);
+      font-size: 11px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Vital Data Tab Specifics */
+    .vital-table th, .vital-table td {
+      text-align: center !important;
+      padding: 8px 6px !important;
+    }
+    .delete-action-btn {
+      color: #555;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      border: none;
+      background: none;
+    }
+    .delete-action-btn:hover {
+      color: #d9534f;
+    }
+
+    /* Prescription Layout */
+    .prescription-grid {
+      display: grid;
+      grid-template-columns: 280px 1fr 260px;
+      border: 1px solid var(--border-color);
+      min-height: 440px;
+    }
+    .presc-col {
+      border-right: 1px solid var(--border-color);
+      padding: 12px;
+    }
+    .presc-col:last-child {
+      border-right: none;
+    }
+    .symptom-list {
+      list-style: none;
+    }
+    .symptom-list li {
+      padding: 6px 4px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+    }
+    .habit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
+      font-size: 12px;
+    }
+
+    /* Modals */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .modal-backdrop.open {
+      display: flex;
+    }
+    .modal-window {
+      background: #fff;
+      border-radius: 3px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+      overflow: hidden;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-header {
+      background: var(--teal-main);
+      color: #fff;
+      padding: 12px 16px;
+      font-size: 15px;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-close {
+      background: none;
+      border: none;
+      color: #dfeaea;
+      font-size: 18px;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .modal-close:hover {
+      color: #fff;
+    }
+    .modal-body {
+      padding: 18px 20px;
+      overflow-y: auto;
+    }
+    .modal-footer {
+      padding: 10px 20px 16px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .btn-outline {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 6px 14px;
+      border-radius: 3px;
+      cursor: pointer;
+      color: #333;
+    }
+    .btn-outline:hover {
+      background: #f5f5f5;
+    }
+
+    /* Vital Data Form Modal */
+    .vital-form-row {
+      display: grid;
+      grid-template-columns: 120px 150px 1fr;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .vital-form-row label {
+      color: #444;
+      font-size: 13px;
+    }
+    .vital-form-row input, .vital-form-row select {
+      width: 100%;
+      padding: 5px 8px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      font-size: 13px;
+    }
+    .vital-unit {
+      font-size: 12.5px;
+      color: #444;
+    }
+    .vital-unit.green {
+      color: #5cb85c;
+    }
+
+    /* Adviced Therapy & Session Selector Pills */
+    .session-pills {
+      display: inline-flex;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .session-pill {
+      padding: 6px 14px;
+      background: #fff;
+      border-right: 1px solid #ccc;
+      cursor: pointer;
+      font-size: 13px;
+      color: #555;
+    }
+    .session-pill:last-child {
+      border-right: none;
+    }
+    .session-pill.active {
+      background: #e6e6e6;
+      font-weight: 600;
+      color: #222;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* Searchable Dropdown in Adviced Therapy */
+    .searchable-select-wrap {
+      position: relative;
+      margin: 15px 0;
+    }
+    .searchable-select-header {
+      border: 1px solid #ccc;
+      padding: 7px 10px;
+      border-radius: 3px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+    }
+    .searchable-dropdown-list {
+      border: 1px solid #aaa;
+      border-top: none;
+      max-height: 200px;
+      overflow-y: auto;
+      background: #fff;
+      display: none;
+    }
+    .searchable-dropdown-list.open {
+      display: block;
+    }
+    .searchable-dropdown-input {
+      width: calc(100% - 16px);
+      margin: 8px;
+      padding: 6px 8px;
+      border: 1px solid #3875d7;
+      outline: none;
+    }
+    .therapy-option-item {
+      padding: 6px 12px;
+      cursor: pointer;
+      font-size: 12.5px;
+    }
+    .therapy-option-item:hover, .therapy-option-item.highlighted {
+      background: var(--teal-main);
+      color: #fff;
+    }
+
+    /* Therapy Cell Modal (Calendar + A-Z) */
+    .therapy-modal-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .calendar-mini-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 28px);
+      gap: 4px;
+      text-align: center;
+      font-size: 12px;
+    }
+    .cal-head {
+      font-weight: bold;
+      color: #444;
+      padding-bottom: 4px;
+    }
+    .cal-day {
+      padding: 4px 0;
+      border: 1px solid #eee;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+    .cal-day.selected {
+      background: var(--teal-main);
+      color: #fff;
+      border-color: var(--teal-dark);
+    }
+    .az-bar {
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin: 10px 0;
+    }
+    .az-letter {
+      padding: 5px 9.5px;
+      border-right: 1px solid #ccc;
+      cursor: pointer;
+      font-size: 12px;
+      color: #555;
+    }
+    .az-letter:last-child {
+      border-right: none;
+    }
+    .az-letter.active, .az-letter:hover {
+      background: #e6e6e6;
+      font-weight: bold;
+    }
+
+    /* Record Saved Alert Box */
+    .record-alert-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+    }
+    .record-alert-backdrop.open {
+      display: flex;
+    }
+    .record-alert-box {
+      background: rgba(25, 25, 25, 0.85);
+      border: 2px solid #b8d0d0;
+      padding: 22px 40px;
+      text-align: center;
+      color: #fff;
+      min-width: 280px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    }
+    .record-alert-box p {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    .record-alert-ok {
+      background: #5cb85c;
+      color: #fff;
+      border: 1px solid #4cae4c;
+      padding: 4px 14px;
+      font-size: 13px;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+
+    /* Footer */
+    .vm-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      padding: 10px 40px;
+      font-size: 13px;
+      color: #555;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+    .vm-footer a {
+      color: #337ab7;
+      text-decoration: none;
+    }
+    .version-tag {
+      color: #d9534f;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Developer / Coding Agent Mode Bar -->
+  <div class="agent-control-bar">
+    <div>
+      <span class="badge">REPLICA READY</span>
+      <strong>VaidyaManager IPD System</strong> — Interactive Reference Prototype & Specification
+    </div>
+    <div class="mode-switch">
+      <span>Vitals Recording Mode:</span>
+      <button id="btnModeLegacy" class="active" onclick="setVitalsMode('legacy')" title="Exact current behavior in video: 1 vital block per date, updates timestamp on re-entry">
+        Current Software Mode (Single Daily Vital)
+      </button>
+      <button id="btnModeThreeSession" onclick="setVitalsMode('three_session')" title="Requested enhancement in video: Separate Morning, Noon, and Evening vitals before each therapy session">
+        Enhanced 3-Session Mode (Morning / Noon / Evening Vitals)
+      </button>
+      <button onclick="resetDemoData()" style="background:#dc2626;border-color:#b91c1c;color:#fff;">
+        Reset Demo Data
+      </button>
+    </div>
+  </div>
+
+  <!-- Top Navbar -->
+  <header class="top-navbar">
+    <div class="brand-logo">
+      <div class="logo-emblem">
+        <div>🪷 S.R.I.A 🪷</div>
+        <span class="sub">AYURVEDA</span>
+      </div>
+    </div>
+
+    <ul class="nav-links">
+      <li style="color:var(--teal-dark);font-size:18px;">🏠</li>
+      <li>New</li>
+      <li>Old</li>
+      <li>Account</li>
+      <li>Inventory</li>
+      <li>IPD ▾</li>
+      <li>Pharmacy Bill</li>
+      <li>Dr. NISHU ▾</li>
+      <li class="nav-badge-icon" title="Notifications">
+        🔔 <span class="nav-badge-count">15</span>
+      </li>
+      <li class="nav-badge-icon" title="Logout / Action">
+        ➜]
+      </li>
+      <li>
+        <button class="physicians-btn">Physicians</button>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Sub-Navigation Tabs -->
+    <div class="sub-tabs" id="subTabs">
+      <div class="sub-tab" data-tab="basic" onclick="switchTab('basic')">Basic Detail</div>
+      <div class="sub-tab" data-tab="accomodation" onclick="switchTab('accomodation')">Accomodation</div>
+      <div class="sub-tab" data-tab="ipd_history" onclick="switchTab('ipd_history')">IPD History</div>
+      <div class="sub-tab" data-tab="prescription" onclick="switchTab('prescription')">Prescription</div>
+      <div class="sub-tab active" data-tab="therapy" onclick="switchTab('therapy')">Therapy</div>
+      <div class="sub-tab" data-tab="diet" onclick="switchTab('diet')">Diet</div>
+      <div class="sub-tab" data-tab="investigation" onclick="switchTab('investigation')">Investigation</div>
+      <div class="sub-tab" data-tab="documents" onclick="switchTab('documents')">Documents</div>
+      <div class="sub-tab" data-tab="discharge" onclick="switchTab('discharge')">Discharge Summary</div>
+      <div class="sub-tab" data-tab="daily_program" onclick="switchTab('daily_program')">Daily Program</div>
+      <div class="sub-tab" data-tab="vital_data" onclick="switchTab('vital_data')">Vital Data</div>
+      <div class="sub-tab" data-tab="view" onclick="switchTab('view')">View ▾</div>
+    </div>
+
+    <!-- Patient Banner -->
+    <div class="patient-banner">
+      <div class="patient-banner-left">
+        <span>Mrs. KAILASH KANWAR</span>
+        <span>57 / Female</span>
+        <span>D.O.A: 01/09/2026</span>
+        <span>D.O.D: 19/09/2026</span>
+      </div>
+      <div class="patient-banner-right">
+        <span>Next Visit Date : 12/09/2026</span>
+        <button class="fav-btn" id="favBtn" style="display:none;" onclick="alert('Marked as Favourite!')">Mark as Favourite</button>
+      </div>
+    </div>
+
+    <!-- TAB 1: THERAPY VIEW -->
+    <section id="tab-therapy" class="tab-pane">
+      <div class="action-bar">
+        <button class="btn-teal" onclick="window.print()">🖨️ Print Estimate Therapy</button>
+        <button class="btn-teal" onclick="openEstimateModal()">Create Estimate Therapy</button>
+        <button class="btn-teal" onclick="window.print()">Print</button>
+      </div>
+
+      <table class="vm-table" id="therapyTable">
+        <thead>
+          <tr>
+            <th style="width:120px;">Date</th>
+            <th style="width:230px;">progress</th>
+            <th>Morning</th>
+            <th>Noon</th>
+            <th>Evening</th>
+          </tr>
+        </thead>
+        <tbody id="therapyTableBody">
+          <!-- Populated dynamically via JS -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- TAB 2: VITAL DATA VIEW -->
+    <section id="tab-vital_data" class="tab-pane" style="display:none;">
+      <div class="action-bar">
+        <button class="btn-teal" onclick="window.print()">Print</button>
+      </div>
+
+      <table class="vm-table vital-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th id="thSessionCol" style="display:none;">Session</th>
+            <th>Height</th>
+            <th>Weight</th>
+            <th>Temperature</th>
+            <th>Pulse</th>
+            <th>BP</th>
+            <th>RR</th>
+            <th>Pain Score</th>
+            <th>FBS</th>
+            <th>PPBS</th>
+            <th>RBS</th>
+            <th>SPO2</th>
+            <th>Sleep</th>
+            <th>Bowel</th>
+            <th>Appetite</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="vitalTableBody">
+          <!-- Populated dynamically via JS -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- TAB 3: PRESCRIPTION VIEW -->
+    <section id="tab-prescription" class="tab-pane" style="display:none;">
+      <div class="prescription-grid">
+        <!-- Left Column: Chief Complaints & Habits -->
+        <div class="presc-col">
+          <ul class="symptom-list">
+            <li>🔍 Generalised Pain With Stiffness - 7 YEARS</li>
+            <li>🔍 Multiple Joint Pain - Ankle Joint, Knee Joint, Low Back Pain , Neck Pain (7 YEARS)</li>
+            <li>🔍 Difficulty In Walking - 2 MONTHS</li>
+            <li>🔍 Weakness</li>
+            <li>🔍 Disturbed Sleep</li>
+          </ul>
+          <div class="habit-grid">
+            <div>✓ regular</div>
+            <div>✓ constipation</div>
+            <div>✓ normal</div>
+            <div>✓ 99</div>
+            <div>✓ 08</div>
+            <div>✓ 18</div>
+            <div>✓ 120/80</div>
+            <div>✓ 98.6</div>
+            <div>✓ giddiness-</div>
+          </div>
+        </div>
+
+        <!-- Middle Column: Medicine List -->
+        <div class="presc-col">
+          <table class="vm-table" style="border:none;">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Medicine</th>
+                <th>Dose</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>
+                  <strong>Ghrita punchatikthakam ghrutham - 150 ml</strong><br/>
+                  <span style="color:#666;font-size:11.5px;">With Luke Warm Water</span>
+                </td>
+                <td>10 ml - 0 - 0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>
+                  <strong>Ksheerabala 101 Avartana - 10 U</strong><br/>
+                  <span style="color:#666;font-size:11.5px;">With Luke Warm Water</span>
+                </td>
+                <td>2 U - 0 - 2 U - 0</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>
+                  <strong>Tablet KAISORAGUGGULU - 10 U</strong><br/>
+                  <span style="color:#666;font-size:11.5px;">With Luke Warm Water</span>
+                </td>
+                <td>2 U - 0 - 2 U - 0</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>4.</td>
+                <td>
+                  <strong>Tablet AAMAVATARI RASA - 10 U</strong><br/>
+                  <span style="color:#666;font-size:11.5px;">With Luke Warm Water</span>
+                </td>
+                <td>2 U - 0 - 2 U - 0</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>5.</td>
+                <td>
+                  <strong>Kashayam DASHMOOLA KASHAYA - 200 ml</strong><br/>
+                  <span style="color:#666;font-size:11.5px;">With Equal Amount of Water</span>
+                </td>
+                <td>20 ml - 0 - 20 ml - 0</td>
+                <td>400</td>
+              </tr>
+              <tr>
+                <td>6.</td>
+                <td>
+                  <strong>Churna VAISWANARA CHURNA - 50 gm</strong><br/>
+                  <span style="color:#666;font-size:11.5px;">With Luke Warm Water</span>
+                </td>
+                <td>5 gm - 0 - 5 gm - 0</td>
+                <td>25</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Right Column: Diagnosis Details -->
+        <div class="presc-col">
+          <div style="margin-bottom:14px;">
+            <label style="font-weight:bold;display:block;margin-bottom:4px;">Date :</label>
+            <select style="width:100%;padding:5px;border:1px solid #ccc;">
+              <option>01/09/26 13:38</option>
+            </select>
+          </div>
+          <p style="margin-bottom:10px;"><strong>FD:</strong> SARVANGAVATA</p>
+          <p style="margin-bottom:10px;"><strong>PD:</strong> SARVANGAVATA</p>
+          <p style="margin-bottom:10px;"><strong>Treatment Time:</strong> 0 Days</p>
+          <p style="margin-bottom:10px;"><strong>Medicine Given Days:</strong> 10 Days</p>
+          <p style="margin-bottom:10px;"><strong>ICD Code :</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Placeholder for other tabs -->
+    <section id="tab-other" class="tab-pane" style="display:none;padding:30px;border:1px solid #ddd;text-align:center;color:#666;">
+      <h3 id="otherTabTitle" style="margin-bottom:8px;color:var(--teal-dark);">Module View</h3>
+      <p>Switch to <strong>Therapy</strong>, <strong>Vital Data</strong>, or <strong>Prescription</strong> to test the core workflows demonstrated in the video.</p>
+    </section>
+  </main>
+
+  <!-- MODAL 1: VITAL DATA ENTRY MODAL -->
+  <div class="modal-backdrop" id="vitalModal">
+    <div class="modal-window" style="width:450px;">
+      <div class="modal-header">
+        <span id="vitalModalTitle">Vital Data</span>
+        <button class="modal-close" onclick="closeVitalModal()">x</button>
+      </div>
+      <div class="modal-body" style="max-height:430px;">
+        <!-- Shown when in 3-Session Mode -->
+        <div class="vital-form-row" id="vitalSessionRow" style="display:none;background:#eef8f8;padding:6px;border-radius:3px;">
+          <label><strong>Session</strong></label>
+          <select id="vitalSessionSelect" onchange="populateVitalModalFields()">
+            <option value="Morning">Morning (Pre-Therapy)</option>
+            <option value="Noon">Noon (Pre-Therapy)</option>
+            <option value="Evening">Evening (Pre-Therapy)</option>
+          </select>
+          <span class="vital-unit">3x Daily</span>
+        </div>
+
+        <div class="vital-form-row">
+          <label>Height</label>
+          <input type="text" id="vHeight" placeholder="00" />
+          <span class="vital-unit">ft / CM</span>
+        </div>
+        <div class="vital-form-row">
+          <label>Weight</label>
+          <input type="text" id="vWeight" placeholder="00" />
+          <span class="vital-unit">kg / pound</span>
+        </div>
+        <div class="vital-form-row">
+          <label>Temperature</label>
+          <input type="text" id="vTemp" placeholder="00" list="tempSuggestions" />
+          <datalist id="tempSuggestions"><option value="98.6"></datalist>
+          <span class="vital-unit">°C / F</span>
+        </div>
+        <div class="vital-form-row">
+          <label>Pulse</label>
+          <input type="text" id="vPulse" placeholder="00" />
+          <span class="vital-unit"></span>
+        </div>
+        <div class="vital-form-row">
+          <label>BP</label>
+          <input type="text" id="vBP" placeholder="00" list="bpSuggestions" />
+          <datalist id="bpSuggestions"><option value="120/80"></datalist>
+          <span class="vital-unit green">mmHg</span>
+        </div>
+        <div class="vital-form-row">
+          <label>RR</label>
+          <input type="text" id="vRR" placeholder="00" />
+          <span class="vital-unit green">CPM</span>
+        </div>
+        <div class="vital-form-row">
+          <label>Pain Score</label>
+          <input type="text" id="vPain" placeholder="00" />
+          <span class="vital-unit"></span>
+        </div>
+        <div class="vital-form-row">
+          <label>FBS</label>
+          <input type="text" id="vFBS" placeholder="00" />
+          <span class="vital-unit"></span>
+        </div>
+        <div class="vital-form-row">
+          <label>PPBS</label>
+          <input type="text" id="vPPBS" placeholder="00" />
+          <span class="vital-unit"></span>
+        </div>
+        <div class="vital-form-row">
+          <label>RBS</label>
+          <input type="text" id="vRBS" placeholder="00" />
+          <span class="vital-unit"></span>
+        </div>
+        <div class="vital-form-row">
+          <label>SPO2</label>
+          <input type="text" id="vSPO2" placeholder="00" list="spo2Suggestions" />
+          <datalist id="spo2Suggestions"><option value="99"></datalist>
+          <span class="vital-unit"></span>
+        </div>
+        <div class="vital-form-row">
+          <label>Sleep</label>
+          <input type="text" id="vSleep" placeholder="00" />
+          <span class="vital-unit"></span>
+        </div>
+        <div class="vital-form-row">
+          <label>Bowel</label>
+          <input type="text" id="vBowel" placeholder="00" />
+          <span class="vital-unit"></span>
+        </div>
+        <div class="vital-form-row">
+          <label>Appetite</label>
+          <input type="text" id="vAppetite" placeholder="00" />
+          <span class="vital-unit"></span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-outline" onclick="saveVitalData()">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: ADVICED THERAPY (CREATE ESTIMATE THERAPY) -->
+  <div class="modal-backdrop" id="estimateModal">
+    <div class="modal-window" style="width:500px;min-height:420px;">
+      <div class="modal-header">
+        <span>Adviced Therapy</span>
+        <button class="modal-close" onclick="closeEstimateModal()">x</button>
+      </div>
+      <div class="modal-body">
+        <div style="display:flex;align-items:center;gap:60px;margin-bottom:14px;border-bottom:1px solid #eee;padding-bottom:12px;">
+          <strong>Session</strong>
+          <div class="session-pills" id="estSessionPills">
+            <div class="session-pill" onclick="selectEstSession(this, 'Morning')">Morning</div>
+            <div class="session-pill active" onclick="selectEstSession(this, 'Noon')">Noon</div>
+            <div class="session-pill" onclick="selectEstSession(this, 'Evening')">Evening</div>
+          </div>
+        </div>
+
+        <!-- Searchable Therapy Dropdown -->
+        <div class="searchable-select-wrap">
+          <div class="searchable-select-header" onclick="toggleEstDropdown()">
+            <span id="estSelectedLabel">Select Therapy</span>
+            <span>▾</span>
+          </div>
+          <div class="searchable-dropdown-list" id="estDropdownList">
+            <input type="text" class="searchable-dropdown-input" id="estSearchInput" placeholder="Search therapy (e.g. ABH)..." oninput="filterEstTherapies()" />
+            <div id="estOptionsContainer"></div>
+          </div>
+        </div>
+
+        <!-- Selected Adviced Therapies Table -->
+        <div id="estSelectedTableWrap" style="display:none;margin-top:16px;">
+          <table class="vm-table">
+            <thead>
+              <tr>
+                <th style="width:65px;">Sl.No.</th>
+                <th>Therapy</th>
+                <th style="width:90px;">Days</th>
+              </tr>
+            </thead>
+            <tbody id="estSelectedTbody"></tbody>
+          </table>
+          <div style="display:flex;justify-content:flex-end;margin-top:12px;">
+            <button class="btn-outline" onclick="saveEstimateTherapy()">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: THERAPY SCHEDULE CELL MODAL -->
+  <div class="modal-backdrop" id="therapyCellModal">
+    <div class="modal-window" style="width:920px;">
+      <div class="modal-header">
+        <span>Therapy</span>
+        <button class="modal-close" onclick="closeTherapyCellModal()">x</button>
+      </div>
+      <div class="modal-body">
+        <div class="therapy-modal-top">
+          <!-- Left: Category & Session -->
+          <div>
+            <div class="session-pills" style="margin-bottom:20px;">
+              <div class="session-pill active">All</div>
+              <div class="session-pill">CGHS/NON-NABH</div>
+            </div>
+            <br/>
+            <div class="session-pills" id="cellSessionPills">
+              <div class="session-pill active" onclick="selectCellSession(this, 'Morning')">Morning</div>
+              <div class="session-pill" onclick="selectCellSession(this, 'Noon')">Noon</div>
+              <div class="session-pill" onclick="selectCellSession(this, 'Evening')">Evening</div>
+              <div class="session-pill" onclick="selectCellSession(this, 'All')">All</div>
+            </div>
+          </div>
+
+          <!-- Right: Calendar Day Picker (01 to 19) -->
+          <div>
+            <div class="calendar-mini-grid" id="calMiniGrid">
+              <div class="cal-head">S</div><div class="cal-head">M</div><div class="cal-head">T</div>
+              <div class="cal-head">W</div><div class="cal-head">T</div><div class="cal-head">F</div><div class="cal-head">S</div>
+              <div></div><div></div>
+              <div class="cal-day selected" onclick="this.classList.toggle('selected')">01</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">02</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">03</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">04</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">05</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">06</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">07</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">08</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">09</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">10</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">11</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">12</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">13</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">14</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">15</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">16</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">17</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">18</div>
+              <div class="cal-day" onclick="this.classList.toggle('selected')">19</div>
+            </div>
+            <button class="btn-outline" style="margin-top:8px;font-size:12px;" onclick="deselectAllCalDays()">Deselect All</button>
+          </div>
+        </div>
+
+        <!-- A-Z Filter Bar -->
+        <div class="az-bar" id="azBar"></div>
+
+        <!-- Search Input -->
+        <input type="text" id="cellTherapySearch" placeholder="Search" style="width:100%;padding:7px 10px;border:1px solid #ccc;border-radius:3px;margin-bottom:14px;" oninput="renderCellTherapyQuickList()" />
+
+        <div id="cellTherapyQuickList" style="max-height:110px;overflow-y:auto;border:1px solid #eee;padding:8px;margin-bottom:12px;font-size:12px;"></div>
+
+        <div style="display:flex;gap:10px;margin-bottom:14px;">
+          <button class="btn-outline">Do you want to assign medicine</button>
+          <button class="btn-outline">Direct schedule Therapy</button>
+        </div>
+
+        <button class="btn-outline" onclick="saveCellTherapyAssignment()">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECORD SAVED OVERLAY -->
+  <div class="record-alert-backdrop" id="recordSavedAlert">
+    <div class="record-alert-box">
+      <p>Record is saved!</p>
+      <button class="record-alert-ok" onclick="closeRecordSavedAlert()">OK</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="vm-footer">
+    <div>
+      Copyright © 2026, <a href="https://vaidyamanager.com" target="_blank">vaidyamanager.com</a>. Support 📞 | <span class="version-tag">v1.1.0 💡</span>
+    </div>
+    <div style="color:#888;font-size:12px;">
+      Patient IPD Case ID: #25559
+    </div>
+  </footer>
+
+  <script>
+    // Catalog of Ayurvedic Therapies shown in the video
+    const THERAPY_CATALOG = [
+      "CUPPING THERAPY",
+      "NASYA",
+      "TAKRADHARA",
+      "UROBASTI/HRIDYA BASTI",
+      "ABHYANGAM - SRVANGA (FULL BODY)",
+      "ABHYANGAM - STHANIKA (LOCAL)",
+      "ABHYANGA + SWEDAN (FULL)",
+      "KAVALGRAH/ GANDOOSH",
+      "KAYASEKA/ PIZHICHIL",
+      "KASHAYABASTI - NIRUHA BASTI - DIFFERENT VARIETIES",
+      "DHARA/ SHIRODHARA - TAILAM",
+      "PATRA PINDA SWEDANAM - FULL BODY , PRE & POST PROCEDURE"
+    ];
+
+    const DEFAULT_MORNING_THERAPY = "ABHYANGAM - SRVANGA (FULL BODY) , KAYASEKA/ PIZHICHIL , KASHAYABASTI - NIRUHA BASTI - DIFFERENT VARIETIES";
+    const DEFAULT_NOON_THERAPY = "DHARA/ SHIRODHARA - TAILAM";
+    const DEFAULT_EVENING_THERAPY = "PATRA PINDA SWEDANAM - FULL BODY , PRE & POST PROCEDURE";
+
+    // Initial Schedule Dates (01/09/2026 to 10/09/2026)
+    const INITIAL_DAYS = [
+      { date: "01/09/2026", dayName: "Tuesday", morning: DEFAULT_MORNING_THERAPY, noon: DEFAULT_NOON_THERAPY, evening: DEFAULT_EVENING_THERAPY },
+      { date: "02/09/2026", dayName: "Wednesday", morning: DEFAULT_MORNING_THERAPY, noon: "", evening: "" },
+      { date: "03/09/2026", dayName: "Thursday", morning: DEFAULT_MORNING_THERAPY, noon: DEFAULT_NOON_THERAPY, evening: "" },
+      { date: "04/09/2026", dayName: "Friday", morning: DEFAULT_MORNING_THERAPY, noon: "", evening: DEFAULT_EVENING_THERAPY },
+      { date: "05/09/2026", dayName: "Saturday", morning: DEFAULT_MORNING_THERAPY, noon: "", evening: "" },
+      { date: "06/09/2026", dayName: "Sunday", morning: DEFAULT_MORNING_THERAPY, noon: DEFAULT_NOON_THERAPY, evening: DEFAULT_EVENING_THERAPY },
+      { date: "07/09/2026", dayName: "Monday", morning: DEFAULT_MORNING_THERAPY, noon: "", evening: "" },
+      { date: "08/09/2026", dayName: "Tuesday", morning: DEFAULT_MORNING_THERAPY, noon: DEFAULT_NOON_THERAPY, evening: DEFAULT_EVENING_THERAPY, highlight: true },
+      { date: "09/09/2026", dayName: "Wednesday", morning: DEFAULT_MORNING_THERAPY, noon: "", evening: DEFAULT_EVENING_THERAPY },
+      { date: "10/09/2026", dayName: "Thursday", morning: DEFAULT_MORNING_THERAPY, noon: "", evening: DEFAULT_EVENING_THERAPY }
+    ];
+
+    // Initial Vitals State (starts with 01/09/2026 pre-filled as shown at 00:03 in the video)
+    const INITIAL_VITALS = [
+      {
+        id: "v_01_morning",
+        date: "01/09/2026",
+        time: "22:02",
+        session: "Morning",
+        height: "",
+        weight: "",
+        temperature: "98.6",
+        pulse: "",
+        bp: "120/80",
+        rr: "",
+        painScore: "08",
+        fbs: "",
+        ppbs: "",
+        rbs: "",
+        spo2: "99",
+        sleep: "",
+        bowel: "",
+        appetite: ""
+      }
+    ];
+
+    let appState = {
+      vitalsMode: "legacy", // 'legacy' or 'three_session'
+      days: JSON.parse(JSON.stringify(INITIAL_DAYS)),
+      vitals: JSON.parse(JSON.stringify(INITIAL_VITALS)),
+      activeVitalDate: null,
+      activeVitalSession: "Morning",
+      estSelectedTherapies: [],
+      activeCellDate: null,
+      activeCellSession: "Morning",
+      selectedQuickTherapy: ""
+    };
+
+    // Load saved state if available
+    function loadState() {
+      const saved = localStorage.getItem("vaidyamanager_ipd_state_v1");
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved);
+          appState.vitalsMode = parsed.vitalsMode || "legacy";
+          appState.days = parsed.days || JSON.parse(JSON.stringify(INITIAL_DAYS));
+          appState.vitals = parsed.vitals || JSON.parse(JSON.stringify(INITIAL_VITALS));
+        } catch (e) {
+          console.error(e);
+        }
+      }
+      updateModeButtons();
+      renderAll();
+    }
+
+    function saveState() {
+      localStorage.setItem("vaidyamanager_ipd_state_v1", JSON.stringify({
+        vitalsMode: appState.vitalsMode,
+        days: appState.days,
+        vitals: appState.vitals
+      }));
+    }
+
+    function resetDemoData() {
+      localStorage.removeItem("vaidyamanager_ipd_state_v1");
+      appState.days = JSON.parse(JSON.stringify(INITIAL_DAYS));
+      appState.vitals = JSON.parse(JSON.stringify(INITIAL_VITALS));
+      renderAll();
+    }
+
+    function setVitalsMode(mode) {
+      appState.vitalsMode = mode;
+      updateModeButtons();
+      saveState();
+      renderAll();
+    }
+
+    function updateModeButtons() {
+      document.getElementById("btnModeLegacy").classList.toggle("active", appState.vitalsMode === "legacy");
+      document.getElementById("btnModeThreeSession").classList.toggle("active", appState.vitalsMode === "three_session");
+      document.getElementById("thSessionCol").style.display = appState.vitalsMode === "three_session" ? "" : "none";
+      document.getElementById("vitalSessionRow").style.display = appState.vitalsMode === "three_session" ? "grid" : "none";
+    }
+
+    // Format a single vital block exactly like the `progress` column in the video
+    function formatVitalBlockHTML(v, showSessionTag) {
+      if (!v) {
+        return `<div style="color:#999;font-size:11.5px;">Click to enter vitals...</div>`;
+      }
+      const tempStr = v.temperature ? `${v.temperature} °C` : "";
+      const rrStr = v.rr ? `${v.rr} CPM` : "";
+      const weightStr = v.weight ? `${v.weight} kg` : "";
+      const bpStr = v.bp ? `${v.bp} mmHg` : "";
+      const headerHtml = showSessionTag
+        ? `<div class="session-tag"><span>${v.session} Vitals</span><span>${v.time || ""}</span></div>`
+        : "";
+      return `
+        <div class="${showSessionTag ? 'session-vitals-box' : ''}">
+          ${headerHtml}
+          <div>Temperature: ${tempStr}</div>
+          <div>RR: ${rrStr}</div>
+          <div>Height: ${v.height || ""}</div>
+          <div>Weight: ${weightStr}</div>
+          <div>BP: ${bpStr}</div>
+          <div>Pulse: ${v.pulse || ""}</div>
+          <div>Pain Score: ${v.painScore || ""}</div>
+          <div>FBS: ${v.fbs || ""}</div>
+          <div>PPBS: ${v.ppbs || ""}</div>
+          <div>RBS: ${v.rbs || ""}</div>
+          <div>SPO2: ${v.spo2 || ""}</div>
+          <div>Sleep: ${v.sleep || ""}</div>
+          <div>Bowel: ${v.bowel || ""}</div>
+          <div>Appetite: ${v.appetite || ""}</div>
+        </div>
+      `;
+    }
+
+    function renderTherapyTable() {
+      const tbody = document.getElementById("therapyTableBody");
+      tbody.innerHTML = "";
+
+      appState.days.forEach((dayObj) => {
+        const tr = document.createElement("tr");
+        if (dayObj.highlight) tr.classList.add("highlight-row");
+
+        // Progress Cell HTML depending on mode
+        let progressHTML = "";
+        if (appState.vitalsMode === "legacy") {
+          const record = appState.vitals.find(v => v.date === dayObj.date);
+          progressHTML = record ? formatVitalBlockHTML(record, false) : "";
+        } else {
+          // 3-Session Mode: Show Morning, Noon, Evening vital blocks or quick-add buttons
+          const sessions = ["Morning", "Noon", "Evening"];
+          progressHTML = sessions.map(sess => {
+            const rec = appState.vitals.find(v => v.date === dayObj.date && v.session === sess);
+            if (rec) {
+              return `<div onclick="event.stopPropagation(); openVitalModal('${dayObj.date}', '${sess}')">${formatVitalBlockHTML(rec, true)}</div>`;
+            } else {
+              return `<div class="session-vitals-box" onclick="event.stopPropagation(); openVitalModal('${dayObj.date}', '${sess}')" style="color:#666;font-size:11.5px;">
+                <div class="session-tag"><span>+ ${sess} Vitals</span></div>
+              </div>`;
+            }
+          }).join("");
+        }
+
+        tr.innerHTML = `
+          <td>
+            <div>${dayObj.date}</div>
+            <div>(${dayObj.dayName})</div>
+          </td>
+          <td class="clickable-cell progress-cell" onclick="openVitalModal('${dayObj.date}', 'Morning')" title="Click to add/edit Vitals for ${dayObj.date}">
+            ${progressHTML}
+          </td>
+          <td class="clickable-cell therapy-session-cell" onclick="openTherapyCellModal('${dayObj.date}', 'Morning')">
+            ${dayObj.morning || ""}
+          </td>
+          <td class="clickable-cell therapy-session-cell" onclick="openTherapyCellModal('${dayObj.date}', 'Noon')">
+            ${dayObj.noon || ""}
+          </td>
+          <td class="clickable-cell therapy-session-cell" onclick="openTherapyCellModal('${dayObj.date}', 'Evening')">
+            <div class="evening-cell-wrapper">
+              <span>${dayObj.evening || ""}</span>
+              <span class="comment-icon" onclick="event.stopPropagation(); promptEveningComment('${dayObj.date}')" title="Add/View Therapy Note">💬</span>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function renderVitalDataTable() {
+      const tbody = document.getElementById("vitalTableBody");
+      tbody.innerHTML = "";
+
+      appState.vitals.forEach((v) => {
+        const tr = document.createElement("tr");
+        const sessionTd = appState.vitalsMode === "three_session" ? `<td><strong>${v.session || "Morning"}</strong></td>` : "";
+        tr.innerHTML = `
+          <td>${v.date}</td>
+          <td>${v.time}</td>
+          ${sessionTd}
+          <td>${v.height ? v.height + ' ft' : ''}</td>
+          <td>${v.weight ? v.weight + ' kg' : ''}</td>
+          <td>${v.temperature ? v.temperature + ' °C' : ''}</td>
+          <td>${v.pulse || ''}</td>
+          <td>${v.bp ? v.bp + ' mmHg' : ''}</td>
+          <td>${v.rr ? v.rr + ' CPM' : ''}</td>
+          <td>${v.painScore || ''}</td>
+          <td>${v.fbs || ''}</td>
+          <td>${v.ppbs || ''}</td>
+          <td>${v.rbs || ''}</td>
+          <td>${v.spo2 || ''}</td>
+          <td>${v.sleep || ''}</td>
+          <td>${v.bowel || ''}</td>
+          <td>${v.appetite || ''}</td>
+          <td>
+            <button class="delete-action-btn" onclick="deleteVitalRecord('${v.id}')" title="Delete record">x</button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function renderAll() {
+      renderTherapyTable();
+      renderVitalDataTable();
+    }
+
+    // Sub-tab Switching
+    function switchTab(tabId) {
+      document.querySelectorAll(".sub-tab").forEach(t => {
+        t.classList.toggle("active", t.dataset.tab === tabId);
+      });
+
+      document.getElementById("tab-therapy").style.display = tabId === "therapy" ? "block" : "none";
+      document.getElementById("tab-vital_data").style.display = tabId === "vital_data" ? "block" : "none";
+      document.getElementById("tab-prescription").style.display = tabId === "prescription" ? "block" : "none";
+      document.getElementById("favBtn").style.display = tabId === "prescription" ? "inline-block" : "none";
+
+      const isCore = ["therapy", "vital_data", "prescription"].includes(tabId);
+      const otherSection = document.getElementById("tab-other");
+      otherSection.style.display = isCore ? "none" : "block";
+      if (!isCore) {
+        document.getElementById("otherTabTitle").textContent = tabId.replace("_", " ").toUpperCase() + " MODULE";
+      }
+    }
+
+    // VITAL DATA MODAL LOGIC
+    function openVitalModal(dateStr, sessionStr) {
+      appState.activeVitalDate = dateStr;
+      appState.activeVitalSession = sessionStr || "Morning";
+      document.getElementById("vitalSessionSelect").value = appState.activeVitalSession;
+      document.getElementById("vitalModalTitle").textContent =
+        appState.vitalsMode === "three_session"
+          ? `Vital Data — ${dateStr} (${appState.activeVitalSession})`
+          : `Vital Data`;
+
+      populateVitalModalFields();
+      document.getElementById("vitalModal").classList.add("open");
+    }
+
+    function populateVitalModalFields() {
+      const sess = document.getElementById("vitalSessionSelect").value;
+      appState.activeVitalSession = sess;
+
+      let existing = null;
+      if (appState.vitalsMode === "legacy") {
+        existing = appState.vitals.find(v => v.date === appState.activeVitalDate);
+      } else {
+        existing = appState.vitals.find(v => v.date === appState.activeVitalDate && v.session === sess);
+      }
+
+      document.getElementById("vHeight").value = existing ? existing.height : "";
+      document.getElementById("vWeight").value = existing ? existing.weight : "";
+      document.getElementById("vTemp").value = existing ? existing.temperature : "";
+      document.getElementById("vPulse").value = existing ? existing.pulse : "";
+      document.getElementById("vBP").value = existing ? existing.bp : "";
+      document.getElementById("vRR").value = existing ? existing.rr : "";
+      document.getElementById("vPain").value = existing ? existing.painScore : "";
+      document.getElementById("vFBS").value = existing ? existing.fbs : "";
+      document.getElementById("vPPBS").value = existing ? existing.ppbs : "";
+      document.getElementById("vRBS").value = existing ? existing.rbs : "";
+      document.getElementById("vSPO2").value = existing ? existing.spo2 : "";
+      document.getElementById("vSleep").value = existing ? existing.sleep : "";
+      document.getElementById("vBowel").value = existing ? existing.bowel : "";
+      document.getElementById("vAppetite").value = existing ? existing.appetite : "";
+    }
+
+    function closeVitalModal() {
+      document.getElementById("vitalModal").classList.remove("open");
+    }
+
+    function saveVitalData() {
+      const now = new Date();
+      const hh = String(now.getHours()).padStart(2, "0");
+      const mm = String(now.getMinutes()).padStart(2, "0");
+      const currentTime = `${hh}:${mm}`;
+
+      const payload = {
+        id: `v_${appState.activeVitalDate}_${appState.activeVitalSession}_${Date.now()}`,
+        date: appState.activeVitalDate,
+        time: currentTime,
+        session: appState.activeVitalSession,
+        height: document.getElementById("vHeight").value.trim(),
+        weight: document.getElementById("vWeight").value.trim(),
+        temperature: document.getElementById("vTemp").value.trim(),
+        pulse: document.getElementById("vPulse").value.trim(),
+        bp: document.getElementById("vBP").value.trim(),
+        rr: document.getElementById("vRR").value.trim(),
+        painScore: document.getElementById("vPain").value.trim(),
+        fbs: document.getElementById("vFBS").value.trim(),
+        ppbs: document.getElementById("vPPBS").value.trim(),
+        rbs: document.getElementById("vRBS").value.trim(),
+        spo2: document.getElementById("vSPO2").value.trim(),
+        sleep: document.getElementById("vSleep").value.trim(),
+        bowel: document.getElementById("vBowel").value.trim(),
+        appetite: document.getElementById("vAppetite").value.trim()
+      };
+
+      if (appState.vitalsMode === "legacy") {
+        const idx = appState.vitals.findIndex(v => v.date === appState.activeVitalDate);
+        if (idx >= 0) {
+          appState.vitals[idx] = payload;
+        } else {
+          appState.vitals.push(payload);
+        }
+      } else {
+        const idx = appState.vitals.findIndex(
+          v => v.date === appState.activeVitalDate && v.session === appState.activeVitalSession
+        );
+        if (idx >= 0) {
+          appState.vitals[idx] = payload;
+        } else {
+          appState.vitals.push(payload);
+        }
+      }
+
+      saveState();
+      closeVitalModal();
+      renderAll();
+      document.getElementById("recordSavedAlert").classList.add("open");
+    }
+
+    function closeRecordSavedAlert() {
+      document.getElementById("recordSavedAlert").classList.remove("open");
+    }
+
+    function deleteVitalRecord(id) {
+      appState.vitals = appState.vitals.filter(v => v.id !== id);
+      saveState();
+      renderAll();
+    }
+
+    // ADVICED THERAPY (CREATE ESTIMATE THERAPY) MODAL LOGIC
+    function openEstimateModal() {
+      appState.estSelectedTherapies = [];
+      document.getElementById("estSelectedTableWrap").style.display = "none";
+      document.getElementById("estSelectedLabel").textContent = "Select Therapy";
+      document.getElementById("estDropdownList").classList.remove("open");
+      document.getElementById("estSearchInput").value = "";
+      filterEstTherapies();
+      document.getElementById("estimateModal").classList.add("open");
+    }
+
+    function closeEstimateModal() {
+      document.getElementById("estimateModal").classList.remove("open");
+    }
+
+    function selectEstSession(el, sessionName) {
+      document.querySelectorAll("#estSessionPills .session-pill").forEach(p => p.classList.remove("active"));
+      el.classList.add("active");
+    }
+
+    function toggleEstDropdown() {
+      const list = document.getElementById("estDropdownList");
+      list.classList.toggle("open");
+      if (list.classList.contains("open")) {
+        document.getElementById("estSearchInput").focus();
+      }
+    }
+
+    function filterEstTherapies() {
+      const q = document.getElementById("estSearchInput").value.trim().toUpperCase();
+      const container = document.getElementById("estOptionsContainer");
+      container.innerHTML = "";
+
+      const filtered = THERAPY_CATALOG.filter(t => t.includes(q));
+      filtered.forEach((therapy, idx) => {
+        const div = document.createElement("div");
+        div.className = "therapy-option-item" + (idx === 0 ? " highlighted" : "");
+        div.textContent = therapy;
+        div.onclick = () => addEstTherapyItem(therapy);
+        container.appendChild(div);
+      });
+    }
+
+    function addEstTherapyItem(therapyName) {
+      document.getElementById("estSelectedLabel").textContent = "Select Therapy";
+      document.getElementById("estDropdownList").classList.remove("open");
+      appState.estSelectedTherapies.push({ name: therapyName, days: "" });
+      renderEstSelectedTable();
+    }
+
+    function renderEstSelectedTable() {
+      const wrap = document.getElementById("estSelectedTableWrap");
+      const tbody = document.getElementById("estSelectedTbody");
+      tbody.innerHTML = "";
+
+      if (appState.estSelectedTherapies.length === 0) {
+        wrap.style.display = "none";
+        return;
+      }
+      wrap.style.display = "block";
+
+      appState.estSelectedTherapies.forEach((item, index) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${index + 1}</td>
+          <td>${item.name}</td>
+          <td>
+            <input type="text" value="${item.days}" style="width:100%;padding:4px;border:1px solid #ccc;" oninput="appState.estSelectedTherapies[${index}].days = this.value" />
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function saveEstimateTherapy() {
+      closeEstimateModal();
+      document.getElementById("recordSavedAlert").classList.add("open");
+    }
+
+    // THERAPY CELL MODAL LOGIC (Morning / Noon / Evening click)
+    function initAzBar() {
+      const bar = document.getElementById("azBar");
+      bar.innerHTML = "";
+      for (let i = 65; i <= 90; i++) {
+        const letter = String.fromCharCode(i);
+        const div = document.createElement("div");
+        div.className = "az-letter" + (letter === "A" ? " active" : "");
+        div.textContent = letter;
+        div.onclick = () => {
+          document.querySelectorAll(".az-letter").forEach(l => l.classList.remove("active"));
+          div.classList.add("active");
+          document.getElementById("cellTherapySearch").value = letter;
+          renderCellTherapyQuickList();
+        };
+        bar.appendChild(div);
+      }
+    }
+
+    function openTherapyCellModal(dateStr, sessionName) {
+      appState.activeCellDate = dateStr;
+      appState.activeCellSession = sessionName;
+      document.querySelectorAll("#cellSessionPills .session-pill").forEach(p => {
+        p.classList.toggle("active", p.textContent === sessionName);
+      });
+      document.getElementById("cellTherapySearch").value = "";
+      renderCellTherapyQuickList();
+      document.getElementById("therapyCellModal").classList.add("open");
+    }
+
+    function closeTherapyCellModal() {
+      document.getElementById("therapyCellModal").classList.remove("open");
+    }
+
+    function selectCellSession(el, sessionName) {
+      document.querySelectorAll("#cellSessionPills .session-pill").forEach(p => p.classList.remove("active"));
+      el.classList.add("active");
+      appState.activeCellSession = sessionName;
+    }
+
+    function deselectAllCalDays() {
+      document.querySelectorAll("#calMiniGrid .cal-day").forEach(d => d.classList.remove("selected"));
+    }
+
+    function renderCellTherapyQuickList() {
+      const q = document.getElementById("cellTherapySearch").value.trim().toUpperCase();
+      const box = document.getElementById("cellTherapyQuickList");
+      const matches = THERAPY_CATALOG.filter(t => t.includes(q));
+      box.innerHTML = matches.map(m => `
+        <label style="display:block;padding:3px 0;cursor:pointer;">
+          <input type="checkbox" class="cell-therapy-chk" value="${m}" style="margin-right:6px;" /> ${m}
+        </label>
+      `).join("");
+    }
+
+    function saveCellTherapyAssignment() {
+      const checked = Array.from(document.querySelectorAll(".cell-therapy-chk:checked")).map(c => c.value);
+      if (checked.length > 0 && appState.activeCellDate) {
+        const dayObj = appState.days.find(d => d.date === appState.activeCellDate);
+        if (dayObj) {
+          const joined = checked.join(" , ");
+          if (appState.activeCellSession === "Morning" || appState.activeCellSession === "All") dayObj.morning = joined;
+          if (appState.activeCellSession === "Noon" || appState.activeCellSession === "All") dayObj.noon = joined;
+          if (appState.activeCellSession === "Evening" || appState.activeCellSession === "All") dayObj.evening = joined;
+          saveState();
+          renderAll();
+        }
+      }
+      closeTherapyCellModal();
+      document.getElementById("recordSavedAlert").classList.add("open");
+    }
+
+    function promptEveningComment(dateStr) {
+      const note = prompt(`Enter Evening Therapy Pre/Post Procedure Note for ${dateStr}:`);
+      if (note !== null && note.trim() !== "") {
+        const dayObj = appState.days.find(d => d.date === dateStr);
+        if (dayObj) {
+          dayObj.evening = (dayObj.evening ? dayObj.evening + " | Note: " : "Note: ") + note.trim();
+          saveState();
+          renderAll();
+        }
+      }
+    }
+
+    // Initialize on load
+    window.addEventListener("DOMContentLoaded", () => {
+      initAzBar();
+      loadState();
+    });
+  </script>
+</body>
+</html>
